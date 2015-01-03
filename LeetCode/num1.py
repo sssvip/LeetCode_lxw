@@ -1,16 +1,18 @@
-#FileName: E:/lxw/Documents/Program/Python/LeetCode/num1.py
-#coding: utf-8
-#Author: lxw
-#Date: 2014-12-31
-#Usage: LeetCode num 1. 
-#alt + /
+# FileName: num1.py
+# Python Version: 2.7
+# coding: utf-8
+# Author: lxw
+# Date: 2014-12-31
+# Usage: LeetCode num 1. 
+# alt + / or new "PyDev Module"
 
 class Solution:
     # @return a tuple, (index1, index2)
     '''
+    #NO:TLE(Time Limit Exceeded). list.index() is much too slow: O(n).
     def twoSum(self, num, target):
         index0 = 0
-        index1 = -1 
+        index1 = -1
         for item in num:
             index0 += 1
             other = target - item
@@ -28,19 +30,32 @@ class Solution:
         length = len(num)
         dic = {}
         for i in xrange(length):
-            dic[num[i]] = i
-        index0 = -1
-        index1 = -1 
-        for key in xrange(length):  #not "for key in dic.values():" 
-            other = target - num[key]
-            index1 = dic.get(other)
-            #[1, 2, 3, 4], 4:   2,2 is not the EXPECTED answer.
-            if index1 and index1 != key:
-                index0 = key + 1
-                index1 += 1
-                break
+            # dic[num[i]] = i
+            try:
+                var = dic[num[i]]
+            except KeyError:
+                dic[num[i]] = [i]
+            else:
+                dic[num[i]].append(i)
 
-        return index0, index1
+        index0 = -1
+        flag = False
+        for key in xrange(length):
+            if flag:
+                break
+            other = target - num[key]
+            index1 = dic.get(other)  # return a "list" instead of an "int".
+
+            if index1:
+                length = len(index1)
+                for i in xrange(length):
+                    if index1[i] > key:
+                        index0 = key + 1
+                        index1[i] += 1
+                        flag = True
+                        break
+
+        return index0, index1[i]
 
 
 def main():
@@ -49,7 +64,7 @@ def main():
     for i in xrange(1000):
         num.append(i)
     num = [0, 4, 3, 0, 0]
-    #print sol.twoSum(num, 1900)
-    print sol.twoSum(num, 7)
+    # print sol.twoSum(num, 1900)
+    print sol.twoSum(num, 0)
 
 main()

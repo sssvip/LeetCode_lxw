@@ -4,7 +4,6 @@
  * @Date: 2014-12-30
  * @Usage: LeetCode num 1.
  */
-
 class Solution {
 	class HashNode {
 		private int value;
@@ -134,8 +133,7 @@ class Solution {
 		}
 	}
 
-	/*
-	 * //This method is much too slow. O(n) public static int inArray(int
+	/* * //This method is much too slow. O(n) public static int inArray(int
 	 * element, int[] numbers, int start) { int length = numbers.length; if
 	 * (start >= length) { return -1; } for (int i = start; i < length; ++i) {
 	 * if (element == numbers[i]) { return i; } } return -1; }
@@ -158,19 +156,21 @@ class Solution {
 		}
 		return result;
 	}
+
 }
 
 public class num1 {
 	public static void main(String[] args) {
-		// int[] numbers = {2, 7, 11, 15};
+		int[] numbers = {2, 7, 3, 3};
+		/*
 		int[] numbers = new int[9200];
 		for (int i = 0; i < 9200; ++i) {
-			// numbers[i] = 2*i + 1;
 			numbers[i] = i;
 		}
+		*/
 
 		Solution sl = new Solution();
-		int[] result = sl.twoSum(numbers, 8398);
+		int[] result = sl.twoSum(numbers, 5);
 		System.out.format("result[0]=%d, result[1]=%d\n", result[0], result[1]);
 	}
 }
