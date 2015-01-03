@@ -3,7 +3,7 @@
 # coding: utf-8
 # Author: lxw
 # Date: 2014-12-31
-# Usage: LeetCode num 1. 
+# Usage: LeetCode num 1.
 # alt + / or new "PyDev Module"
 
 class Solution:
@@ -25,6 +25,15 @@ class Solution:
                 break
         return index0, index1
     '''
+    # A really SIMPLE & CLEAN solution.
+    def twoSum1(self, num, target):
+        s = {}
+        for i, element in enumerate(num):
+            i2 = s.get(target-element)
+            if i2 != None:
+                return i2+1, i+1
+            else:
+                s[element] = i
 
     def twoSum(self, num, target):
         length = len(num)
@@ -63,8 +72,10 @@ def main():
     num = []
     for i in xrange(1000):
         num.append(i)
-    num = [0, 4, 3, 0, 0]
+    num = [0, 4, 3, 4, 0, 0, 5]
     # print sol.twoSum(num, 1900)
-    print sol.twoSum(num, 0)
+    # It's possible and right when the following 2 methods show different answers.
+    print sol.twoSum(num, 9)
+    print sol.twoSum1(num, 9)
 
 main()
