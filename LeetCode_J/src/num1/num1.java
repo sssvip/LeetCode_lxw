@@ -4,6 +4,8 @@
  * @Date: 2014-12-30
  * @Usage: LeetCode num 1.
  */
+package num1;
+
 class Solution {
 	class HashNode {
 		private int value;

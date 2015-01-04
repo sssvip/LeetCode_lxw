@@ -4,6 +4,7 @@
  *@Date: Jan 3, 2015
  *@Usage: Use the Built-in Data Structure in Java to solve the problem.
  */
+package num1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
