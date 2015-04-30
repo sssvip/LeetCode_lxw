@@ -3,7 +3,7 @@
 # coding: utf-8
 # Author: lxw
 # Date: 2014-12-31
-# Usage: LeetCode num 1.
+# Usage: Num 1: Two Sum.
 # alt + / or new "PyDev Module"
 
 class Solution:
