@@ -1,9 +1,9 @@
-# FileName: num1.py
+# FileName: num001.py
 # Python Version: 2.7
 # coding: utf-8
 # Author: lxw
 # Date: 2014-12-31
-# Usage: Num 1: Two Sum.
+# Usage: Num 001: Two Sum.
 # alt + / or new "PyDev Module"
 
 class Solution:

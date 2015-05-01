@@ -16,7 +16,7 @@ class Solution(object):
         length = len(s)
         result = True
         for index in xrange(length):
-            if s[index] in mapDict.keys():    #compare this with get() method.
+            if s[index] in mapDict.keys():    #compare this with get() method. get() seems much faster.
                 value = mapDict[s[index]]
                 if value != t[index]:
                     result = False
