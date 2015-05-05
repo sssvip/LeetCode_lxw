@@ -42,6 +42,7 @@ class Solution(object):
                 l1 = l1.next
             else:
                 break
+
         while 1:
             if l2:
                 value = l2.val + carry
@@ -54,7 +55,6 @@ class Solution(object):
 
         if carry:
             curPosition.next = ListNode(carry)
-            curPosition = curPosition.next
 
         return retList.next
 
