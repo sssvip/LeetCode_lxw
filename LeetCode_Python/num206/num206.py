@@ -1,8 +1,16 @@
 #!/usr/bin/python2.7
-#File: num206.py
-#Author: lxw
-#Time: 2015-05-05
-#Usage: Num 206: Reverse Linked List.
+# FileName: num206.py
+# Author: lxw
+# Date: 2015-05-05
+
+"""
+Num 206: Reverse Linked List.
+Source: https://leetcode.com/problems/reverse-linked-list/
+
+Reverse a singly linked list.
+Hint:
+    A linked list can be reversed either iteratively or recursively. Could you implement both?
+"""
 
 class ListNode:
     """
@@ -27,4 +35,3 @@ if __name__ == '__main__':
     main()
 else:
     print("Being imported as a module.")
-
