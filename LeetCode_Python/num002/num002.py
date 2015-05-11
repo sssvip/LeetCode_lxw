@@ -63,7 +63,6 @@ class Solution(object):
 
         if carry:
             curPosition.next = ListNode(carry)
-            curPosition = curPosition.next
 
         return retList.next
 

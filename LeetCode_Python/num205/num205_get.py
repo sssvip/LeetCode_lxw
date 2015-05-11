@@ -54,7 +54,7 @@ class Solution(object):
 
 def main():
     s = Solution()
-    isomDict = {"egg":"add", "foo":"bar", "paper":"title", "ab":"aa"}
+    isomDict = {"egg":"add", "foo":"bar", "paper":"title", "ab":"aa", "ae":"eg"}
     for item in isomDict:
         print item, isomDict[item], " : ",
         print(s.isIsomorphic(item, isomDict[item]))
