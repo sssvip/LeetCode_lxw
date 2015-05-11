@@ -1,10 +1,22 @@
+#!/usr/bin/python2.7
 # FileName: num001.py
-# Python Version: 2.7
-# coding: utf-8
 # Author: lxw
 # Date: 2014-12-31
-# Usage: Num 001: Two Sum.
-# alt + / or new "PyDev Module"
+
+"""
+Num 001: Two Sum
+
+Source: https://leetcode.com/problems/two-sum/
+
+Given an array of integers, find two numbers such that they add up to a specific target number.
+
+The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.
+
+You may assume that each input would have exactly one solution.
+
+Input: numbers={2, 7, 11, 15}, target=9
+Output: index1=1, index2=2
+"""
 
 class Solution:
     # @return a tuple, (index1, index2)

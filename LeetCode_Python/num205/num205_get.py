@@ -1,11 +1,32 @@
 #!/usr/bin/python2.7
-#File: num205_get.py
-#Author: lxw
-#Time: 2015-04-29
-#Usage: Num 205: Isomorphic Strings.
-#Note:
-#No two characters may map to the same character but a character may map to itself. e.g.
-#"ab", "aa"
+# FileName: num205_get.py
+# Author: lxw
+# Date: 2015-04-29
+
+"""
+Num 205: Isomorphic Strings
+Source : https://leetcode.com/problems/isomorphic-strings/
+
+Given two strings s and t, determine if they are isomorphic.
+
+Two strings are isomorphic if the characters in s can be replaced to get t.
+
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character but a character may map to itself.
+
+For example,
+Given "egg", "add", return true.
+
+Given "foo", "bar", return false.
+
+Given "paper", "title", return true.
+
+Note:
+    You may assume both s and t have the same length.
+"""
+
+"""
+Note: No two characters may map to the same character but a character may map to itself. e.g. "ab", "aa"
+"""
 
 class Solution(object):
     def __init__(self):
