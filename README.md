@@ -1,7 +1,7 @@
 LeetCode_lxw
 ============
 
-LeetCode Programming Practice in _**Python**_.<br>
+LeetCode Programming Practice in _**[Python](https://docs.python.org/3/)**_.<br>
 Submitted by lxw.
 
 
