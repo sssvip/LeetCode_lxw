@@ -1,3 +1,4 @@
+// Time Limit Exceeded.
 // File: num005_dp.cpp
 // Author: lxw
 // Date: 2015-05-20
@@ -59,6 +60,11 @@ class Solution {
                     //}
                 }
             }
+
+            for(int i = 0; i < length; ++i){
+                delete[] array2[i];
+            }
+            delete[] array2;
             return maxStr;
         }
 };
