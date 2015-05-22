@@ -1,0 +1,112 @@
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/4.8/bits/allocator.h:46,
+                 from /usr/include/c++/4.8/string:41,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from test.cpp:1:
+/usr/include/c++/4.8/ext/new_allocator.h: In instantiation of ‘class __gnu_cxx::new_allocator<int&>’:
+/usr/include/c++/4.8/bits/allocator.h:92:11:   required from ‘class std::allocator<int&>’
+/usr/include/c++/4.8/ext/alloc_traits.h:199:53:   required from ‘struct __gnu_cxx::__alloc_traits<std::allocator<int&> >’
+/usr/include/c++/4.8/bits/stl_vector.h:75:28:   required from ‘struct std::_Vector_base<int&, std::allocator<int&> >’
+/usr/include/c++/4.8/bits/stl_vector.h:210:11:   required from ‘class std::vector<int&>’
+test.cpp:15:19:   required from here
+/usr/include/c++/4.8/ext/new_allocator.h:63:26: error: forming pointer to reference type ‘int&’
+       typedef _Tp*       pointer;
+                          ^
+/usr/include/c++/4.8/ext/new_allocator.h:64:26: error: forming pointer to reference type ‘int&’
+       typedef const _Tp* const_pointer;
+                          ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from test.cpp:1:
+/usr/include/c++/4.8/bits/allocator.h: In instantiation of ‘class std::allocator<int&>’:
+/usr/include/c++/4.8/ext/alloc_traits.h:199:53:   required from ‘struct __gnu_cxx::__alloc_traits<std::allocator<int&> >’
+/usr/include/c++/4.8/bits/stl_vector.h:75:28:   required from ‘struct std::_Vector_base<int&, std::allocator<int&> >’
+/usr/include/c++/4.8/bits/stl_vector.h:210:11:   required from ‘class std::vector<int&>’
+test.cpp:15:19:   required from here
+/usr/include/c++/4.8/bits/allocator.h:97:26: error: forming pointer to reference type ‘int&’
+       typedef _Tp*       pointer;
+                          ^
+/usr/include/c++/4.8/bits/allocator.h:98:26: error: forming pointer to reference type ‘int&’
+       typedef const _Tp* const_pointer;
+                          ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from test.cpp:2:
+/usr/include/c++/4.8/bits/stl_vector.h: In instantiation of ‘class std::vector<int&>’:
+test.cpp:15:19:   required from here
+/usr/include/c++/4.8/bits/stl_vector.h:237:20: error: no members matching ‘std::vector<int&>::_Base {aka std::_Vector_base<int&, std::allocator<int&> >}::_M_allocate’ in ‘std::vector<int&>::_Base {aka struct std::_Vector_base<int&, std::allocator<int&> >}’
+       using _Base::_M_allocate;
+                    ^
+/usr/include/c++/4.8/bits/stl_vector.h:238:20: error: no members matching ‘std::vector<int&>::_Base {aka std::_Vector_base<int&, std::allocator<int&> >}::_M_deallocate’ in ‘std::vector<int&>::_Base {aka struct std::_Vector_base<int&, std::allocator<int&> >}’
+       using _Base::_M_deallocate;
+                    ^
+test.cpp: In constructor ‘std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = int&; _Alloc = std::allocator<int&>; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = int&; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int&>]’:
+test.cpp:15:21: error: value-initialization of reference type ‘std::vector<int&>::value_type {aka int&}’
+     vector<int&> b(0);
+                     ^
+test.cpp:15:21: note:   when instantiating default argument for call to std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = int&; _Alloc = std::allocator<int&>; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = int&; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int&>]
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from test.cpp:2:
+/usr/include/c++/4.8/bits/stl_vector.h: In instantiation of ‘std::vector<_Tp, _Alloc>::~vector() [with _Tp = int&; _Alloc = std::allocator<int&>]’:
+test.cpp:15:21:   required from here
+/usr/include/c++/4.8/bits/stl_vector.h:416:30: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_start’
+         _M_get_Tp_allocator()); }
+                              ^
+/usr/include/c++/4.8/bits/stl_vector.h:416:30: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_finish’
+/usr/include/c++/4.8/bits/stl_vector.h: In instantiation of ‘std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = int&; _Alloc = std::allocator<int&>]’:
+/usr/include/c++/4.8/bits/stl_vector.h:297:23:   required from ‘std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = int&; _Alloc = std::allocator<int&>; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = int&; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int&>]’
+test.cpp:15:21:   required from here
+/usr/include/c++/4.8/bits/stl_vector.h:161:33: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_start’
+         - this->_M_impl._M_start); }
+                                 ^
+/usr/include/c++/4.8/bits/stl_vector.h:161:9: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_start’
+         - this->_M_impl._M_start); }
+         ^
+/usr/include/c++/4.8/bits/stl_vector.h:161:9: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_end_of_storage’
+/usr/include/c++/4.8/bits/stl_vector.h:161:33: error: ‘_M_deallocate’ was not declared in this scope
+         - this->_M_impl._M_start); }
+                                 ^
+/usr/include/c++/4.8/bits/stl_vector.h: In instantiation of ‘void std::vector<_Tp, _Alloc>::_M_fill_initialize(std::vector<_Tp, _Alloc>::size_type, const value_type&) [with _Tp = int&; _Alloc = std::allocator<int&>; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = int&]’:
+/usr/include/c++/4.8/bits/stl_vector.h:298:40:   required from ‘std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = int&; _Alloc = std::allocator<int&>; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = int&; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int&>]’
+test.cpp:15:21:   required from here
+/usr/include/c++/4.8/bits/stl_vector.h:1215:32: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_start’
+           _M_get_Tp_allocator());
+                                ^
+/usr/include/c++/4.8/bits/stl_vector.h:1216:26: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_end_of_storage’
+  this->_M_impl._M_finish = this->_M_impl._M_end_of_storage;
+                          ^
+/usr/include/c++/4.8/bits/stl_vector.h:1216:26: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_finish’
+/usr/include/c++/4.8/bits/stl_vector.h: In instantiation of ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_Vector_impl(const _Tp_alloc_type&) [with _Tp = int&; _Alloc = std::allocator<int&>; std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type = std::allocator<int&>]’:
+/usr/include/c++/4.8/bits/stl_vector.h:135:20:   required from ‘std::_Vector_base<_Tp, _Alloc>::_Vector_base(std::size_t, const allocator_type&) [with _Tp = int&; _Alloc = std::allocator<int&>; std::size_t = unsigned int; std::_Vector_base<_Tp, _Alloc>::allocator_type = std::allocator<int&>]’
+/usr/include/c++/4.8/bits/stl_vector.h:297:23:   required from ‘std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = int&; _Alloc = std::allocator<int&>; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = int&; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int&>]’
+test.cpp:15:21:   required from here
+/usr/include/c++/4.8/bits/stl_vector.h:91:71: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_M_start’
+  : _Tp_alloc_type(__a), _M_start(0), _M_finish(0), _M_end_of_storage(0)
+                                                                       ^
+/usr/include/c++/4.8/bits/stl_vector.h:91:71: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_M_finish’
+/usr/include/c++/4.8/bits/stl_vector.h:91:71: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_M_end_of_storage’
+/usr/include/c++/4.8/bits/stl_vector.h: In instantiation of ‘void std::_Vector_base<_Tp, _Alloc>::_M_create_storage(std::size_t) [with _Tp = int&; _Alloc = std::allocator<int&>; std::size_t = unsigned int]’:
+/usr/include/c++/4.8/bits/stl_vector.h:136:30:   required from ‘std::_Vector_base<_Tp, _Alloc>::_Vector_base(std::size_t, const allocator_type&) [with _Tp = int&; _Alloc = std::allocator<int&>; std::size_t = unsigned int; std::_Vector_base<_Tp, _Alloc>::allocator_type = std::allocator<int&>]’
+/usr/include/c++/4.8/bits/stl_vector.h:297:23:   required from ‘std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = int&; _Alloc = std::allocator<int&>; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = int&; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int&>]’
+test.cpp:15:21:   required from here
+/usr/include/c++/4.8/bits/stl_vector.h:181:25: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >’ has no member named ‘_M_allocate’
+  this->_M_impl._M_start = this->_M_allocate(__n);
+                         ^
+/usr/include/c++/4.8/bits/stl_vector.h:181:25: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_start’
+/usr/include/c++/4.8/bits/stl_vector.h:182:26: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_start’
+  this->_M_impl._M_finish = this->_M_impl._M_start;
+                          ^
+/usr/include/c++/4.8/bits/stl_vector.h:182:26: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_finish’
+/usr/include/c++/4.8/bits/stl_vector.h:183:59: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_start’
+  this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+                                                           ^
+/usr/include/c++/4.8/bits/stl_vector.h:183:34: error: ‘struct std::_Vector_base<int&, std::allocator<int&> >::_Vector_impl’ has no member named ‘_M_end_of_storage’
+  this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+                                  ^
