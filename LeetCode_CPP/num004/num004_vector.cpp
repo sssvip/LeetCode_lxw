@@ -1,6 +1,6 @@
-// File: num004.cpp
+// File: num004_vector.cpp
 // Author: lxw
-// Date: 2015-05-14
+// Date: 2015-05-22
 
 /*
 Num 004: Median of Two Sorted Arrays
@@ -16,10 +16,13 @@ using std::cout;
 using std::endl;
 
 // [Recursively] Find the Kth minimium element in 2 arrays.
-double findKthMin(int A[], int m, int B[], int n, int k) {
+//double findKthMin(int A[], int m, int B[], int n, int k) {
+double findKthMin(vector<int> A, vector<int> B, int k) {
+    int m = A.size();
+    int n = B.size();
     // To ensure m is smaller than n.
     if (m > n)
-        return findKthMin(B, n, A, m, k);
+        return findKthMin(B, A, k);
 
     // NOTE: 2 exit (more than one exit).
     if (m == 0)
@@ -30,24 +33,22 @@ double findKthMin(int A[], int m, int B[], int n, int k) {
     int posA = min(k/2, m);
     int posB = k - posA;
     if (A[posA - 1] < B[posB - 1])
-        return findKthMin(A + posA, m - posA, B, n, k - posA);
+        return findKthMin(A(A.begin() + posA, A.end()), B, k - posA);
     else if (A[posA - 1] > B[posB - 1])
-        return findKthMin(A, m, B + posB, n - posB, k - posB);
+        return findKthMin(A, B(B.begin() + posB, B.end()), k - posB);
     else
         return A[posA - 1];
 }
 
 //double findMedianSortedArrays(int A[], int m, int B[], int n) {
 double findMedianSortedArrays(vector<int>& A, vector<int>& B) {
-    int m = A.size();
-    int n = B.size();
-    int total = m + n;
+    int total = A.size() + B.size();
     //if (total % 2)
     if (total & 0x01)
-        return findKthMin(A, m, B, n, total/2+1);
+        return findKthMin(A, B, total/2+1);
     else
-        return (findKthMin(A , m, B, n, total/2) +
-                 findKthMin(A, m, B, n, total/2+1)) / 2;
+        return (findKthMin(A, B, total/2) +
+                 findKthMin(A, B, total/2+1)) / 2;
 }
 
 void showArray(int A[], int m, int B[], int n){
@@ -66,6 +67,7 @@ void showArray(int A[], int m, int B[], int n){
 
 
 int main(int argc, char ** argv){
+    /*
     int r[] = {};
     int r0[] = {1};
  
@@ -73,7 +75,12 @@ int main(int argc, char ** argv){
     int n0 = sizeof(r0)/sizeof(r0[0]);
 
     showArray(r, n, r0, n0);
-    cout << "Median is 1 = " << findMedianSortedArrays(r, n, r0, n0) << endl;
+    */
+    vector<int> r(0);
+    vector<int> r0(1);
+    r0.push_back(1);
+
+    cout << "Median is 1 = " << findMedianSortedArrays(r, r0) << endl;
 
     /*
     int r1[] = {1};
