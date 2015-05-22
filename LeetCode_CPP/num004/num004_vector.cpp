@@ -11,9 +11,7 @@ There are two sorted arrays nums1 and nums2 of size m and n respectively. Find t
 
 #include <iostream>
 #include <vector>
-using std::min;
-using std::cout;
-using std::endl;
+using namespace std;    //If use vector, this is essential. #incldue <vecotr> alone is not enough.
 
 // [Recursively] Find the Kth minimium element in 2 arrays.
 double findKthMin(int A[], int m, int B[], int n, int k) {
@@ -23,7 +21,7 @@ double findKthMin(int A[], int m, int B[], int n, int k) {
 
     // NOTE: 2 exit (more than one exit).
     if (m == 0)
-       return B[k -1];
+        return B[k -1];
     if (k == 1)
         return min(A[0], B[0]);
     
@@ -37,7 +35,7 @@ double findKthMin(int A[], int m, int B[], int n, int k) {
         return A[posA - 1];
 }
 
-double findMedianSortedArrays1(int A[], int m, int B[], int n) {
+double findMedianSortedArrays(int A[], int m, int B[], int n) {
 //double findMedianSortedArrays(vector<int>& A, vector<int>& B) {
     //int m = A.size();
     //int n = B.size();
@@ -64,17 +62,32 @@ void showArray(int A[], int m, int B[], int n){
     cout << endl;
 }
 
+void showVector(vector<int> vec){
+    for(int i = 0; i < vec.size(); ++i){
+        cout << vec[i] << "\t";
+    }
+    cout << endl;
+}
+
 double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-    vector<int>:;iterator it1 = nums1.begin();
-    vector<int>:;iterator it2 = nums2.begin();
-    findMedianSortedArrays1(*it1, nums1.size(), *nums2, nums2.size());
+    //vector<int>::iterator it1 = nums1.begin();
+    //vector<int>::iterator it2 = nums2.begin();
+    //cout << "&nums1[0]:" << &nums1[0] << ", size:" << nums1.size() << endl;
+    //cout << "&nums2[0]:" << &nums2[0] << ", size:" << nums2.size() << endl;
+    return findMedianSortedArrays(&nums1[0], nums1.size(), &nums2[0], nums2.size());
 }
 
 int main(int argc, char ** argv){
-    vector<int> r(0);
-    vector<int> r0(1);
+    vector<int> r;
+    vector<int> r0;
     r0.push_back(1);
 
     cout << "Median is 1 = " << findMedianSortedArrays(r, r0) << endl;
+
+    /*
+    cout << "-----------------------------" << endl;
+    showVector(r);
+    showVector(r0);
+    */
     return 0;
 }

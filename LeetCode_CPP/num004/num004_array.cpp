@@ -11,9 +11,7 @@ There are two sorted arrays nums1 and nums2 of size m and n respectively. Find t
 
 #include <iostream>
 #include <vector>
-using std::min;
-using std::cout;
-using std::endl;
+using namespace std;
 
 // [Recursively] Find the Kth minimium element in 2 arrays.
 double findKthMin(int A[], int m, int B[], int n, int k) {
