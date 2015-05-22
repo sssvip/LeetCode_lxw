@@ -1,8 +1,6 @@
-// Memory Limit Exceeded.
-// I think "Memory cost on the heap seems being limited." (new is not allowed, while 'int array2 = int[1000][1000]' is allowed;
 // File: num005_dp.cpp
 // Author: lxw
-// Date: 2015-05-20
+// Date: 2015-05-22
 
 /*
 Num 005: Longest Palindromic Substring
@@ -16,18 +14,9 @@ class Solution {
     public:
         std::string longestPalindrome(std::string s) {
             int length = s.length();
-            int** array2 = new int* [length];
-            for(int i = 0; i < length; ++i){
-                array2[i] = new int[length];
-            }
-            //[NO]std::string maxStr = std::string(s[0]);
-            //[YES]std::string maxStr = "";
-            //maxStr.insert(maxStr.begin(), s[0]);
+            int array2[1000][1000] = {false};
             int maxStart = 0;
             int maxLength = 1;
-
-            //length == 1
-            //Is this operation essential? Yes. Note the calculation of the "blue line" in the picture. And so on.
             for(int i = 0; i < length; ++i){
                 array2[i][i] = true;
             }
@@ -36,12 +25,7 @@ class Solution {
                 if(s[i] == s[i+1]){
                     array2[i][i+1] = true;
                     maxLength = 2;
-                    //maxStr = s.substr(i, 2);
                     maxStart = i;
-                    //std::cout << maxStr << std::endl;
-                }
-                else{
-                    array2[i][i+1] = false;
                 }
             }
             //length >= 3
@@ -51,23 +35,10 @@ class Solution {
                     if(array2[i+1][j-1] && s[i] == s[j]){
                         array2[i][j] = true;
                         maxLength = curLength;
-                        //maxStr = s.substr(i, maxLength);
                         maxStart = i;
-                        //std::cout << "array2[" << i+1 << "][" << j-1 << "]:" << array2[i+1][j-1] << "\ts[" << i << "]:" << s[i] << ", s[" << j << "]:" << s[j] << std::endl;
-                        //std::cout << maxStr << std::endl;
                     }
-                    else{
-                        array2[i][j] = false;
-                        //std::cout << "array2[" << i+1 << "][" << j-1 << "]:" << array2[i+1][j-1] << "\ts[" << i << "]:" << s[i] << ", s[" << j << "]:" << s[j] << std::endl;
-                    }
-                    //}
                 }
             }
-
-            for(int i = 0; i < length; ++i){
-                delete[] array2[i];
-            }
-            delete[] array2;
             return s.substr(maxStart, maxLength);
         }
 };

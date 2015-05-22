@@ -14,7 +14,6 @@ Given a string S, find the longest palindromic substring in S. You may assume th
 class Solution {
     public:
         std::string longestPalindrome(std::string s) {
-            std::string result = "";
             int length = s.length();
             int** array2 = new int* [length];
             int maxLength = 1;
@@ -36,7 +35,7 @@ class Solution {
                     array2[i][i+1] = true;
                     maxLength = 2;
                     maxStr = s.substr(i, 2);
-                    //std::cout << maxStr << std::endl;
+                    //If we use maxStr to save the temporary longest string, we will get the TLE.
                 }
                 else{
                     array2[i][i+1] = false;
@@ -50,6 +49,7 @@ class Solution {
                         array2[i][j] = true;
                         maxLength = curLength;
                         maxStr = s.substr(i, maxLength);
+                        //If we use maxStr to save the temporary longest string, we will get the TLE.
                         //std::cout << "array2[" << i+1 << "][" << j-1 << "]:" << array2[i+1][j-1] << "\ts[" << i << "]:" << s[i] << ", s[" << j << "]:" << s[j] << std::endl;
                         //std::cout << maxStr << std::endl;
                     }

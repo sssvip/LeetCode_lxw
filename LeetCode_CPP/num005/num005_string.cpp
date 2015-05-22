@@ -8,10 +8,11 @@ Source: https://leetcode.com/problems/longest-palindromic-substring/
 
 Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
 */
+#include <iostream>
 
 class Solution {
     public:
-        string getPalindrome(string s, int left, int right){
+        std::string getPalindrome(std::string s, int left, int right){
             int length = s.length();
             while(left >= 0 && right < length){
                 if(s[left] != s[right]){
@@ -22,11 +23,11 @@ class Solution {
             }
             return s.substr(left+1, right-left-1);
         }
-        string longestPalindrome(string s) {
+        std::string longestPalindrome(std::string s) {
             int length = s.length();
-            string longestStr = s.substr(0, 1);
+            std::string longestStr = s.substr(0, 1);
             for(int i = 0; i < length-1; ++i){
-                string retStr = getPalindrome(s, i, i);
+                std::string retStr = getPalindrome(s, i, i);
                 if(retStr.length() > longestStr.length()){
                     longestStr = retStr;
                 }
@@ -40,3 +41,9 @@ class Solution {
             return longestStr;
         }
 };
+
+int main(int argc, char ** argv){
+	Solution s;
+	std::cout << s.longestPalindrome("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa") << std::endl;
+	return 0;
+}
