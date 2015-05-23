@@ -14,6 +14,5 @@ Submitted by lxw.
 | 005 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [num005 README](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP%2Fnum005%2FREADEME.md) | DP/String |
 | 007 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [num007.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP%2Fnum007%2Fnum007.cpp) | Math(Overflow) |
 | 008 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [num008.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP%2Fnum008%2Fnum008.cpp) | String(Overflow) |
-
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) | Linked List |
