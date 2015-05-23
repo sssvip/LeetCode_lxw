@@ -16,23 +16,21 @@ using namespace std;
 
 class Solution {
 public:
-    /*
-    NO COMPLIE FOR THIS BLOCK.
-    O(n^2) Time Limit Exceeded.*/
+    /*O(n^2) Time Limit Exceeded.*/
     int maxArea1(vector<int>& height) {
         int maxArea = 0;
         int tempArea = 0;
         int size = height.size();
         for(int i = 0; i < size; ++i){
             for(int j = i+1; j < size; ++j){
-                tempArea = min(height[i], height[j]) * (j - i);
+                tempArea = min(height[i], height[j]) * (j - i); 
                 if(tempArea > maxArea){
                     maxArea = tempArea;
                 }
             }
         }
         return maxArea;
-    }
+    }   
     int maxArea(vector<int>& height) {
         int size = height.size();
         int left = 0;
@@ -42,18 +40,26 @@ public:
         while(left < right){
             if(height[left] < height[right]){
                 tempArea = (right - left) * height[left];
-                ++left;
-            }
+                int k = left + 1;
+                while(k < right && height[k] <= height[left]){
+                    ++k;
+                }
+                left = k;
+            }   
             else{
                 tempArea = (right - left) * height[right];
-                --right;
+                int k = right - 1;
+                while(left < k && height[k] <= height[right]){
+                    --k;
+                }
+                right = k;
             }
             if(tempArea > maxArea){
                 maxArea = tempArea;
-            }
+            }   
         }
         return maxArea;
-    }
+    }       
 };
 
 int main(void){
