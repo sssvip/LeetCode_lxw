@@ -35,7 +35,7 @@ public:
     }
 
     //[OK]Method 2: 24ms
-    string intToRoman(int num){
+    string intToRoman2(int num){
         string symbol[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         int intValue[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         string retStr = ""; 
@@ -51,13 +51,58 @@ public:
         }   
         return retStr;
     }
+
+    //[OK]Method 3: 24ms
+    string intToRoman(int num){
+         //Thousand
+         int thousand = num / 1000;
+         string result = "";
+         for(int i = 0; i < thousand; ++i){
+             result += "M";
+         }
+         //Hundred 
+         int hundred = (num % 1000) / 100;
+         result += getSymbol(hundred, "M", "D", "C");
+         //Ten
+         int ten = (num % 100) / 10;
+         result += getSymbol(ten, "C", "L", "X");
+         //One
+         int one = num % 10;
+         result += getSymbol(one, "X", "V", "I");
+         return result;
+    }           
+     
+    string getSymbol(int num, string a, string b, string c){
+        switch(num){
+            case 9:
+                return c + a;
+            case 8:
+                return b + c + c + c;
+            case 7:
+                return b + c + c;
+            case 6:
+                return b + c;
+            case 5:
+                return b;
+            case 4:
+                return c + b;
+            case 3:
+                return c + c + c;
+            case 2:
+                return c + c;
+            case 1:
+                return c;
+            default:
+                return ""; 
+        }   
+    }
 };
 
 int main(int argc, const char * argv[])
 {
     Solution sol;
-    int intArr[] = {100, 1, 101, 1000, 3424, 1111};
-    for(int i = 0; i < 6; ++i){
+    int intArr[] = {100, 1, 101, 1000, 3424, 1111, 9};
+    for(int i = 0; i < 7; ++i){
         cout << intArr[i] << ": " << sol.intToRoman(intArr[i]) << endl;
     }
     return 0;
