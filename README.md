@@ -16,5 +16,7 @@ Submitted by lxw.
 | 008 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [num008.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP%2Fnum008%2Fnum008.cpp) | String(Overflow) |
 | 009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [num009_generic.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP%2Fnum009%2Fnum009_generic.cpp) | Math(Overflow) |
 | 011 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [num011.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP%2Fnum011%2Fnum011.cpp) | Logic |
+| 012 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [num012.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num012/num012.cpp) | Math |
+| 013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [num013.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num013/num013.cpp) | Math |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) | Linked List |
