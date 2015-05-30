@@ -101,12 +101,18 @@ public:
 
 int main(void){
     vector<int> vec;
+    /*
     vec.push_back(-1);
     vec.push_back(0);
     vec.push_back(1);
     vec.push_back(2);
     vec.push_back(-1);
     vec.push_back(-4);
+    */
+    vec.push_back(-2);
+    vec.push_back(1);
+    vec.push_back(1);
+    vec.push_back(3);
     Solution sol;
     vector<vector<int> > result = sol.threeSum(vec);
     for(int j = 0; j < result.size(); ++j){
