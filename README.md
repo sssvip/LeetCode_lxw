@@ -19,5 +19,6 @@ Submitted by lxw.
 | 012 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [num012.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num012/num012.cpp) | Math |
 | 013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [num013.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num013/num013.cpp) | Math |
 | 014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [num014.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num014/num014.cpp) | String |
+| 015 | [3Sum](https://leetcode.com/problems/3sum/) | [num015.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num015/num015.cpp) | Array |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) | Linked List |
