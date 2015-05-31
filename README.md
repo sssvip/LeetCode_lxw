@@ -22,6 +22,6 @@ Submitted by lxw.
 | 014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [num014.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num014/num014.cpp) | String |
 | 015 | [3Sum](https://leetcode.com/problems/3sum/) | [num015.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num015/num015.cpp) | Array |
 | 016 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [num016.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num016/num016.cpp) | Array |
-| 017 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [num017.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num017/num017.cpp) | Array |
+| 017 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [num017.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num017/num017.cpp) | DFS&String |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) | Linked List |

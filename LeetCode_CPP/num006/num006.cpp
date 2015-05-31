@@ -34,7 +34,7 @@ public:
     //Time: O(n).
     string convert(string s, int numRows) {
         int length = s.length();
-        if(numRows == 1 || length < numRows)
+        if(numRows == 1 || length <= numRows)
             return s;
         string result = "";
         for(int i = 0; i < numRows; ++i){
