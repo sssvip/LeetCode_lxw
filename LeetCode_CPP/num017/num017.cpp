@@ -18,13 +18,67 @@ Although the above answer is in lexicographical order, your answer could be in a
 */
 
 #include <iostream>
+#include <vector>
 using namespace std;
+
+class Solution {
+public:
+    //Better
+    void dfs1(string & digits, int start, int end, vector<string> & result, string & prefix){
+        string digStr = this->vec[digits[start]-'0'];
+        int length = digStr.length();
+        if(start == end){
+            for(int i = 0; i < length; ++i){
+                result.push_back(prefix + digStr[i]); 
+            }
+        }
+        else{
+            for(int i = 0; i < length; ++i){
+                prefix.push_back(digStr[i]);  //OK
+                dfs1(digits, start + 1, end, result, prefix);
+                prefix.pop_back();
+            }
+        }
+    }
+
+    //OK
+    void dfs(string & digits, int start, int end, vector<string> & result, string prefix){
+        string digStr = this->vec[digits[start]-'0'];
+        int length = digStr.length();
+        if(start == end){
+            for(int i = 0; i < length; ++i){
+                result.push_back(prefix + digStr[i]); 
+            }
+        }
+        else{
+            for(int i = 0; i < length; ++i){
+                dfs(digits, start + 1, end, result, prefix+digStr[i]);
+            }
+        }
+    }
+
+    vector<string> letterCombinations(string digits) {
+        vector<string> result;
+        int length = digits.length();
+        if(length < 1){
+            return result;
+        }
+        string prefix = "";
+        dfs1(digits, 0, length - 1, result, prefix); // Better
+        dfs(digits, 0, length - 1, result, "");  // OK
+        return result;
+    }
+private:
+    vector<string> vec = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+};
 
 int main(void)
 {
-    string str = "hello";
-    cout << &str << ", " << str << endl;
-    str[1] = 'a';
-    cout << &str << ", " << str << endl;
+    Solution sol;
+    vector<string> result = sol.letterCombinations("29");
+    int length = result.size();
+    for(int i = 0; i < length; ++i){
+        cout << result[i] << endl;
+    }
     return 0;
 }
