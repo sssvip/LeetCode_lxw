@@ -27,5 +27,6 @@ Submitted by lxw.
 | 019 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [num019.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num019/num019.cpp) | Linked List(Two Pointers)|
 | 020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [num020.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num020/num020.cpp) | Stack |
 | 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [num021.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num021/num021.cpp) | Linked List |
+| 022 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [num022.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num022/num022.cpp) | DFS |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) | Linked List |
