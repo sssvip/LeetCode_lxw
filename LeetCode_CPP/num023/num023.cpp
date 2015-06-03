@@ -12,6 +12,7 @@ Analyze and describe its complexity.
 */
 
 #include <iostream>
+#include <algorithm>
 #include <vector>
 using namespace std;
 
@@ -22,7 +23,16 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
+class cmp{
+public:
+    //DO NOT UNDERSTAND.
+    bool operator()(ListNode* p1, ListNode* p2) const{
+        return p1->val > p2->val;
+    }
+};
+
 class Solution {
+private:
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
         int length = lists.size();
@@ -33,52 +43,17 @@ public:
             return lists[0];
         }
         else{
-            ListNode * head = lists[0];
-            for(int i = 1; i < length; ++i){
-                head = mergeTwoLists(head, lists[i]);
+            ListNode * head = NULL;
+            vector<int> v;
+            for(int i = 0; i < length; ++i){
+                if(List[i] != NULL){
+                    v.push_back(lists[i]);
+                }
             }
-            return head;
-        }
-    }
-    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
-        ListNode * head1 = l1;
-        ListNode * head2 = l2;
-        ListNode * head = NULL;
-        ListNode * current = NULL;
-        if(head1 == NULL){
-            return head2;
-        }
-        if(head2 == NULL){
-            return head1;
-        }
-        if(head1->val < head2->val){
-            head = head1;
-            current = head1;
-            head1 = head1->next;
-        }
-        else{
-            head = head2;
-            current = head2;
-            head2 = head2->next;
-        }
-        while(head1 != NULL && head2 != NULL){
-            if(head1->val < head2->val){
-                current->next = head1;
-                head1 = head1->next;
+            make_heap(v.begin(), v.end(), cmp());
+            while(1){
             }
-            else{
-                current->next = head2;
-                head2 = head2->next;
-            }
-            current = current->next;
         }
-        if(head1 != NULL){
-            current->next = head1;
-        }
-        else{
-            current->next = head2;
-        }
-        return head;
     }
 };
 
