@@ -1,6 +1,6 @@
-// File: num023.cpp
+// File: num023_priority_queue.cpp
 // Author: lxw
-// Date: 2015-06-03
+// Date: 2015-06-04
 
 /*
 Num 023: Merge k Sorted Lists
@@ -23,14 +23,6 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-class cmp{
-public:
-    //DO NOT UNDERSTAND.
-    bool operator()(ListNode* p1, ListNode* p2) const{
-        return p1->val > p2->val;
-    }
-};
-
 class Solution {
 private:
 public:
@@ -42,17 +34,9 @@ public:
         if(length == 1){
             return lists[0];
         }
-        else{
-            ListNode * head = NULL;
-            vector<int> v;
-            for(int i = 0; i < length; ++i){
-                if(List[i] != NULL){
-                    v.push_back(lists[i]);
-                }
-            }
-            make_heap(v.begin(), v.end(), cmp());
-            while(1){
-            }
+
+        {
+            ;
         }
     }
 };
@@ -72,4 +56,3 @@ int main(void)
     cout << sol.mergeKLists(l1)->val << endl;
     return 0;
 }
-
