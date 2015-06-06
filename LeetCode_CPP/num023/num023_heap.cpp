@@ -12,6 +12,17 @@ Analyze and describe its complexity.
 
 */
 
+/*
+C++ STL 还提供了一个priority_queue（优先级队列），它是一个拥有权值观念的队列。
+
+1. 它是队列，所以只能在底端加入元素，从顶端取出元素。
+2. 它带有权值观念，所以其中的元素并非依照 push 的次序排列，而是依照权值排列，每次 pop 出权值最高的元素。
+
+priority_queue其实就是调用make_heap()、push_heap()、pop_heap()实现的，所以它的底层就是基于heap。只不过经过封装以后，使用更加方便了。
+
+priority_queue的解法,本题没有给出。
+*/
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -26,7 +37,7 @@ struct ListNode {
 
 class cmp{
 public:
-    //DO NOT UNDERSTAND.
+    //
     bool operator()(ListNode* p1, ListNode* p2) const{
         return p1->val > p2->val;
     }
