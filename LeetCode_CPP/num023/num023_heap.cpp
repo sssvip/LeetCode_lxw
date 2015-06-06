@@ -47,14 +47,6 @@ class Solution {
 private:
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        int length = lists.size();
-        if(length < 1){
-            return NULL;
-        }
-        if(length == 1){
-            return lists[0];
-        }
-
         //remove the empty list from the vector.  NOTE THE CASE THAT WE MODIFY THE DICT/LIST IN A LOOP.
         //for(int i = 0; i < length;){ //NO!NO!NO!NO!NO!NO!NO!NO!NO!NO!NO!NO!NO!NO!NO!
         for(int i = 0; i < lists.size();){
@@ -66,7 +58,7 @@ public:
             }
         }
 
-        length = lists.size();
+        int length = lists.size();
         if(length < 1){
             return NULL;
         }
@@ -81,9 +73,11 @@ public:
         ListNode * current = &ln;
         ListNode * head = current;
 
+        //固定搭配pop_heap()接pop_back(), push_back()接push_heap()
         while(!lists.empty()){
             int curSize = lists.size();
             pop_heap(lists.begin(), lists.end(), cmp());
+            //The element poped is not deleted, but moved at the index of 'curSize-1'.
             current->next = lists[curSize-1];
             current = current->next;
             lists.pop_back();
@@ -98,8 +92,7 @@ public:
 
 int main(void)
 {
-    Solution sol;
-    ListNode ln1(0);
+    Solution sol; ListNode ln1(0);
     ListNode ln2(2);
     ListNode ln3(5);
     ln1.next = &ln2;
@@ -111,4 +104,3 @@ int main(void)
     cout << sol.mergeKLists(l1)->val << endl;
     return 0;
 }
-
