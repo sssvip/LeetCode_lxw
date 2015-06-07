@@ -1,7 +1,6 @@
-// Time Limit Exceeded.
 // File: num023.cpp
 // Author: lxw
-// Date: 2015-06-03
+// Date: 2015-06-07
 
 /*
 Num 023: Merge k Sorted Lists
@@ -30,17 +29,17 @@ public:
         if(length < 1){
             return NULL;
         }
-        if(length == 1){
-            return lists[0];
-        }
-        else{
-            ListNode * head = lists[0];
-            for(int i = 1; i < length; ++i){
-                head = mergeTwoLists(head, lists[i]);
+        while(length > 1){
+            int k = (length + 1) / 2;
+            int half = length / 2;
+            for(int i = 0; i < half; ++i){
+                lists[i] = mergeTwoLists(lists[i], lists[i+k]);
             }
-            return head;
+            length = k;
         }
+        return lists[0];
     }
+
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
         ListNode * head1 = l1;
         ListNode * head2 = l2;
@@ -109,4 +108,3 @@ int main(void)
     }
     return 0;
 }
-

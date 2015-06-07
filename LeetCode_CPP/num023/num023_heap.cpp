@@ -35,11 +35,18 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-class cmp{
+class Cmp{
 public:
-    //
-    bool operator()(ListNode* p1, ListNode* p2) const{
-        return p1->val > p2->val;
+    /*
+    // num023_heap.cpp:78:52:   required from here
+    // /usr/include/c++/4.8/bits/stl_heap.h:313:40: error: no match for call to ‘(Cmp) (ListNode*&, ListNode*&)’
+    // So the following method is wrong.
+    bool operator()(ListNode* p2) const{
+        return p->val > p2->val;
+    }
+    */
+    bool operator()(ListNode*& p1, ListNode*& p2) const{
+        return p1->val > p2->val;   //why '>' instead of '<' ?
     }
 };
 
@@ -67,7 +74,7 @@ public:
         }
 
         //build heap for "first element in each list"
-        make_heap(lists.begin(), lists.end(), cmp());
+        make_heap(lists.begin(), lists.end(), Cmp());
 
         ListNode ln(0);
         ListNode * current = &ln;
@@ -76,14 +83,14 @@ public:
         //固定搭配pop_heap()接pop_back(), push_back()接push_heap()
         while(!lists.empty()){
             int curSize = lists.size();
-            pop_heap(lists.begin(), lists.end(), cmp());
+            pop_heap(lists.begin(), lists.end(), Cmp());
             //The element poped is not deleted, but moved at the index of 'curSize-1'.
             current->next = lists[curSize-1];
             current = current->next;
             lists.pop_back();
             if(current->next != NULL){
                 lists.push_back(current->next);
-                push_heap(lists.begin(), lists.end(), cmp());
+                push_heap(lists.begin(), lists.end(), Cmp());
             }
         }
         return head->next;
@@ -92,15 +99,27 @@ public:
 
 int main(void)
 {
-    Solution sol; ListNode ln1(0);
+    Solution sol;
+    ListNode ln1(0);
     ListNode ln2(2);
     ListNode ln3(5);
     ln1.next = &ln2;
     ln2.next = &ln3;
-    ListNode * lnP = &ln1;
+
+    ListNode ln4(1);
+    ListNode ln5(3);
+    ListNode ln6(4);
+    ln4.next = &ln5;
+    ln5.next = &ln6;
 
     vector<ListNode*> l1;
     l1.push_back(&ln1);
-    cout << sol.mergeKLists(l1)->val << endl;
+    l1.push_back(&ln4);
+
+    ListNode * head = sol.mergeKLists(l1);
+    while(head != NULL){
+        cout << head->val << endl;
+        head = head->next;
+    }
     return 0;
 }
