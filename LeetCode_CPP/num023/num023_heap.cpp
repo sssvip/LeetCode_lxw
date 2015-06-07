@@ -35,6 +35,8 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
+//Reference: http://blog.csdn.net/lisonglisonglisong/article/details/45942605
+
 class Cmp{
 public:
     /*
