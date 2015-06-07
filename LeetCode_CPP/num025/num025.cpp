@@ -22,4 +22,47 @@ For k = 2, you should return: 2->1->4->3->5
 For k = 3, you should return: 3->2->1->4->5
 */
 
-
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    int getLength(ListNode * head){
+        int length = 0;
+        while(head){
+            ++length;
+            head = head->next;
+        }
+        return length;
+    }
+    ListNode* reverseKGroup(ListNode* head, int k) {
+        if(head == NULL || k <= 1){
+            return head;
+        }
+        int length = getLength(head);
+        return reverse(head, k, length);
+    }
+    ListNode * reverse(ListNode * head, int k, int length){
+        if(length < k){
+            return head;
+        }
+        ListNode * p = head;
+        ListNode * q = head;
+        ListNode * temp = NULL;
+        int i = 0;
+        while(i < k){
+            temp = q->next;
+            q->next = p;
+            p = q;
+            q = temp;
+            ++i;
+        }
+        head->next = reverse(q, k, length - k);
+        return p;
+    }
+};
