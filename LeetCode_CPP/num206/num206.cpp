@@ -19,8 +19,27 @@ Hint:
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
 class Solution {
 public:
+    //Iterative
+    ListNode * reverseList(ListNode* head) {
+        if(head == NULL){
+            return NULL;
+        }
+        ListNode * p = head;
+        ListNode * q = head;
+        ListNode * temp = NULL;
+        while(q){
+            temp = q->next;
+            q->next = p;
+            p = q;
+            q = temp;
+        }
+        head->next = NULL;
+        return p;
+    }
+    //Recursive
     ListNode* reverseList(ListNode* head) {
         if(head == NULL){
             return NULL;
