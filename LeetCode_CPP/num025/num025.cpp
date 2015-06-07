@@ -32,7 +32,7 @@ For k = 3, you should return: 3->2->1->4->5
  */
 class Solution {
 public:
-    int getLength(ListNode * head){
+	int getLength(ListNode * head){
         int length = 0;
         while(head){
             ++length;
@@ -40,6 +40,41 @@ public:
         }
         return length;
     }
+    
+    //Iterative
+    /*ListNode* reverseKGroup(ListNode* head, int k) {
+        if(head == NULL || k <= 1){
+            return head;
+        }
+        int length = getLength(head);
+        ListNode * current = head;
+        ListNode * tail = new ListNode(0);
+        tail->next = head;
+        head = tail;
+        ListNode * p = current;
+        ListNode * q = current;
+        ListNode * temp = NULL;
+        while(length >= k){
+            p = current;
+            q = current;
+            temp = NULL;
+            for(int i = 0; i < k; ++i){
+                temp = q->next;
+                q->next = p;
+                p = q;
+                q = temp;
+            }
+            //current->next = q;
+            tail->next = p;
+            tail = current;
+            current = q;
+            length -= k;
+        }
+        tail->next = q;
+        return head->next;
+    }*/
+
+    //Recursive
     ListNode* reverseKGroup(ListNode* head, int k) {
         if(head == NULL || k <= 1){
             return head;
@@ -62,6 +97,7 @@ public:
             q = temp;
             ++i;
         }
+        //head->next = NULL;
         head->next = reverse(q, k, length - k);
         return p;
     }
