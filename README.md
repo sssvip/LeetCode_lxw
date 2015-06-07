@@ -28,6 +28,7 @@ Submitted by lxw.
 | 020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [num020.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num020/num020.cpp) | Stack |
 | 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [num021.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num021/num021.cpp) | Linked List |
 | 022 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [num022.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num022/num022.cpp) | DFS |
-| 023 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [num023 heap/priority_queue](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num023/) | Linked List, Heap, Priority Queue |
+| 023 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [num023 heap/num023](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num023/) | Linked List, Heap, Priority Queue |
+| 024 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [num024.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num024/num024.cpp) | |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) | Linked List |
