@@ -23,7 +23,17 @@ int main(void){
     show(v);
 
     //nothing changed.
+    v.erase(v.begin()+v.size(), v.end());
+    show(v);
+
+    //nothing changed.
+    v.erase(v.end(), v.end());
+    show(v);
+
+    //Something unexpected.
     v.erase(v.begin()+2, v.begin()+1);
     show(v);
+
+
     return 0;
 }
