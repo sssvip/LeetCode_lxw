@@ -13,33 +13,10 @@ If it is overflow, return MAX_INT.
 
 class Solution {
 public:
-/*
-//OK
     int divide(int dividend, int divisor) {
-		long long a = dividend >= 0 ? dividend : -(long long)dividend;
-		long long b = divisor >= 0 ? divisor : -(long long)divisor;
-		long long result = 0, c = 0;
-		bool sign = (dividend > 0 && divisor < 0) || (dividend < 0 && divisor > 0);
-
-		while (a >= b) {
-			c = b;
-			for (int i = 0; a >= c; ++i, c <<= 1) {
-				a -= c;
-				result += (1<<i);
-			}
-		}
-		if (sign) { //different sign
-			return max((long long)INT_MIN, -result);
-		} else { //same sign
-			return min((long long)INT_MAX, result);
-		}
-    }
-*/
-//WRONG
-    int divide(int dividend, int divisor) {
-        long long dividendAbs = dividend >= 0 ? dividend : -(long long)dividend;  //注意不是(long long)-divident;
+        long long dividendAbs = dividend >= 0 ? dividend : -(long long)dividend;  //注意不是(long long)-dividend;
         long long divisorAbs = divisor >= 0 ? divisor : -(long long)divisor;
-        bool sign = ((dividendAbs >= 0 && divisor <= 0) || (dividendAbs <= 0 && divisor >= 0));
+        bool sign = ((dividend >= 0 && divisor <= 0) || (dividend <= 0 && divisor >= 0));
         long long temp = 0;
         long long result = 0;
         while(dividendAbs >= divisorAbs){
