@@ -18,7 +18,7 @@ return [3, 4].
 
 class Solution {
 public:
-    int bsConvert(vector<int>& nums, int begin, int end, int target){
+    int binSearch(vector<int>& nums, int begin, int end, int target){
         int middle = 0;
         while(begin <= end){
             middle = (begin + end) / 2;
@@ -40,7 +40,7 @@ public:
         if(length == 0){
             return vec;
         }
-        int index = bsConvert(nums, 0, length-1, target);
+        int index = binSearch(nums, 0, length-1, target);
         if(index == -1){
             return vec;
         }
