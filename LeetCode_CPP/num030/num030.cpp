@@ -1,5 +1,5 @@
-// MUCH TOO SLOW.
-// File: num030_OK_BUT_BAD.cpp
+// Fast but not understand.
+// File: num030.cpp
 // Author: lxw
 // Date: 2015-06-09
 
@@ -23,7 +23,7 @@ You should return the indices: [0,9].
 #include <sstream>
 using namespace std;
 
-﻿class Solution {
+class Solution {
 public:
     vector<int> findSubstring(string s, vector<string>& words) {
         int word_len = words[0].size();

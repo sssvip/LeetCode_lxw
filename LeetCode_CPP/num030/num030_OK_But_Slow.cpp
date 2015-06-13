@@ -1,8 +1,7 @@
 // MUCH TOO SLOW.
-// File: num030_OK_BUT_BAD.cpp
+// File: num030_OK_But_Slow.cpp
 // Author: lxw
-// Date: 2015-06-09
-
+// Date: 2015-06-13
 /*
 Num num030: Substring with Concatenation of All Words
 Source: https://leetcode.com/problems/substring-with-concatenation-of-all-words/
@@ -54,32 +53,26 @@ public:
             unordered_map<string, int> tempMap(wordsMap);
             --tempMap[str];
             //Match One;
-            while(1){
-                index += LETTERCOUNT;
-                if(index > sLength - LETTERCOUNT){
-                    break;
-                }
+            index += LETTERCOUNT;
+            int count = 1;
+            while(index <= sLength - LETTERCOUNT){
                 str = s.substr(index, LETTERCOUNT);
                 if(tempMap.count(str) == 0){
                     break;
                 }
                 else{
                     if(tempMap[str] > 0){
+                        count += 1;
                         --tempMap[str];
                     }
                     else{
                         break;
                     }
                 }
+                index += LETTERCOUNT;
             }
-            bool flag = true;
-            for(auto& item : tempMap){
-                if(item.second > 0){
-                    flag = false;
-                    break;
-                }
-            }
-            if(flag){
+                //cout << count << ", " << wLength << endl;
+            if(count == wLength){
                 result.push_back(i);
             }
         }

@@ -43,10 +43,6 @@ public:
                 wordsMap[words[i]] += "," + str;
             }
         }
-        /*
-        for(auto& item: wordsMap){
-            cout << item.first << ": " << item.second << endl;
-        }*/
         const int LETTERCOUNT = words[0].length();
         int sLength = s.length();
         int end = sLength - wLength * LETTERCOUNT;
