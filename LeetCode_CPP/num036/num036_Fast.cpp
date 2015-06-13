@@ -1,5 +1,5 @@
-// unordered_set(Hash table) is a little slower than the 'Array Method' in num036_Fast.cpp.
-// File: num036.cpp
+// unordered_set(Hash table) is a little slower than the following method(Array).
+// File: num036_Fast.cpp
 // Author: lxw
 // Date: 2015-06-13
 
@@ -17,34 +17,27 @@ A valid Sudoku board (partially filled) is not necessarily solvable. Only the fi
 
 class Solution {
 public:
-    bool rowValid(vector<vector<char>>& board){
+    bool rowColValid(vector<vector<char>>& board){
         for(int i = 0; i < 9; ++i){
-            unordered_set<char> us;
+            vector<int> rowV(9, 0);
+            vector<int> colV(9, 0);
             for(int j = 0; j < 9; ++j){
                 char ch = board[i][j];
                 if(ch != '.'){
-                    if(us.find(ch) != us.end()){//in
+                    if(rowV[ch-'1'] > 0){//in
                         return false;
                     }
                     else{
-                        us.insert(ch);
+                        ++rowV[ch-'1'];
                     }
                 }
-            }
-        }
-        return true;
-    }
-    bool colValid(vector<vector<char>>& board){
-        for(int i = 0; i < 9; ++i){
-            unordered_set<char> us;
-            for(int j = 0; j < 9; ++j){
-                char ch = board[j][i];
+                ch = board[j][i];
                 if(ch != '.'){
-                    if(us.find(ch) != us.end()){//in
+                    if(colV[ch-'1'] > 0){//in
                         return false;
                     }
                     else{
-                        us.insert(ch);
+                        ++colV[ch-'1'];
                     }
                 }
             }
@@ -54,16 +47,16 @@ public:
     bool boxValid(vector<vector<char>>& board){
         for(int i = 0; i < 7; i+=3){
             for(int j = 0; j < 7; j+=3){
-                unordered_set<char> us;
+                vector<int> boxV(9, 0);
                 for(int k = 0; k < 3; ++k){
                     for(int l = 0; l < 3; ++l){
                         char ch = board[i+k][j+l];
                         if(ch != '.'){
-                            if(us.find(ch) != us.end()){//in
+                            if(boxV[ch-'1'] > 0){//in
                                 return false;
                             }
                             else{
-                                us.insert(ch);
+                                ++boxV[ch-'1'];
                             }
                         }
                     }
@@ -85,7 +78,7 @@ public:
             }
         }
         //row/col/box valid
-        if(rowValid(board) && colValid(board) && boxValid(board)){
+        if(rowColValid(board) && boxValid(board)){
             return true;
         }
         else{
