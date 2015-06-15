@@ -1,5 +1,5 @@
 // unordered_set(Hash table) is a little slower than the 'Array Method' in num036_Fast.cpp.
-// File: num036.cpp
+//File: num036_unordered_set.cpp
 // Author: lxw
 // Date: 2015-06-13
 
@@ -17,9 +17,10 @@ A valid Sudoku board (partially filled) is not necessarily solvable. Only the fi
 
 class Solution {
 public:
-    bool rowValid(vector<vector<char>>& board){
+    bool rowColValid(vector<vector<char>>& board){
         for(int i = 0; i < 9; ++i){
             unordered_set<char> us;
+            unordered_set<char> us1;
             for(int j = 0; j < 9; ++j){
                 char ch = board[i][j];
                 if(ch != '.'){
@@ -30,21 +31,13 @@ public:
                         us.insert(ch);
                     }
                 }
-            }
-        }
-        return true;
-    }
-    bool colValid(vector<vector<char>>& board){
-        for(int i = 0; i < 9; ++i){
-            unordered_set<char> us;
-            for(int j = 0; j < 9; ++j){
-                char ch = board[j][i];
+                ch = board[j][i];
                 if(ch != '.'){
-                    if(us.find(ch) != us.end()){//in
+                    if(us1.find(ch) != us1.end()){//in
                         return false;
                     }
                     else{
-                        us.insert(ch);
+                        us1.insert(ch);
                     }
                 }
             }
@@ -85,11 +78,6 @@ public:
             }
         }
         //row/col/box valid
-        if(rowValid(board) && colValid(board) && boxValid(board)){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return (rowColValid(board) && boxValid(board));
     }
 };
