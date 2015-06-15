@@ -1,4 +1,4 @@
-// unordered_set(Hash table) is a little slower than the following method(Array).
+// Not too much: unordered_set(Hash table) is a little slower than the following method(Array).
 // File: num036_Fast.cpp
 // Author: lxw
 // Date: 2015-06-13
@@ -78,11 +78,6 @@ public:
             }
         }
         //row/col/box valid
-        if(rowColValid(board) && boxValid(board)){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return (rowColValid(board) && boxValid(board));
     }
 };
