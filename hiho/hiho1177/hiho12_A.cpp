@@ -25,15 +25,15 @@ int getIndex(char ch){
         case '7':
         case '8':
         case '9':
-            return ch - '2';
+            return ch - '1';
         case 'J':
-            return 9;
-        case 'Q':
             return 10;
-        case 'K':
+        case 'Q':
             return 11;
-        case 'A':
+        case 'K':
             return 12;
+        case 'A':
+            return 13;
         default:
             return -1;
     }
@@ -47,9 +47,16 @@ void dealStr(const string& str, vector<char>& color){//const string & ?
     for(; i < length; ++i){
         if(str[i] == ' '){
             if(strlen(&str1[0]) == 3){   // 10S 10H 10C 10D
-                color[8] = str1[2];
+                color[9] = str1[2];
             }else{ // other than 10
-                color[getIndex(str1[0])] = str1[1];
+                int index = getIndex(str1[0]);
+                if(index == 13){
+                    color[0] = str1[1];
+                    color[index] = str1[1];
+                }
+                else{
+                    color[index] = str1[1];
+                }
             }
             j = 0;
             for(int k = 0; k < 3; ++k){
@@ -63,30 +70,34 @@ void dealStr(const string& str, vector<char>& color){//const string & ?
     if(strlen(&str1[0]) == 3){   // 10S 10H 10C 10D
         color[8] = str1[2];
     }else{ // other than 10
-        color[getIndex(str1[0])] = str1[1];
-    }
-    j = 0;
-    for(int k = 0; k < 3; ++k){
-        str1[k] = '\0';
+        //color[getIndex(str1[0])] = str1[1];
+        int index = getIndex(str1[0]);
+        if(index == 13){
+            color[0] = str1[1];
+            color[index] = str1[1];
+        }
+        else{
+            color[index] = str1[1];
+        }
     }
 }
 
 void span(vector<char>& color, int& length1, int& index1, int& length2, int& index2){
     for(int i = 0; i < 13; ++i){
         int length = 0;
-        while(color[i]){
+        while(color[i] != '\0'){
             ++length;
             ++i;
         }
-        if(length1 != 0){
-            if(length != 0){
+        if(length != 0){
+            if(length1 != 0){
                 length2 = length;
                 index2 = i - length;
             }
-        }
-        else{
-            length1 = length;
-            index1 = i - length;
+            else{
+                length1 = length;
+                index1 = i - length;
+            }
         }
     }
 }
@@ -103,11 +114,6 @@ int main(void){
             break;
         }
         dealStr(str, color);
-        /*
-        for(int i = 0; i < 13; ++i){
-            cout << color[i] << endl;
-        }
-        */
         length1 = 0;
         length2 = 0;
         index1 = 0;
