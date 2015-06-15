@@ -1,5 +1,5 @@
 // Not too much: unordered_set(Hash table) is a little slower than the following method(Array).
-// File: num036_Fast.cpp
+//File: num036_array.cpp
 // Author: lxw
 // Date: 2015-06-13
 
