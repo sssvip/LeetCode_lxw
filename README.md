@@ -45,3 +45,11 @@ Submitted by lxw.
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [num226_Recursive.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num226/num226_Recursive.cpp) [num226_Iterative.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num226/num226_Iterative.cpp)  | Binary Tree | Easy |
+
+
+###References:
+[LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)
+[LeetCode Question Difficulty Distribution](http://wwwx.cs.unc.edu/~zhew/Leetcoder/)
+[illuz-Some Good Solutions](http://blog.csdn.net/hcbbt/article/category/2904451)
+[illuz-Some Good Solutions](https://github.com/illuz/leetcode/tree/master/solutions)
+
