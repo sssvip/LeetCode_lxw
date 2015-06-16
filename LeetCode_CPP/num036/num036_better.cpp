@@ -14,6 +14,11 @@ Note:
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
 */
 
+#include <iostream>
+#include <vector>
+#include <cstring>
+using namespace std;
+
 class Solution {
 private:
 	int row[9], col[9], sqr[3][3];
@@ -26,20 +31,27 @@ private:
 		sqr[x/3][y/3] |= (1<<val);
 	}
 public:
+    int getSizeOf(){
+        return sizeof(sqr)/sizeof(int);     //9
+    }
     bool isValidSudoku(vector<vector<char> > &board) {
 		memset(row, 0, sizeof(row));
 		memset(col, 0, sizeof(col));
 		memset(sqr, 0, sizeof(sqr));
-		for (int i = 0; i < board.size(); i++)
-			for (int j = 0; j < board[i].size(); j++)
-				if (board[i][j] != '.') {
-					if (!check(i, j, board[i][j] - '1'))
+		for(int i = 0; i < board.size(); i++)
+			for(int j = 0; j < board[i].size(); j++)
+				if(board[i][j] != '.') {
+					if(!check(i, j, board[i][j] - '1')) //Show before.
 						return false;
 					mark(i, j, board[i][j] - '1');
 				}
 		return true;
-		// return dfs(0, board);
     }
 };
 
-};
+int main(void)
+{
+    Solution s;
+    cout << s.getSizeOf() << endl;//9
+    return 0;
+}

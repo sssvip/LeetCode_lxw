@@ -36,8 +36,8 @@ private:
 		if (board[pos/9][pos%9] != '.') {
 			return dfs(pos + 1, board);
 		} else {
-			for (int i = 0; i < 9; i++)
-				if (check(pos/9, pos%9, i)) {
+			for(int i = 0; i < 9; i++)
+				if(check(pos/9, pos%9, i)) {
 					mark(pos/9, pos%9, i, board);
 					if (dfs(pos + 1, board))
 						return true;
