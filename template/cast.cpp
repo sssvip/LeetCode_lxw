@@ -108,6 +108,31 @@ public:
 	}
 };
 
+char * reverse(char * arr){
+    int length = strlen(arr);
+    int middle = length / 2;
+    char ch;
+    for(int i = 0; i < middle; ++i){
+        ch = arr[i];
+        arr[i] = arr[length-1-i];
+        arr[length-1-i] = ch;
+    }
+    return arr;
+}
+
+//int -> string
+//Implement casting int to string on myself.
+string int2String(int number){
+    char t[24];
+    int i = 0;	 
+    while (number) {
+        t[i++] = (number % 10) + '0';
+        number /= 10;
+    }
+    t[i] = 0;	 
+    return string(reverse(t));
+}
+
 int main(void){	
     //char * ptr = "123"; //warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 

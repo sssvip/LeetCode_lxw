@@ -16,8 +16,36 @@ Given an integer n, generate the nth sequence.
 
 Note: The sequence of integers will be represented as a string.
 */
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <sstream>
+using namespace std;
 
 class Solution {
+private:
+    char * reverse(char * arr){
+        int length = strlen(arr);
+        int middle = length / 2;
+        char ch;
+        for(int i = 0; i < middle; ++i){
+            ch = arr[i];
+            arr[i] = arr[length-1-i];
+            arr[length-1-i] = ch;
+        }
+        return arr;
+    }
+
+    string int2String(int number){
+        char t[24];
+        int i = 0;	 
+        while (number) {
+            t[i++] = (number % 10) + '0';
+            number /= 10;
+        }
+        t[i] = 0;	 
+        return string(reverse(t));
+    }
 public:
     string say(string number){
         int length = number.length();
@@ -30,25 +58,28 @@ public:
             }
             else{
             	/*
-            	//stringstream is very slow.
+            	//stringstream is much too slow.
                 stringstream ss;
                 ss << count;
                 ss << ch;
                 result += ss.str();
                 */
-                result += count + '0';
+                //result += count + '0';// if count > 9, wrong Answer.
+                result += int2String(count);
                 result += ch;
                 ch = number[i];
                 count = 1;
             }
         }
         /*
-        //stringstream is very slow.
+        //stringstream is much too slow.
         stringstream ss;
         ss << count;
         ss << ch;
-        result += ss.str();*/
-        result += count + '0';
+        result += ss.str();
+        */
+        //result += count + '0'; // if count > 9, wrong Answer.
+        result += int2String(count);
         result += ch;
         return result;
     }
@@ -60,3 +91,13 @@ public:
         return result;
     }
 };
+
+int main(void){
+	Solution sol;
+    clock_t start, end;
+    start = clock();
+	cout << sol.countAndSay(50) << endl;
+    end = clock();
+    cout << "Run time: " << (double)(end-start)/CLOCKS_PER_SEC << "S" << endl;
+	return 0;
+}
