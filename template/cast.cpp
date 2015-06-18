@@ -2,31 +2,27 @@
 // Author: lxw
 // Date: 2015-06-16
 
-/*
-char* -> string 
-string s(char *); 
-你的只能初始化，在不是初始化的地方最好还是用assign().
-string str;
-str.assign(const char *s, size_t n);
-
-string 转 char * 
-string aa("aaa");
-char *c = aa.c_str();
-*/
-
 #include <iostream>
 #include <sstream> //std::stringstream, std::stringbuf
 #include <string>
+#include <cstring>
 #include <cstdlib>
 #include <algorithm> //std::reverse
 using namespace std;
 
-class intCharStar{
+class IntCharStar{
 private:
 	int number;
 	char * pointer;
 public:
-	intCharStar(int number, char * ptr):number(number), pointer(ptr){}
+	IntCharStar(int number, char * ptr):number(number){
+        int length = strlen(ptr);
+        this->pointer = new char[length+1];
+        strcpy(pointer, ptr);
+    }
+    ~IntCharStar(){
+        delete[] this->pointer;
+    }
 
 	//char* -> int
 	int charStarToInt(){
@@ -100,7 +96,8 @@ public:
 		} while ( value );
 
 		// Apply negative sign
-		if (tmp_value < 0) *ptr++ = '-';
+		if (tmp_value < 0)
+            *ptr++ = '-';
 		*ptr-- = '\0';
 		while(ptr1 < ptr) {
 			tmp_char = *ptr;
@@ -111,50 +108,56 @@ public:
 	}
 };
 
-int main(void){
-    ToString ts;
-    char * helloStr = "hello world!";
-    cout << ts.toString(helloStr) << endl;
+int main(void){	
+    //char * ptr = "123"; //warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 
-    char ch = 'a';
-    cout << ts.toString(ch) << endl;
+    //char * -> int
+	char ptr[] = "123";
+	IntCharStar ics(10, ptr);
+    int number = ics.charStarToInt();
+	cout << number << endl; //123
+	cout << ics.intToCharStar() << endl << endl; //10
 
-    int number = 123;
-    cout << ts.toString(number) << endl;
-
-
-    string str;
-	char * ptr = "hello";
     //char * -> string
-    str = ptr;  // ????
-    cout << "str: " << str << endl;
+    //1
+    string str;
+    char ptr1[] = "world";
+    str = ptr1;
+    cout << "str: " << str << endl; //world
+    //2
+    //string s(char *); 只能初始化，在不是初始化的地方最好还是用assign().
+    string str1(ptr1);
+    cout << "str1: " << str1 << endl; //world
+    //3
+    str1.assign(ptr1, strlen(ptr1));
+    cout << "str1: " << str1 << endl << endl; //world
 
     //char -> string
     char ch = 'a';
     stringstream ss;
     ss << ch;
     str = ss.str();
-    cout << "str: " << str << endl;
+    cout << "str: " << str << endl << endl; //a
 
     //int -> string
-    int number = 123;
-    stringstream ss;
-    ss << number;
-    str = ss.str();
-    cout << "str: " << str << endl;
+    stringstream ss1;
+    number = 123;
+    ss1 << number;
+    str = ss1.str();
+    cout << "str: " << str << endl << endl;//123
 
     //string -> const char *    
-    //只能转换成const char*，如果去掉const编译不能通过
+    //只能转换成const char*，如果去掉const编译不能通过  //error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
     const char * constStr = str.c_str();
     const char * constStr1 = str.data();
-    cout << "constStr: " << cStr << endl;
-    cout << "constStr1: " << cStr1 << endl;
+    cout << "constStr: " << constStr << endl;   //123
+    cout << "constStr1: " << constStr1 << endl; //123
 
     //string -> char *
     int length = str.length();
     char * chStr = new char[length + 1];
     str.copy(chStr, length, 0);
+    cout << "chStr: " << chStr << endl << endl; //123
     delete[] chStr;
-    cout << "str: " << str << endl;
     return 0;
 }

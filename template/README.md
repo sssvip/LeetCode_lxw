@@ -7,4 +7,4 @@ Submitted by lxw.
 
 | **FileName** | **Type** |
 | ----- | -------- |
-| toString.cpp | char/int/char */... to String |
+| cast.cpp | char/int/char */... to String |
