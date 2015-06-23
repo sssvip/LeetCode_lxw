@@ -27,18 +27,17 @@ using namespace std;
 class Solution{
 public:
     vector<vector<int> > combinationSum(vector<int> &candidates, int target){
-        sort(candidates.begin(), candidates.end());
-        
+        sort(candidates.begin(), candidates.end());        
         vector<int> vi;
         combinationSum(candidates, target, 0, vi);
-        return vvi;
+        return this->vvi;
     }
     
 private:
     vector<vector<int> > vvi;
     void combinationSum(vector<int> &candidates, int target, int i, vector<int> &vi){        
         if(target == 0){
-            vvi.push_back(vi);
+            this->vvi.push_back(vi);
             return;
         }
         int size = candidates.size();
@@ -51,8 +50,9 @@ private:
 	        }
 	        cout << endl;
 	        */    
-            if(target < candidates[j])
-                break;
+            if(target < candidates[j]){
+            	return;
+            }
             vi.push_back(candidates[j]);
             combinationSum(candidates, target - candidates[j], j, vi);
             vi.pop_back();
