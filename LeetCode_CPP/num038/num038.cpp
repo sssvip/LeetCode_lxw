@@ -44,6 +44,7 @@ private:
             number /= 10;
         }
         t[i] = 0;	 
+        //char* -> string
         return string(reverse(t));
     }
 public:
