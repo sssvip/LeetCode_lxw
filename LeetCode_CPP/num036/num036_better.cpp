@@ -38,8 +38,5 @@ public:
 					mark(i, j, board[i][j] - '1');
 				}
 		return true;
-		// return dfs(0, board);
     }
-};
-
 };
