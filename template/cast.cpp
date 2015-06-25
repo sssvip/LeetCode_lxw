@@ -163,6 +163,8 @@ int main(void){
     ss << ch;
     str = ss.str();
     cout << "str: " << str << endl << endl; //a
+    str += 'a'; //operator += can add string & char
+    cout << "str: " << str << endl << endl; //a
 
     //int -> string
     stringstream ss1;
