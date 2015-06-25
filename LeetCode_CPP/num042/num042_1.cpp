@@ -1,4 +1,4 @@
-// File: num042.cpp
+// File: num042_1.cpp
 // Author: lxw
 // Date: 2015-06-24
 
@@ -18,44 +18,25 @@ Thanks Marcos for contributing this image!
 #include <vector>
 using namespace std;
 
+// 时间复杂度O(n)，空间复杂度O(n)
 class Solution {
 public:
-	// 时间复杂度O(n)，空间复杂度O(1)
     int trap(vector<int> & vec){
         int length = vec.size();
-        if(length < 1){
-        	return 0;
-        }
-        //NOTE: Do you know why we need to find the maxIndex?
-        int max = vec[0];
-        int maxIndex = 0;
+        vector<int> maxLeft(length, 0);
+        vector<int> maxRight(length, 0);
         for(int i = 1; i < length; ++i){
-        	if(vec[i] > max){
-        		max = vec[i];
-        		maxIndex = i;
-        	}
+            maxLeft[i] = max(maxLeft[i-1], vec[i-1]);
+            //maxRight[length-1-i] = max(maxRight[length-1-i+1], vec[length-1-i+1]);
+            maxRight[length-1-i] = max(maxRight[length-i], vec[length-i]);
         }
         int result = 0;
-        int peak = 0;
-        //from left(0) to maxIndex
-        for(int i = 0; i < maxIndex; ++i){
-        	if(vec[i] > peak){
-        		peak = vec[i];
-        	}
-        	else{
-        		result += peak - vec[i];
-        	}
-        }        
-        peak = 0;
-        //from right(length-1) to maxIndex
-        for(int i = length-1; i > maxIndex; --i){
-        	if(vec[i] > peak){
-        		peak = vec[i];
-        	}
-        	else{
-        		result += peak - vec[i];
-        	}
-        }        
+        for(int i = 0; i < length; ++i){
+            int lower = min(maxLeft[i], maxRight[i]);
+            if(lower > vec[i]){
+                result += lower - vec[i];
+            }
+        }
         return result;
     }
 };
@@ -63,7 +44,7 @@ public:
 int main(void){
 	Solution sol;
 	vector<int> height;
-	height.push_back(0);height.push_back(2);height.push_back(0);
+	height.push_back(5);height.push_back(2);height.push_back(1);height.push_back(2);height.push_back(1);height.push_back(5);
 	cout << sol.trap(height) << endl;
 	return 0;
 }
