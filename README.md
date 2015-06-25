@@ -53,8 +53,8 @@ Submitted by lxw.
 
 
 ###References:
-[LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)
-[LeetCode Question Difficulty Distribution](http://wwwx.cs.unc.edu/~zhew/Leetcoder/)
-[illuz-Some Good Solutions](http://blog.csdn.net/hcbbt/article/category/2904451)
-[illuz-Some Good Solutions](https://github.com/illuz/leetcode/tree/master/solutions)
+[LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>
+[LeetCode Question Difficulty Distribution](http://wwwx.cs.unc.edu/~zhew/Leetcoder/)</br>
+[illuz-Some Good Solutions](http://blog.csdn.net/hcbbt/article/category/2904451)</br>
+[illuz-Some Good Solutions](https://github.com/illuz/leetcode/tree/master/solutions)</br>
 
