@@ -1,3 +1,4 @@
+// NOTE: THIS IS NOT A GOOD SOLUTION, 'j' MAY be OutOfBounds. such as: s="a", p="*"
 // File: num044.cpp
 // Author: lxw
 // Date: 2015-06-25
@@ -32,39 +33,40 @@ using namespace std;
 
 class Solution {
 public:
-    bool isMatch(string s, string p) {
-        int pPos = -1;
-        int sPos = -1;
-        int i = 0;
-        int j = 0;
-        while (i < s.size()) {
-            if (s[i] == p[j] || p[j] == '?') {
-                i ++;
-                j ++;
-                continue;
-            }
-            if (p[j] == '*') {
-                pPos = j;
-                sPos = i;
-                j ++;
-                continue;
-            }
-            if (pPos != -1 && sPos != -1) {
-                i = sPos + 1;
-                j = pPos + 1;
-                sPos ++;
-                continue;
-            }
-            return false;
-        }
-        while (p[j] == '*')
-            j ++;
-        return j == p.size();
+	// NOTE: THIS IS NOT A GOOD SOLUTION, 'j' MAY be OutOfBounds. such as: s="a", p="*"
+    bool isMatch(string s, string p){
+    	int length = s.length();
+    	int i = 0, j = 0;
+    	int sPos = -1, pPos = -1;
+    	while(i < length){
+    		if(s[i] == p[j] || p[j] == '?'){
+    			++i;
+    			++j;
+    			continue;
+    		}
+    		if(p[j] == '*'){
+    			sPos = i;
+    			pPos = j;
+    			++j;
+    			continue;
+    		}
+    		//if(sPos != -1 && pPos != -1){	//In this context: equal to the following expression.
+    		if(sPos != -1){
+    			i = ++sPos;	//sPos increase 1
+    			j = pPos + 1;
+    			continue;
+    		}
+    		return false;
+    	}
+    	while(p[j] == '*'){
+    		++j;
+    	}
+    	return j == p.length();
     }
 };
 
 int main(void){
 	Solution sol;
-	cout << sol.isMatch("aaabbbaabaaaaababaabaaabbabbbbbbbbaabababbabbbaaaaba", "a*******b") << endl;
+	cout << sol.isMatch("aaabbbaabaaaaababaabaaabbabbbbbbbbaabababbabbbaaaaba", "*") << endl;
 	return 0;
 }
