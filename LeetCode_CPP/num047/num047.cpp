@@ -17,9 +17,17 @@ For example,
 #include <unordered_set>
 using namespace std;
 
+
 class Solution {
 private:
     vector<vector<int> > vvi;
+
+	void swap(int & num1, int & num2){
+	    int temp = num1;
+	    num1 = num2;
+	    num2 = temp;
+	}
+
     void permute(vector<int> & nums, int begin, int end){
         if(begin == end){
             this->vvi.push_back(nums);
@@ -31,15 +39,10 @@ private:
         permute(nums, begin+1, end);
         int tempBegin = begin+1;
         while(tempBegin <= end){
-            cout << nums[tempBegin] << ", " << us.count(nums[tempBegin]) << endl;
-            if(us.count(nums[tempBegin]) < 0){
-	            int temp = nums[begin];
-	            nums[begin] = nums[tempBegin];
-	            nums[tempBegin] = temp;
+            if(us.count(nums[tempBegin]) == 0){
+	            swap(nums[begin], nums[tempBegin]);
 	            permute(nums, begin+1, end);
-	            temp = nums[begin];
-	            nums[begin] = nums[tempBegin];
-	            nums[tempBegin] = temp;            
+	            swap(nums[begin], nums[tempBegin]);
                 us.insert(nums[tempBegin]);
         	}
             ++tempBegin;
