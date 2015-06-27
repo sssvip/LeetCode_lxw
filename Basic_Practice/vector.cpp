@@ -42,7 +42,5 @@ int main(void){
 
     v.clear();
     showVec(v);
-    v.push_back(vector<int>(3, 1));
-    showVec(v);
     return 0;
 }
