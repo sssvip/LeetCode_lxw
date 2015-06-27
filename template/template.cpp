@@ -2,7 +2,23 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+
+#include <climits>
+
 using namespace std;
+
+int getMid(int start, int end){
+    long long llStart = (long long)start;
+    long long llEnd = (long long)end;
+    return int((llStart + llEnd)/2);
+}
+void showVec(vector<int> & vec){
+    int length = vec.size();
+    for(int i = 0; i < length-1; ++i){
+        cout << vec[i] << ",";
+    }
+    cout << vec[length-1] << endl;
+}
 
 int main(void){
     //string
@@ -12,20 +28,15 @@ int main(void){
     //vector
     vector<int> vec;
     vec.push_back(1); vec.push_back(-1); vec.push_back(0); vec.push_back(8);
-    int length = vec.size();
-    for(int i = 0; i < length; ++i){
-        cout << vec[i] << "\t";
-    }
-    cout << endl;
+    showVec(vec);
     
     //sort
     sort(vec.begin(), vec.end());
-    for(int i = 0; i < length; ++i){
-        cout << vec[i] << "\t";
-    }
-    cout << endl;
+    showVec(vec);
 
     //std::max
     cout << max(10, 90) << endl;
+
+    cout << getMid(INT_MAX, INT_MAX) << endl;
     return 0;
 }

@@ -34,6 +34,9 @@ int main(void){
     v.erase(v.begin()+2, v.begin()+1);
     show(v);
 
+    //vecotr<int>::iterator iter;
+    v.insert(v.begin(), 123);
+    show(v);
 
     return 0;
 }
