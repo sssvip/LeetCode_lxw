@@ -52,6 +52,8 @@ Submitted by lxw.
 | 045 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [num045.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num045/num045.cpp) | Greedy | Medium |
 | 046 | [Permutations](https://leetcode.com/problems/permutations/) | [num046.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num046/num046.cpp) | Backtracking | Medium |
 | 047 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [num047.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num047/num047.cpp) | Backtracking | Medium |
+| 048 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [num048.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num048/num048.cpp) | Array | Easy(**but Patience**) |
+| 060 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | [num060.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num060/num060.cpp) | Array | Easy |
 | 066 | [Plus One](https://leetcode.com/problems/plus-one/) | [num066.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num066/num066.cpp) | Array | Easy |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |

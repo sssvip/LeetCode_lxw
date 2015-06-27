@@ -14,10 +14,18 @@ int getMid(int start, int end){
 }
 void showVec(vector<int> & vec){
     int length = vec.size();
+    if(length < 1)
+    	return;
     for(int i = 0; i < length-1; ++i){
         cout << vec[i] << ",";
     }
     cout << vec[length-1] << endl;
+}
+
+void swap(int & num1, int & num2){
+	int temp = num1;
+	num1 = num2;
+	num2 = temp;
 }
 
 int main(void){

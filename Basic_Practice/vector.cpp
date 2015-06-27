@@ -2,41 +2,47 @@
 #include <vector>
 using namespace std;
 
-void show(vector<int> & v){
-    int length = v.size();
-    for(int i = 0; i < length; ++i){
-        cout << v[i] << ", ";
+void showVec(vector<int> & vec){
+    int length = vec.size();
+    if(length < 1)
+        return;
+    for(int i = 0; i < length-1; ++i){
+        cout << vec[i] << ",";
     }
-    cout << endl;
+    cout << vec[length-1] << endl;
 }
 
 int main(void){
     int intArr[] = {1, 3, 2};
     vector<int> v(intArr, intArr + 3);
-    show(v);
+    showVec(v);
 
     v.erase(v.begin() + 2);
-    show(v);
+    showVec(v);
 
     //nothing changed.
     v.erase(v.begin()+1, v.begin()+1);
-    show(v);
+    showVec(v);
 
     //nothing changed.
     v.erase(v.begin()+v.size(), v.end());
-    show(v);
+    showVec(v);
 
     //nothing changed.
     v.erase(v.end(), v.end());
-    show(v);
+    showVec(v);
 
     //Something unexpected.
     v.erase(v.begin()+2, v.begin()+1);
-    show(v);
+    showVec(v);
 
     //vecotr<int>::iterator iter;
     v.insert(v.begin(), 123);
-    show(v);
+    showVec(v);
 
+    v.clear();
+    showVec(v);
+    v.push_back(vector<int>(3, 1));
+    showVec(v);
     return 0;
 }
