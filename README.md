@@ -56,6 +56,7 @@ Submitted by lxw.
 | 049 | [Anagrams](https://leetcode.com/problems/anagrams/) | [num049](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num049) | Hash Table| Medium |
 | 053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [num053.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num053/num053.cpp) | Array | Easy |
 | 054 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [num054.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num054/num054.cpp) | Array | Easy |
+| 055 | [Jump Game](https://leetcode.com/problems/jump-game/) | [num055.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num055/num055.cpp) | Greedy | Medium |
 | 060 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | [num060.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num060/num060.cpp) | Array | Easy |
 | 066 | [Plus One](https://leetcode.com/problems/plus-one/) | [num066.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num066/num066.cpp) | Array | Easy |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
