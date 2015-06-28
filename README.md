@@ -53,6 +53,7 @@ Submitted by lxw.
 | 046 | [Permutations](https://leetcode.com/problems/permutations/) | [num046.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num046/num046.cpp) | Backtracking | Medium |
 | 047 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [num047.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num047/num047.cpp) | Backtracking | Medium |
 | 048 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [num048.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num048/num048.cpp) | Array | Easy(**but Patience**) |
+| 053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [num053.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num053/num053.cpp) | Array | Easy |
 | 054 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [num054.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num054/num054.cpp) | Array | Easy |
 | 060 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | [num060.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num060/num060.cpp) | Array | Easy |
 | 066 | [Plus One](https://leetcode.com/problems/plus-one/) | [num066.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num066/num066.cpp) | Array | Easy |
