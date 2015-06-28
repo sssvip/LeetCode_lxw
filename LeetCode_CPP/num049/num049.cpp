@@ -3,9 +3,12 @@
 // Date: 2015-06-27
 
 /*
-Num num049: 
-Source: 
+Num num049: Anagrams
+Source: https://leetcode.com/problems/anagrams/
 
+Given an array of strings, return all groups of strings that are anagrams.
+
+Note: All inputs will be in lower-case.
 */
 
 #include <iostream>
@@ -18,26 +21,29 @@ Source:
 using namespace std;
 class Solution {
 public:
-    vector<string> anagrams(vector<string> &strs) {
-        vector<string> ret;
-        map<string, int> m;
-
-        for(int i = 0; i < strs.size(); i ++) {
-            string s = strs[i];
-            sort(s.begin(), s.end());
-            if(m.find(s) == m.end()) {
-                m[s] = i;
-            }
-            else{
-                if(m[s] >= 0) {
-                    ret.push_back(strs[m[s]]);
-                    m[s] = -1;
-                }
-                ret.push_back(strs[i]);
-            }
-        }
-        return ret;
-    }
+	vector<string> anagrams(vector<string> &strs) {
+		int length = strs.size();
+		vector<string> result;
+		if(length <= 1){
+			return result;
+		}
+		map<string, int> strIndex;
+		for(int i = 0; i < length; ++i){
+			string temp = strs[i];
+			sort(temp.begin(), temp.end());
+			if(strIndex.count(temp) == 0){
+				strIndex[temp] = i;
+			}
+			else{
+				if(strIndex[temp] >= 0){
+					result.push_back(strs[strIndex[temp]]);
+					strIndex[temp] = -1;
+				}
+				result.push_back(strs[i]);
+			}
+		}
+		return result;
+	}
 };
 void showVec(vector<string> & vec){
     int length = vec.size();
