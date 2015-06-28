@@ -7,41 +7,53 @@ Num num049:
 Source: 
 
 */
+
 #include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
-using namespace std;;
+#include <map>
+#include <climits>
 
-bool isAnagram(string& str1, string& str2){
-    sort(str1.begin(), str1.end());
-    sort(str2.begin(), str2.end());
-    //cout << &str1 << ", " << &str2 << endl; // Even the 2 strings are equal, their address are not equal.
-    return str1 == str2;
-}
+using namespace std;
+class Solution {
+public:
+    vector<string> anagrams(vector<string> &strs) {
+        vector<string> ret;
+        map<string, int> m;
 
-bool isAnagram1(string& str1, string& str2){
-    vector<int> letters1(26, 0);
-    vector<int> letters2(26, 0);
-    int length = str1.length();
-    for(int i = 0; i < length; ++i){
-        ++letters1[str1[i] - 'a'];
+        for(int i = 0; i < strs.size(); i ++) {
+            string s = strs[i];
+            sort(s.begin(), s.end());
+            if(m.find(s) == m.end()) {
+                m[s] = i;
+            }
+            else{
+                if(m[s] >= 0) {
+                    ret.push_back(strs[m[s]]);
+                    m[s] = -1;
+                }
+                ret.push_back(strs[i]);
+            }
+        }
+        return ret;
     }
-    length = str2.length();
-    for(int i = 0; i < length; ++i){
-        ++letters2[str2[i] - 'a'];
+};
+void showVec(vector<string> & vec){
+    int length = vec.size();
+    if(length < 1)
+    	return;
+    for(int i = 0; i < length-1; ++i){
+        cout << vec[i] << ",";
     }
-    for(int i = 0; i < 26; ++i){
-        if(letters1[i] != letters2[i])
-            return false;
-    }
-    return true;
+    cout << vec[length-1] << endl;
 }
 
 int main(void){
-    string str1 = "hello";
-    string str2 = "lhloe";
-    cout << isAnagram(str1, str2) << endl;
-    cout << isAnagram1(str1, str2) << endl;
-    return 0;
+	Solution sol;
+	vector<string> strs;
+	strs.push_back("hello");strs.push_back("lleo");strs.push_back("aello");strs.push_back("elalo");
+    vector<string> result = sol.anagrams(strs);
+	showVec(result);
+	return 0;
 }

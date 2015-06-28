@@ -58,14 +58,12 @@ public:
             //right
             for(int i = leftBound; i <= rightBound; ++i){
                 result.push_back(matrix[upBound][i]);
-                //cout << matrix[upBound][i] << endl;
             }
             ++upBound;
             if(upBound > downBound)
                 break;
             //down
             for(int i = upBound; i <= downBound; ++i){
-                //cout << rightBound << ", " << i << endl;    //2, 1
                 result.push_back(matrix[i][rightBound]);
             }
             --rightBound;
@@ -74,7 +72,6 @@ public:
             //left
             for(int i = rightBound; i >= leftBound; --i){
                 result.push_back(matrix[downBound][i]);
-                //cout << matrix[downBound][i] << endl;
             }
             --downBound;
             if(downBound < upBound)
@@ -82,7 +79,6 @@ public:
             //up
             for(int i = downBound; i >= upBound; --i){
                 result.push_back(matrix[i][leftBound]);
-                //cout << matrix[i][leftBound] << endl;
             }
             ++leftBound;
             if(leftBound > rightBound)
