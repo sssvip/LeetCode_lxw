@@ -24,7 +24,7 @@ Submitted by lxw.
 | 016 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [num016.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num016/num016.cpp) | Array | Hard |
 | 017 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [num017.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num017/num017.cpp) | DFS&String | Hard |
 | 018 | [4Sum](https://leetcode.com/problems/4sum/) | [num018.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num018/num018.cpp) | Array | Hard |
-| 019 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [num019.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num019/num019.cpp) | Linked List(Two Pointers)| Easy |
+| 019 | [Remove Nth Node From EndPow(x, n) of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [num019.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num019/num019.cpp) | Linked List(Two Pointers)| Easy |
 | 020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [num020.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num020/num020.cpp) | Stack | Easy |
 | 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [num021.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num021/num021.cpp) | Linked List | Easy |
 | 022 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [num022.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num022/num022.cpp) | DFS | Hard |
@@ -53,7 +53,8 @@ Submitted by lxw.
 | 046 | [Permutations](https://leetcode.com/problems/permutations/) | [num046.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num046/num046.cpp) | Backtracking | Medium |
 | 047 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [num047.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num047/num047.cpp) | Backtracking | Medium |
 | 048 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [num048.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num048/num048.cpp) | Array | Easy(**but Patience**) |
-| 049 | [Anagrams](https://leetcode.com/problems/anagrams/) | [num049](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num049) | Hash Table| Medium |
+| 049 | [Anagrams](https://leetcode.com/problems/anagrams/) | [num049](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num049) | Hash Table | Medium |
+| 050 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [num050.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num050/num050.cpp) | Binary Search | Medium |
 | 053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [num053.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num053/num053.cpp) | Array | Easy |
 | 054 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [num054.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num054/num054.cpp) | Array | Easy |
 | 055 | [Jump Game](https://leetcode.com/problems/jump-game/) | [num055.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num055/num055.cpp) | Greedy | Medium |
