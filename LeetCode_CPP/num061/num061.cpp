@@ -12,82 +12,59 @@ For example:
 Given 1->2->3->4->5->NULL and k = 2,
 return 4->5->1->2->3->NULL.
 */
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
-
-//There is no trick for this problem. Some people used slow/fast pointers to find the tail node,
-//but I don't see the benefit (in the sense that it doesn't reduce the pointer move op) to do so.
-//So I just used one loop to find the length first.
+#include <iostream>
+using namespace std;
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
 class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
-        if(head == NULL)
+        if(k == 0 || head == NULL){
             return head;
-
-        int len = 1; // number of nodes
-        ListNode *newH, *tail;
-        newH = tail = head;
-
-        while(tail->next){  // get the number of nodes in the list
-            tail = tail->next;
-            len++;
         }
-        tail->next = head; // circle the link
-
-        if(k %= len){
-            for(auto i=0; i<len-k; i++) tail = tail->next; // the tail node is the (len-k)-th node (1st node is head)
-        }
-        newH = tail->next; 
-        tail->next = NULL;
-        return newH;
-    }
-};
-/*
-class Solution{
-public:
-    ListNode* rotateRight(ListNode* head, int k) {
-        if(k == 0 || head == NULL)
-            return head;
+        int length = 1;
         ListNode * current = head;
-        int count = 0;
-        for(int i = 0; i < k; ++i){
-            current = current->next;
-            ++count;
-            if(current == NULL){
-                k %= count;
-                current = head;
-                for(i = 0; i < k; ++i){
-                    current = current->next;
-                }
-                break;
-            }
+        while(current->next){
+            ++length;   // current->next
+            current = current->next;    //current != NULL
         }
-        if(current->next == NULL){
-            current = head;
-            if(current->next == NULL){
-                return head;
+        //Now 'current' points to the tail of the list.
+        //Important: circle the list.
+        current->next = head;
+        k %= length;
+        if(k){
+            for(int i = 0; i < length - k - 1; ++i){
+                head = head->next;
             }
+            ListNode * newHead = head->next;
+            head->next = NULL;
+            return newHead;
         }
-        ListNode * temp = head;
-        head = current->next;
-        current->next = NULL;
-        current = head;
-        while(1){
-            if(current->next == NULL){
-                break;
-            }
-            current = current->next;
+        else{
+            current->next = NULL;
+            return head;
         }
-        //current != NULL
-        current->next = temp;
-        return head;
     }
 };
-*/
+void showList(ListNode * head){
+    if(head == NULL){
+        return;
+    }
+    while(head->next){
+        cout << head->val << ", ";
+        head = head->next;
+    }
+    cout << head->val << endl;
+}
+int main(void){
+	ListNode ln1 = ListNode(1);
+	ListNode ln2 = ListNode(2);
+	ln1.next = &ln2;
+	Solution sol;
+	ListNode * head = sol.rotateRight(&ln1, 2);
+    showList(head);
+	return 0;
+}

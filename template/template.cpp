@@ -7,17 +7,27 @@
 
 using namespace std;
 
+//-----------------------------------------------------------------------
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+
+//-----------------------------------------------------------------------
+//Ignore the 'float' method.
 int getMid(int start, int end){
     long long llStart = (long long)start;
     long long llEnd = (long long)end;
     return int((llStart + llEnd)/2);
 }
+
 void showVec(vector<int> & vec){
     int length = vec.size();
     if(length < 1)
     	return;
     for(int i = 0; i < length-1; ++i){
-        cout << vec[i] << ",";
+        cout << vec[i] << ", ";
     }
     cout << vec[length-1] << endl;
 }
@@ -29,12 +39,24 @@ void showVecVec(vector<vector<int>> & vvi){
         showVec(vvi[i]);
     }
 }
+
 void swap(int & num1, int & num2){
 	int temp = num1;
 	num1 = num2;
 	num2 = temp;
 }
 
+void showList(ListNode * head){
+    if(head == NULL){
+        return;
+    }
+    while(head->next){
+        cout << head->val << ", ";
+        head = head->next;
+    }
+    cout << head->val << endl;
+}
+//-----------------------------------------------------------------------
 int main(void){
     //string
     string str = "hello world";
@@ -54,6 +76,7 @@ int main(void){
 
     cout << getMid(INT_MAX, INT_MAX) << endl;
 
+    //2 dimensions vecotr
 	vector<vector<int> > matrix;
     vec.clear();
 	vec.push_back(1);vec.push_back(2);
@@ -62,5 +85,11 @@ int main(void){
 	vec.push_back(5);vec.push_back(6);
 	matrix.push_back(vec);
     showVecVec(matrix);
+
+    //LinkedList
+    ListNode ln1 = ListNode(1);
+    ListNode ln2 = ListNode(2);
+    ln1.next = &ln2;
+    showList(&ln1);
     return 0;
 }
