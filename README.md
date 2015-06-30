@@ -32,6 +32,7 @@ Submitted by lxw.
 | 024 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [num024.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num024/num024.cpp) | Linked List | Easy |
 | 025 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [num025.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num025/num025.cpp) | Linked List | Easy |
 | 026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [num026.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num026/num026.cpp) | Array | Easy |
+| 027 | [Remove Element](https://leetcode.com/problems/remove-element/) | [num027.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num027/num027.cpp) | Array | Easy |
 | 028 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [num028.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num028/num028.cpp) | String(Two pointers) | Easy |
 | 029 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | [num029.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num029/num029.cpp) | Binary Search | Medium |
 | 030 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | [num030.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num030) | Hash Table | Medium |
