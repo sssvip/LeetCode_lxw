@@ -27,41 +27,75 @@ There exist two distinct solutions to the 4-queens puzzle:
   ".Q.."]
 ]
 */
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
 
-class Solution {
-public:
-    vector<vector<string> > ret;
-    vector<vector<string> > solveNQueens(int n) {
-        int *a = new int[n];
-        memset(a, 0, n);
-        backTrace(a, 0, n);
-        return ret;
+using namespace std;
+
+void showVec(vector<string> & vec){
+    int length = vec.size();
+    if(length < 1)
+    	return;
+    for(int i = 0; i < length-1; ++i){
+        cout << vec[i] << endl;
     }
-    void backTrace(int a[], int k, int n) {
-        if (k == n) {
-            string s = "";
-            for (int i = 0; i < n; i ++)
-                s += ".";
-            vector<string> v(n, s);
-            for (int i = 0; i < n; i ++)
-                v[i][a[i]] = 'Q';
-            ret.push_back(v);
-            return ;
+    cout << vec[length-1] << endl;
+    cout << endl;
+}
+void showVecVec(vector<vector<string>> & vvi){
+    int length = vvi.size();
+    if(length < 1)
+        return;
+    for(int i = 0; i < length; ++i){
+        showVec(vvi[i]);
+    }
+}
+class Solution {
+private:
+    vector<vector<string> > result;
+public:
+    vector<vector<string>> solveNQueens(int n) {
+        vector<int> position(n, -1);
+        placeOneRow(position, 0, n);
+        return this->result;
+    }
+    
+    void placeOneRow(vector<int> & pos, int row, int n){
+        if(row == n){
+            vector<string> vs(n, string(n, '.'));
+            for(int i = 0; i < n; ++i){
+                vs[i][pos[i]] = 'Q';
+            }
+            result.push_back(vs);
+            return;
         }
-        for (int i = 0; i < n; i ++) {
-            if (place(a, k, i)) {
-                a[k] = i;
-                backTrace(a, k + 1, n);
-                a[k] = 0;
+        for(int j = 0; j < n; ++j){
+            if(place(pos, row, j)){
+                pos[row] = j;
+                placeOneRow(pos, row+1, n);
+                pos[row] = -1;
             }
         }
     }
-    bool place(int a[], int k, int pos) {
-        for (int i = 0; i < k; i ++) {
-            //  same column.       diagonal.
-            if (a[i] == pos || abs(i - k) == abs(a[i] - pos))  
+    
+    bool place(vector<int> & position, int row, int col){
+        for(int i = 0; i < row; ++i){
+            //   same column.                 diagonal.
+            if(position[i] == col || abs(position[i] - col) == abs(i - row)){
                 return false;
+            }
         }
         return true;
     }
 };
+
+int main(void){
+	Solution sol;	
+	//2 dimensions vecotr
+	vector<vector<string> > nQueens;
+	nQueens = sol.solveNQueens(5);
+    showVecVec(nQueens);
+    return 0;
+}
