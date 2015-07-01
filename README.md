@@ -57,7 +57,7 @@ Submitted by lxw.
 | 049 | [Anagrams](https://leetcode.com/problems/anagrams/) | [num049](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num049) | Hash Table | Medium |
 | 050 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [num050.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num050/num050.cpp) | Binary Search | Medium |
 | 051 | [N-Queens](https://leetcode.com/problems/n-queens/) | [num051.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num051/num051.cpp) | Backtracking | Hard |
-| 052 | [N-Queens II](https://leetcode.com/problems/n-queens-ii/) | [num052.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num052/num052.cpp) | Backtracking | Hard |
+| 052 | [N-Queens II](https://leetcode.com/problems/n-queens-ii/) | [num052.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num052/num052.cpp) | Backtracking | Easy |
 | 053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [num053.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num053/num053.cpp) | Array | Easy |
 | 054 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [num054.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num054/num054.cpp) | Array | Easy |
 | 055 | [Jump Game](https://leetcode.com/problems/jump-game/) | [num055.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num055/num055.cpp) | Greedy | Medium |
