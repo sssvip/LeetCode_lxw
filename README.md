@@ -67,6 +67,7 @@ Submitted by lxw.
 | 059 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [num059.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num059/num059.cpp) | Array | Easy |
 | 060 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | [num060.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num060/num060.cpp) | Array | Easy |
 | 061 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [num061.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num061/num061.cpp) | Linked List | Hard(Complicated) |
+| 062 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [num062.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num062/num062.cpp) | Array/Easy DP | Medium(OK) |
 | 064 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [num064.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num064/num064.cpp) | DP | Medium |
 | 066 | [Plus One](https://leetcode.com/problems/plus-one/) | [num066.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num066/num066.cpp) | Array | Easy |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
