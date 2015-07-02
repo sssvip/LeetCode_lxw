@@ -39,6 +39,8 @@ int main(void){
     //vecotr<int>::iterator iter;
     v.insert(v.begin(), 123);
     showVec(v);
+    v.insert(v.begin() + 2, 12);
+    showVec(v);
 
     v.clear();
     showVec(v);
