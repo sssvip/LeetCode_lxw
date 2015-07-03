@@ -74,6 +74,7 @@ Submitted by lxw.
 | 067 | [Add Binary](https://leetcode.com/problems/add-binary/) | [num067.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num067/num067.cpp) | String | Easy |
 | 069 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [num069.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num069/num069.cpp) | Binary Search | Medium |
 | 070 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [num070.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num070/num070.cpp) | DP | Easy |
+| 071 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | [num071.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num071/num071.cpp)[num071.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num071/num071.py) | String | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |
