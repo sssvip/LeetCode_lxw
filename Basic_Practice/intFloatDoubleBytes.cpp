@@ -31,6 +31,12 @@ int main(void){
 	cout << "double 类型能存储的最大值和最小值" << endl;
 	cout << "DBL_MAX = " << DBL_MAX << endl;
 	cout << "DBL_MIN = " << DBL_MIN << endl;
+    long long num1 = INT_MAX;
+    long long num2 = INT_MAX;
+    cout << num1 * num2 << endl;
+    num1 = INT_MIN;
+    num2 = INT_MIN;
+    cout << num1 * num2 << endl;
 
     return 0;
 }
