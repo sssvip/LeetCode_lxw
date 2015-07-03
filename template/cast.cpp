@@ -120,6 +120,21 @@ char * reverse(char * arr){
     return arr;
 }
 
+string reverse(string str){
+    int length = str.length();
+    if(length <= 1){
+        return str;
+    }
+    int mid = length / 2;
+    char ch;
+    for(int i = 0; i < mid; ++i){
+        ch = str[i];
+        str[i] = str[length-1-i];
+        str[length-1-i] = ch;
+    }
+    return str;
+}
+
 //int -> string
 //Implement casting int to string on myself.
 string int2String(int number){

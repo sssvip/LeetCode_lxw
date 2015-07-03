@@ -26,18 +26,19 @@ using namespace std;
 class Solution {
 private:
     string reverse(string str){
-        int length = str.length();
-        if(length <= 1){
-            return str;
-        }
-        int mid = length / 2;
-        for(int i = 0; i < mid; ++i){
-            char ch = str[i];
-            str[i] = str[length-1-i];
-            str[length-1-i] = ch;
-        }
-        return str;
-    }
+	    int length = str.length();
+	    if(length <= 1){
+	        return str;
+	    }
+	    int mid = length / 2;
+	    char ch;
+	    for(int i = 0; i < mid; ++i){
+	        ch = str[i];
+	        str[i] = str[length-1-i];
+	        str[length-1-i] = ch;
+	    }
+	    return str;
+	}
 public:
     string addBinary(string a, string b) {
         int length1 = a.length();
