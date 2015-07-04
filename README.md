@@ -80,6 +80,8 @@ Submitted by lxw.
 | 075 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [num075.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num075/num075.cpp) | Array | Medium |
 | 077 | [Combinations](https://leetcode.com/problems/combinations/) | [num077.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num077/num077.cpp) | Backtracking | Medium |
 | 078 | [Subsets](https://leetcode.com/problems/subsets/) | [num078.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num078/num078.cpp) | Backtracking | Medium |
+| 080 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [num080.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num080/num080.cpp) | Array | Medium |
+| 086 | [Partition List](https://leetcode.com/problems/partition-list/) | [num086.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num086/num086.cpp) | Linked List | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |
