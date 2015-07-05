@@ -81,6 +81,7 @@ Submitted by lxw.
 | 077 | [Combinations](https://leetcode.com/problems/combinations/) | [num077.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num077/num077.cpp) | Backtracking | Medium |
 | 078 | [Subsets](https://leetcode.com/problems/subsets/) | [num078.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num078/num078.cpp) | Backtracking | Medium |
 | 080 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [num080.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num080/num080.cpp) | Array | Medium |
+| 082 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [num082.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num082/num082.cpp) | Linked List | Medium(Traps and pitfalls) |
 | 086 | [Partition List](https://leetcode.com/problems/partition-list/) | [num086.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num086/num086.cpp) | Linked List | Medium |
 | 089 | [Gray Code](https://leetcode.com/problems/gray-code/) | [num089.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num089/num089.cpp) | Array(Math) | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
