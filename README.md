@@ -70,6 +70,7 @@ Submitted by lxw.
 | 062 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [num062.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num062/num062.cpp) | Array/Easy DP | Medium(OK) |
 | 063 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [num063.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num063/num063.cpp) | Array/Easy DP | Medium(OK) |
 | 064 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [num064.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num064/num064.cpp) | DP | Medium |
+| 065 | [Valid Number](https://leetcode.com/problems/valid-number/) | [num065](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num065) | Math/String | Hard |
 | 066 | [Plus One](https://leetcode.com/problems/plus-one/) | [num066.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num066/num066.cpp) | Array | Easy |
 | 067 | [Add Binary](https://leetcode.com/problems/add-binary/) | [num067.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num067/num067.cpp) | String | Easy |
 | 069 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [num069.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num069/num069.cpp) | Binary Search | Medium |
