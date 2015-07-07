@@ -84,6 +84,7 @@ Submitted by lxw.
 | 080 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [num080.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num080/num080.cpp) | Array | Medium |
 | 081 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [num081.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num081/num081.cpp) | Array/Binary Search | Medium |
 | 082 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [num082.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num082/num082.cpp) | Linked List | Medium(Traps and pitfalls) |
+| 083 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [num083.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num083/num083.cpp) | Linked List | Easy |
 | 086 | [Partition List](https://leetcode.com/problems/partition-list/) | [num086.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num086/num086.cpp) | Linked List | Medium |
 | 089 | [Gray Code](https://leetcode.com/problems/gray-code/) | [num089.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num089/num089.cpp) | Array(Math) | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
