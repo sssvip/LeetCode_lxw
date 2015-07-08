@@ -49,17 +49,21 @@ public:
         ListNode * current = newHead;
         int value = head->val;
         int count = 0;
-        while(head){        	
+        while(head){            
             if(head->val == value){
                 ++count;
             }
             else{
-                if(count == 1){                	
-		            /*
-		            //NOT OK. when came in the second time, ln1 will be modified instead of being recreated.
-		            ListNode ln1 = ListNode(value);
-		            current->next = &ln1;
-		            */
+                if(count == 1){                 
+                    /*
+                    //NOT OK. when came in the second time, ln1 will be modified instead of being recreated.
+                    ListNode ln1 = ListNode(value);
+                    current->next = &ln1;
+                    */
+                    /*NOT OK.
+                    ListNode ln1(value);
+                    current->next = &ln1;
+                    */
                     current->next = new ListNode(value);
                     current = current->next;
                 }
@@ -69,7 +73,7 @@ public:
             head = head->next;            
         }
         if(count == 1){
-        	/*
+            /*
             ln = ListNode(value);   //NOTE: this is a 'trap and pitfall'. "ln = ListNode(value);" WON'T create a new ListNode, but modify the old ln in line 6;
             current->next = &ln;
             */
