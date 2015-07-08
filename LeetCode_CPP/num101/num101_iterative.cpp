@@ -1,4 +1,4 @@
-// File: num101.cpp
+// File: num101_iterative.cpp
 // Author: lxw
 // Date: 2015-07-08
 

@@ -90,7 +90,8 @@ Submitted by lxw.
 | 088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [num088.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num088/num088.cpp) | Array | Easy |
 | 089 | [Gray Code](https://leetcode.com/problems/gray-code/) | [num089.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num089/num089.cpp) | Array(Math) | Medium |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [num100.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num100/num100.cpp) | Tree/DFS | Easy |
-| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [num101.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num101/num101.cpp) | Tree/Layer Traverse | Easy |
+| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [num101](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num101) | Tree/BFS | Easy |
+| 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [num102.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num102/num102.cpp) | Tree/BFS | Easy |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |
