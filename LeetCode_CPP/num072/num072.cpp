@@ -1,6 +1,6 @@
 // File: num072.cpp
 // Author: lxw
-// Date: 2015-07-07
+// Date: 2015-07-08
 
 /*
 Num num072: Edit Distance
@@ -20,24 +20,6 @@ c) Replace a character
 using namespace std;
 
 class Solution {
-private:
-    int minDistance(string & word1, int index1, int len1, string & word2, int index2, int len2, int count){
-        if(index1 == len1)
-            return count + len2 - index2;
-        if(index2 == len2)
-            return count + len1 - index1;
-        if(word1[index1] == word2[index2]){
-            ++index1;
-            ++index2;
-            return minDistance(word1, index1, len1, word2, index2, len2, count);
-        }
-        else{
-            return min( minDistance(word1, index1, len1, word2, index2+1, len2, count+1),   //insert
-                        min(minDistance(word1, index1+1, len1, word2, index2, len2, count+1),   //delete
-                            minDistance(word1, index1+1, len1, word2, index2+1, len2, count+1))   //replace
-                    );
-        }
-    }
 public:
     int minDistance(string word1, string word2) {
         int len1 = word1.length();
@@ -46,12 +28,29 @@ public:
             return len2;    //insert
         if(len2 == 0)
             return len1;    //delete
-        return minDistance(word1, 0, len1, word2, 0, len2, 0);
+        vector<vector<int> > vvi(len1+1, vector<int>(len2+1, 0));
+        //Index begins with 1.  0 points to no letter.
+        for(int i = 0; i <= len1; ++i){
+            vvi[i][0] = i;
+        }
+        for(int j = 0; j <= len2; ++j){
+            vvi[0][j] = j;
+        }
+        for(int i = 1; i <= len1; ++i){
+            for(int j = 1; j <= len2; ++j){
+                // index begins with 0. not word1[i] but word1[i-1].
+                vvi[i][j] = word1[i-1] == word2[j-1] ? vvi[i-1][j-1] : vvi[i-1][j-1] + 1; // replace
+                                //replace       insert          delete
+                vvi[i][j] = min(vvi[i][j], min(vvi[i-1][j]+1, vvi[i][j-1]+1));
+            }
+        }
+        return vvi[len1][len2];
     }
 };
 
+
 int main(void){
 	Solution sol;
-	cout << sol.minDistance("dinitrophenylhy", "acetylphenylhy") << endl;	
+	cout << sol.minDistance("dinitrophenylhydrazine", "acetylphenylhydrazine") << endl;
 	return 0;
 }
