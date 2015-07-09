@@ -103,6 +103,7 @@ Submitted by lxw.
 | 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [num111.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num111/num111.cpp) | Tree/DFS | Easy(**Think Carefully**) |
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum/) | [num112.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num112/num112.cpp) | Tree/DFS | Easy |
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii/) | [num113.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num113/num113.cpp) | Tree/DFS | Medium |
+| 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [num114.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num114/num114.cpp) | Tree/DFS | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |
