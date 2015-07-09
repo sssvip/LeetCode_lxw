@@ -1,9 +1,9 @@
-// File: num115.cpp
+// File: num116.cpp
 // Author: lxw
 // Date: 2015-07-09
 
 /*
-Num num115: Populating Next Right Pointers in Each Node
+Num num116: Populating Next Right Pointers in Each Node
 Source: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 
 Given a binary tree
