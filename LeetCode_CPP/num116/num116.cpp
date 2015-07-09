@@ -48,7 +48,7 @@ class Solution {
 public:
     void connect(TreeLinkNode *root) {
         if(root == NULL)
-        	return;
+          return;
         queue<TreeLinkNode *> nodeQueue;
         nodeQueue.push(root);
         int count = 1;
@@ -56,28 +56,28 @@ public:
         TreeLinkNode * node1;
         TreeLinkNode * node2;
         while(1){
-        	node1 = nodeQueue.top();
-        	nodeQueue.pop();
-        	if(node1->left != NULL){
-        		nodeQueue.push(node1->left);
-        		nodeQueue.push(node1->right);
-        	}
-        	i = 1;
-        	while(i < count){
-        		node2 = nodeQueue.top();
-        		nodeQueue.pop();
-        		node1->next = node2;
-        		node1 = node1->next;
-        		++i;
-        		if(node2->left != NULL){
-        			nodeQueue.push(node2->left);
-        			nodeQueue.push(node2->right);
-        		}
-        	}
-        	node1->next = NULL;
-        	if(nodeQueue.empty())	//if(node2->left == NULL)
-        		break;
-        	count << 1; // count *= 2;
+          node1 = nodeQueue.front();
+          nodeQueue.pop();
+          if(node1->left != NULL){
+            nodeQueue.push(node1->left);
+            nodeQueue.push(node1->right);
+          }
+          i = 1;
+          while(i < count){
+            node2 = nodeQueue.front();
+            nodeQueue.pop();
+            node1->next = node2;
+            node1 = node1->next;
+            ++i;
+            if(node2->left != NULL){
+              nodeQueue.push(node2->left);
+              nodeQueue.push(node2->right);
+            }
+          }
+          node1->next = NULL;
+          if(nodeQueue.empty())
+            break;
+          count <<= 1; //count *= 2; //NOTE: NOT "count << 1;" BUT "count <<= 1;" 
         }
     }
 };
