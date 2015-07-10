@@ -1,3 +1,8 @@
+### << 和 >>
+乘2左移1位,除2右移1位
+左移还是右移一定要仔细
+NOTE: negative integer ">>1" MAY NOT EQUAL TO "/2". positive integer is OK.
+
 ### int/long long 取值范围:
 int 最大有几位数字？10
 long long 呢？19
