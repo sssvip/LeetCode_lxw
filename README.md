@@ -108,6 +108,7 @@ Submitted by lxw.
 | 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | [num117.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num117/num117.cpp) | Tree/BFS | Medium |
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | [num118.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num118/num118.cpp) | Array | Easy |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | [num119.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num119/num119.cpp) | Array | Easy |
+| 120 | [Triangle](https://leetcode.com/problems/triangle/) | [num120.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num120/num120.cpp) | DP | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |
@@ -119,4 +120,3 @@ Submitted by lxw.
 [LeetCode Question Difficulty Distribution](http://wwwx.cs.unc.edu/~zhew/Leetcoder/)</br>
 [illuz-Some Good Solutions](http://blog.csdn.net/hcbbt/article/category/2904451)</br>
 [illuz-Some Good Solutions](https://github.com/illuz/leetcode/tree/master/solutions)</br>
-

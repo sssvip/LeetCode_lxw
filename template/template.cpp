@@ -22,6 +22,20 @@ int getMid(int start, int end){
     return int((llStart + llEnd)/2);
 }
 
+int getMin(vector<int> & vec){
+    int length = vec.size();
+    if(length == 0)
+        return INT_MIN;
+    if(length == 1)
+        return vec[0];
+    int min1 = vec[0];    
+    for(int i = 1; i < length; ++i){
+        if(vec[i] < min1)
+            min1 = vec[i];
+    }
+    return min1;
+}
+
 void showVec(vector<int> & vec){
     int length = vec.size();
     if(length < 1)
@@ -65,8 +79,10 @@ int main(void){
 
     //vector
     vector<int> vec;
-    vec.push_back(1); vec.push_back(-1); vec.push_back(0); vec.push_back(8);
+    vec.push_back(1); vec.push_back(-2); vec.push_back(0); vec.push_back(8);
     showVec(vec);
+    //min(vec)
+    cout << "min of vec: " << getMin(vec) << endl;
     
     //sort
     sort(vec.begin(), vec.end());
@@ -76,6 +92,7 @@ int main(void){
     cout << "max: " << max(10, 90) << endl;
 
     cout << getMid(INT_MAX, INT_MAX) << endl;
+    cout << getMid(INT_MIN, INT_MAX) << endl;
 
     //2 dimensions vecotr
 	vector<vector<int> > matrix;
@@ -92,5 +109,6 @@ int main(void){
     ListNode ln2 = ListNode(2);
     ln1.next = &ln2;
     showList(&ln1);
+
     return 0;
 }
