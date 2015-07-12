@@ -109,6 +109,7 @@ Submitted by lxw.
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | [num118.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num118/num118.cpp) | Array | Easy |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | [num119.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num119/num119.cpp) | Array | Easy |
 | 120 | [Triangle](https://leetcode.com/problems/triangle/) | [num120.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num120/num120.cpp) | DP | Medium |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [num121.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num121/num121.cpp) | Array | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |
