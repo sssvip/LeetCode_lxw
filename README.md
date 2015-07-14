@@ -110,7 +110,7 @@ Submitted by lxw.
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | [num118.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num118/num118.cpp) | Array | Easy |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | [num119.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num119/num119.cpp) | Array | Easy |
 | 120 | [Triangle](https://leetcode.com/problems/triangle/) | [num120.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num120/num120.cpp) | DP | Medium |
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [num121.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num121/num121.cpp) | Array | Medium |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [num121](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num121/) | Array | Medium |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [num122.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num122/num122.cpp) | Array | Medium |
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [num123.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num123/num123.cpp) | Array/DP | Hard |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [num125.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num125/num125.cpp) | String | Easy |
