@@ -1,4 +1,4 @@
-// File: num079.cpp
+// File: num079_Slow.cpp
 // Author: lxw
 // Date: 2015-07-14
 
@@ -27,40 +27,59 @@ word = "ABCB", -> returns false.
 #include <string>
 #include <vector>
 #include <algorithm>
-
+#include <set>
 #include <climits>
 
 using namespace std;
 
 class Solution {
 public:
-    //如果允许重复
-    bool exist(vector<vector<char> > & board, int i, int j, int rows, int cols, const string & word, int index, vector<pair<int, int> > & coordinates){
+    bool exist(vector<vector<char> > & board, int i, int j, int rows, int cols, const string & word, int index, set<pair<int, int> > & coordinates){
         if(index == word.length()-1)
             return true;
-        if(coordinates.find(pair<int, int>)
-        if(i-1 >= 0 && board[i-1][j] == word[index+1])
-            if(exist(board, i-1, j, rows, cols, word, index+1, coordinates))
-                return true;
-        if(j-1 >= 0 && board[i][j-1] == word[index+1])
-            if(exist(board, i, j-1, rows, cols, word, index+1, coordinates))
-                return true;
-        if(j+1 <= cols && board[i][j+1] == word[index+1])
-            if(exist(board, i, j+1, rows, cols, word, index+1, coordinates))
-                return true;
-        if(i+1 <= rows && board[i+1][j] == word[index+1])
-            if(exist(board, i+1, j, rows, cols, word, index+1, coordinates))
-                return true;
+        
+        if(i-1 >= 0 && board[i-1][j] == word[index+1]){
+            if(coordinates.find(pair<int, int>(i-1, j)) == coordinates.end()){
+            	coordinates.insert(pair<int, int>(i-1, j));
+            	if(exist(board, i-1, j, rows, cols, word, index+1, coordinates))
+                    return true;
+                coordinates.erase(pair<int, int>(i-1, j));
+            }
+        }
+        if(j-1 >= 0 && board[i][j-1] == word[index+1]){
+            if(coordinates.find(pair<int, int>(i, j-1)) == coordinates.end()){
+                coordinates.insert(pair<int, int>(i, j-1));
+                if(exist(board, i, j-1, rows, cols, word, index+1, coordinates))
+                    return true;
+                coordinates.erase(pair<int, int>(i, j-1));
+            }            
+        }
+        if(j+1 <= cols && board[i][j+1] == word[index+1]){
+            if(coordinates.find(pair<int, int>(i, j+1)) == coordinates.end()){
+                coordinates.insert(pair<int, int>(i, j+1));
+                if(exist(board, i, j+1, rows, cols, word, index+1, coordinates))
+                    return true;
+                coordinates.erase(pair<int, int>(i, j+1));
+            }
+        }
+        if(i+1 <= rows && board[i+1][j] == word[index+1]){
+            if(coordinates.find(pair<int, int>(i+1, j)) == coordinates.end()){
+                coordinates.insert(pair<int, int>(i+1, j));
+                if(exist(board, i+1, j, rows, cols, word, index+1, coordinates))
+                    return true;
+                coordinates.erase(pair<int, int>(i+1, j));
+            }
+        }
         return false;
     }
     
     bool exist(vector<vector<char>>& board, string word) {
         int rows = board.size() - 1;
         int cols = board[0].size() - 1;
+        set<pair<int, int> > coordinates;
         for(int i = 0; i <= rows; ++i){
             for(int j = 0; j <= cols; ++j){
-                if(board[i][j] == word[0]){
-                    set<pair<int, int> > coordinates;
+                if(board[i][j] == word[0]){                    
                     coordinates.insert(pair<int, int>(i, j));
                     if(exist(board, i, j, rows,cols, word, 0, coordinates))
                         return true;

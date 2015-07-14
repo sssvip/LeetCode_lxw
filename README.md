@@ -82,7 +82,7 @@ Submitted by lxw.
 | 075 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [num075.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num075/num075.cpp) | Array | Medium |
 | 077 | [Combinations](https://leetcode.com/problems/combinations/) | [num077.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num077/num077.cpp) | Backtracking | Medium |
 | 078 | [Subsets](https://leetcode.com/problems/subsets/) | [num078.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num078/num078.cpp) | Backtracking | Medium |
-| 079 | [Word Search](https://leetcode.com/problems/word-search/) | [num079.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num079) | Backtracking | Medium |
+| 079 | [Word Search](https://leetcode.com/problems/word-search/) | [num079](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num079) | Backtracking | Medium |
 | 080 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [num080.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num080/num080.cpp) | Array | Medium |
 | 081 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [num081.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num081/num081.cpp) | Array/Binary Search | Medium |
 | 082 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [num082.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num082/num082.cpp) | Linked List | Medium(**Traps and pitfalls**) |
