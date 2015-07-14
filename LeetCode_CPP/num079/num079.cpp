@@ -35,20 +35,21 @@ using namespace std;
 class Solution {
 public:
     //如果允许重复
-    bool exist(vector<vector<char> > & board, int i, int j, int rows, int cols, const string & word, int index){
+    bool exist(vector<vector<char> > & board, int i, int j, int rows, int cols, const string & word, int index, vector<pair<int, int> > & coordinates){
         if(index == word.length()-1)
             return true;
+        if(coordinates.find(pair<int, int>)
         if(i-1 >= 0 && board[i-1][j] == word[index+1])
-            if(exist(board, i-1, j, rows, cols, word, index+1))
+            if(exist(board, i-1, j, rows, cols, word, index+1, coordinates))
                 return true;
         if(j-1 >= 0 && board[i][j-1] == word[index+1])
-            if(exist(board, i, j-1, rows, cols, word, index+1))
+            if(exist(board, i, j-1, rows, cols, word, index+1, coordinates))
                 return true;
         if(j+1 <= cols && board[i][j+1] == word[index+1])
-            if(exist(board, i, j+1, rows, cols, word, index+1))
+            if(exist(board, i, j+1, rows, cols, word, index+1, coordinates))
                 return true;
         if(i+1 <= rows && board[i+1][j] == word[index+1])
-            if(exist(board, i+1, j, rows, cols, word, index+1))
+            if(exist(board, i+1, j, rows, cols, word, index+1, coordinates))
                 return true;
         return false;
     }
@@ -59,8 +60,11 @@ public:
         for(int i = 0; i <= rows; ++i){
             for(int j = 0; j <= cols; ++j){
                 if(board[i][j] == word[0]){
-                    if(exist(board, i, j, rows,cols, word, 0))
+                    set<pair<int, int> > coordinates;
+                    coordinates.insert(pair<int, int>(i, j));
+                    if(exist(board, i, j, rows,cols, word, 0, coordinates))
                         return true;
+                    coordinates.clear();
                 }
             }
         }
