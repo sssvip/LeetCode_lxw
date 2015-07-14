@@ -20,6 +20,7 @@ For the purpose of this problem, we define empty string as valid palindrome.
 
 class Solution {
 public:
+	//slow
     bool isPalindrome(string s) {
         int length = s.length();
         int head = 0;
@@ -48,4 +49,34 @@ public:
         }
         return true;
     }
+
+    //optimize
+    bool isPalindrome(string s) {
+        int length = s.length();
+        int head = 0;
+        int tail = length - 1;
+        while(head < tail){
+            if(!isalpha(s[head]) && !isdigit(s[head])){
+                ++head;
+                continue;
+            }
+            if(s[head] >= 'A' && s[head] <= 'Z')
+                s[head] = s[head] - 'A' + 'a';
+            while(!isalpha(s[tail]) && !isdigit(s[tail])){
+                --tail;
+            }
+            if(s[tail] >= 'A' && s[tail] <= 'Z')
+                s[tail] = s[tail] - 'A' + 'a';
+            if(s[head] == s[tail]){
+                ++head;
+                --tail;
+                continue;
+            }
+            else{
+                return false;
+            }
+        }
+        return true;
+    }
+//test case: ""  is OK.
 };
