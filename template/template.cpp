@@ -94,7 +94,7 @@ int main(void){
     cout << getMid(INT_MAX, INT_MAX) << endl;
     cout << getMid(INT_MIN, INT_MAX) << endl;
 
-    //2 dimensions vecotr
+    //2 dimensions vector
 	vector<vector<int> > matrix;
     vec.clear();
 	vec.push_back(1);vec.push_back(2);
