@@ -23,21 +23,17 @@ Hint:
 class Solution {
 public:
     //Iterative
-    ListNode * reverseList(ListNode* head) {
-        if(head == NULL){
-            return NULL;
+    ListNode* reverseList(ListNode* head) {
+        ListNode * p1 = head;
+        ListNode * p2 = NULL;
+        ListNode * current = NULL;
+        while(p1){
+            current = p1->next;
+            p1->next = p2;
+            p2 = p1;
+            p1 = current;
         }
-        ListNode * p = head;
-        ListNode * q = head;
-        ListNode * temp = NULL;
-        while(q){
-            temp = q->next;
-            q->next = p;
-            p = q;
-            q = temp;
-        }
-        head->next = NULL;
-        return p;
+        return p2;
     }
     //Recursive
     ListNode* reverseList(ListNode* head) {
