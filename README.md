@@ -119,6 +119,7 @@ Submitted by lxw.
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [num125.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num125/num125.cpp) | String | Easy |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | [num155](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num155/) | Stack/Data Structure | Easy(**Not Easy. Important.**) |
+| 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [num160](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num160/num160.cpp) | Linked List | Easy |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |
 | 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | [num221.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num221/num221.cpp) | DP | Hard |

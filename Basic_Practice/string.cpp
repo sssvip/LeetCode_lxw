@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <algorithm>
 using namespace std;
 
 int main(void)
@@ -37,6 +38,19 @@ int main(void)
     cout << str << endl;
     cout << "b" + 'c' << endl;	//NO: messy code.
     cout << "end" << endl;
+
+    //sort
+    str = "hello";
+    cout << "str: " << str << endl;
+    sort(str.begin(), str.end());
+    cout << "str: " << str << endl;
+    string str1 = "olhel";
+    cout << "str1: " << str1 << endl;
+    sort(str1.begin(), str1.end());
+    cout << "str1: " << str1 << endl;
+    if(str1 == str){
+        cout << "str1 == str" << endl;
+    }
     return 0;
 }
 
