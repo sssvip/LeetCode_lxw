@@ -27,16 +27,17 @@ public:
         height.push_back(0);
         int length = height.size();
         int maxArea = 0;
-        for(int i = 0; i < length;){//for(int i = 0; i < length; ++i){
+        for(int i = 0; i < length;){
             if(indexStack.empty() || height[i] >= height[indexStack.top()]){
+                //indexStack存的是height的索引, 索引指示的高度是递增的.
                 indexStack.push(i);
                 ++i;
             }
-            else{
+            else{//height[i] < height[indexStack.top()]
                 int index = indexStack.top();
                 indexStack.pop();
                 //int width = indexStack.empty() ? i : i - index; // not index ~ i but indexStack.top()+1 ~ i
-                int width = indexStack.empty() ? i : i - indexStack.top() - 1;
+                int width = indexStack.empty() ? i : i - indexStack.top() - 1; //此处的empty()防止空栈top() 这句很巧妙
                 maxArea = max(maxArea, height[index]*width);
                 /*
                 //NO, special case [1, 2, 2]
