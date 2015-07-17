@@ -26,51 +26,39 @@ Given m, n satisfy the following condition:
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+ //最开始时对m分情况讨论m>1和m==1,这时就可以通过添加一个哨兵节点,来避免分情况讨论
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int m, int n) {
         if(m == n || head == NULL){
             return head;
         }
-        ListNode * prev = NULL;
+        ListNode * newHead = new ListNode(0);
+        newHead->next = head;
+        ListNode * prev = newHead;
         ListNode * p2 = NULL;
         ListNode * p1 = head;
         int i = 1;
-        if(m > 1){
-            while(i < m){
-                prev = p1;
-                p1 = p1->next;
-                if(p1 == NULL)
-                    return head;
-                ++i;
-            }
-            ListNode * current = NULL;
-            while(i <= n){
-                if(p1 == NULL)
-                    break;
-                current = p1->next;
-                p1->next = p2;
-                p2 = p1;
-                p1 = current;
-                ++i;
-            }
-            prev->next->next = p1;
-            prev->next = p2;
-            return head;
+        while(i < m){
+            prev = p1;
+            p1 = p1->next;
+            ++i;
         }
-        else{   //m == 1
-            ListNode * current = NULL;
-            while(i <= n){
-                if(p1 == NULL)
-                    break;
-                current = p1->next;
-                p1->next = p2;
-                p2 = p1;
-                p1 = current;
-                ++i;
-            }
-            head->next = p1;
-            return p2;
+        ListNode * temp = p1;
+        ListNode * current = NULL;
+        while(i <= n){
+            current = p1->next;
+            p1->next = p2;
+            p2 = p1;
+            p1 = current;
+            ++i;
         }
+        temp->next = p1;
+        prev->next = p2;
+        temp = newHead;
+        newHead = newHead->next;
+        delete temp;
+        return newHead;
     }
 };
