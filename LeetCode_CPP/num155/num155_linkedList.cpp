@@ -1,5 +1,7 @@
-//Runtime Error.
-// File: num155.cpp
+//LinkedList simulates stack.
+//对于类似栈的操作（在链表的同一端进行添加和删除节点），如果操作链表的尾部不方便（添加节点和删除节点不方便--知道为什么不方便吗？因为每当删除tail节点时需要修改tail指针，比较麻烦），可以考虑从链表的头部进行操作
+
+// File: num155_linkedList.cpp
 // Author: lxw
 // Date: 2015-07-16
 
@@ -15,7 +17,15 @@ top() -- Get the top element.
 getMin() -- Retrieve the minimum element in the stack.
 */
 
-//insert from left(head) instead of right(tail). This is important and smart.
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <set>
+#include <climits>
+
+using namespace std;
+
 class Node{
 private:
     int value;
@@ -32,17 +42,20 @@ public:
     Node * getNext(){
         return this->next;
     }
-    Node * setNext(Node * next){
+    void setNext(Node * next){
         this->next = next;
     }
 };
+
+//insert from left(head) instead of right(tail). This is important and smart.
 class MinStack {
 private:
     Node * topNode;
 public:
+	MinStack():topNode(NULL){}
     void push(int x) {
         if(this->topNode == NULL){
-            //this->topNode = & Node(x, x);   //Line 28: taking address of temporary [-fpermissive]
+            //this->topNode = & Node(x, x);   //num155.cpp:56:40: error: taking address of temporary [-fpermissive]
             this->topNode = new Node(x, x);
         }
         else{
@@ -62,7 +75,7 @@ public:
         }
         Node * temp = this->topNode;
         this->topNode = this->topNode->getNext();
-        //delete temp;
+        delete temp;
     }
 
     int top() {
@@ -78,4 +91,37 @@ public:
         }
         return this->topNode->getMinVal();
     }
+
+    void showMinStack(){
+    	Node * temp = this->topNode;
+    	while(temp){
+    		cout << "(" << temp->getValue() << ", " << temp->getMinVal() << ") -> ";
+    		temp = temp->getNext();
+    	}
+    	cout << endl;
+    }
 };
+
+int main(void){
+	MinStack ms;
+	ms.push(1);
+	ms.push(2);
+	ms.push(1);		
+	ms.push(12);
+	ms.push(-12);
+	ms.push(3);	
+	ms.push(-14);
+	ms.push(3);	
+	ms.push(13);
+	cout << "ms.getMin(): " << ms.getMin() << endl;
+	cout << "ms.top(): " << ms.top() << endl;
+	cout << "ms.showMinStack(): " << endl;
+	ms.showMinStack();
+	cout << "ms.pop()." << endl;
+	ms.pop();
+	cout << "ms.top(): " << ms.top() << endl;
+	cout << "ms.showMinStack(): " << endl;
+	ms.showMinStack();
+	cout << "ms.getMin(): " << ms.getMin() << endl;
+	return 0;
+}
