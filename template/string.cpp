@@ -11,53 +11,43 @@ string& trim(string &s){
     if (s.empty()){
         return s;  
     }  
-    s.erase(0,s.find_first_not_of(" "));  
-    s.erase(s.find_last_not_of(" ") + 1);  
-    return s;  
+    s.erase(0, s.find_first_not_of(" "));
+    s.erase(s.find_last_not_of(" ") + 1);
+    return s;
 } 
 
-//注意：当字符串为空时，也会返回一个空字符串  
-void split(string& s, string& delim, vector<string>* ret){  
-    size_t last = 0;  
-    size_t index = s.find_first_of(delim,last);  
-    while (index != string::npos){  
-        ret->push_back(s.substr(last, index-last));  
-        last = index+1;  
-        index = s.find_first_of(delim, last);  
-    }  
-    if (index-last > 0){  
-        ret->push_back(s.substr(last, index-last));  
-    }  
-}
+//NOTE:
+//string::find_first_of("aeiou", pos);	//只要aeiou有任何一个字符匹配就返回该位置.
+//string::find("", pos);	//必须aeiou这个字符串整体匹配才返回
 
-void TestGetLineWithStringStream(){
-    //1.线程安全的,但是只能以字符作为分隔符
+//线程安全, 只能以字符作为分隔符
+void getlineSplit(){    
     stringstream ss("google|twitter|facebook|microsoft|apple|ibm|");
     string str;
-    while(getline(ss,str,'|')){
-        cout << str << endl;
+    //istream& getline (istream& is, string& str, char delim);
+    while(getline(ss, str, '|')){
+        cout << "\"" << str << "\"" << endl;
     }
 }
 
-
-void TestStringFind(){
-    //1.自己实现,线程安全,支持字符串作为分隔符.缺点可能就是代码量多.
+//线程安全, 支持字符串作为分隔符.
+void ownSplit(){    
     string str = "google||twitter||facebook||microsoft||apple||ibm||";
-    const char* delim = "||";
-    const int len = strlen(delim);
+    const string delim = "||";
+    const int len = delim.length();
     size_t index = 0;
-    size_t pos = str.find(delim,index);
+    size_t pos = str.find(delim, index);
     while(pos != string::npos){
-        string ss = str.substr(index,pos-index);
-        cout << ss << endl;
-        index = pos+len;
+    	//string substr (size_t pos = 0, size_t len = npos) const;
+        string ss = str.substr(index, pos-index);
+        cout << "\"" << ss << "\"" << endl;
+        index = pos + len;
         pos = str.find(delim,index);
     }
- 
-    //cout << "is last?" << " index:" << index << " str.length():" << str.length() << endl;
-    if((index+1) < str.length()){
-        string ss = str.substr(index,str.length() - index);
-        cout << ss << endl;
+    
+    if(index < str.length() - 1){
+        string ss = str.substr(index, str.length() - index);
+        cout << "\"" << ss << "\"" << endl;
     }
 }
 
@@ -69,7 +59,7 @@ int main(void){
     }
     else{
         cout << str.find("t") << endl; 
-        cout << string::npos << endl;
+        cout << string::npos << endl;	//string::npos maximum of size_t;
         cout << string::npos + 1 << endl;   //0
         cout << string::npos - 1 << endl; 
         cout << INT_MAX << endl;
@@ -100,8 +90,8 @@ int main(void){
 	str = "";
     str += 'a';
     cout << str << endl;    //a
-    str += 'b' + '0'; //NO: messy code.
-    cout << str << endl;
+    str += '1' + '2'; //'1': 49   '2': 50   49+50==99('c');
+    cout << str << endl;	//ac
     str = "a";
     str += "b" + 'c';   //NO: messy code.
     cout << str << endl;
@@ -124,9 +114,19 @@ int main(void){
     sort(str1.begin(), str1.end());
     cout << "str1: " << str1 << endl;
     if(str1 == str){
-        cout << "str1 == str" << endl;
+        cout << "str1 == str" << endl;        
     }
     cout << "--------------------------------" << endl;
+
+    //trim
+    cout << "trim(string& str)" << endl;
+    str = " lxw \n  ";
+    cout << "\"" << trim(str) << "\"" << endl;	//only space, without "\n"
+    cout << "--------------------------------" << endl;
+
+    //split
+    getlineSplit();
+    ownSplit();	
     return 0;
 }
 
@@ -147,12 +147,12 @@ hello9
 hello9a
 --------------------------------
 a
-a
+ac
 a
 --------------------------------
 string += char is OK. but "string + char" is NOT OK.
 bc
-e
+
 --------------------------------
 str: hello
 str: ehllo

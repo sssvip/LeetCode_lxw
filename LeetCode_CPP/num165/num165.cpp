@@ -20,3 +20,51 @@ Credits:
 Special thanks to @ts for adding this problem and creating all test cases.
 */
 
+class Solution {
+public:
+    int compareVersion(string version1, string version2) {
+        stringstream ssVer1(version1);
+        stringstream ssVer2(version2);
+        string ver1, ver2;
+        int value1, value2;
+        int stopFlag = 0;
+        while(1){
+            if(getline(ssVer1, ver1, '.')){
+                //string -> int
+                value1 = atoi(ver1.c_str());
+            }
+            else{
+                stopFlag = 1;
+                break;
+            }
+            if(getline(ssVer2, ver2, '.')){
+                value2 = atoi(ver2.c_str());
+            }
+            else{
+                stopFlag = 2;
+                break;
+            }
+            if(value1 < value2)
+                return -1;
+            else if(value1 > value2)
+                return 1;
+        }
+        if(stopFlag == 2){
+            if(value1 != 0)
+                return 1;
+            while(getline(ssVer1, ver1, '.')){
+                value1 = atoi(ver1.c_str());
+                if(value1 != 0)
+                    return 1;
+            }
+        }
+        if(stopFlag == 1){
+            while(getline(ssVer2, ver2, '.')){
+                value2 = atoi(ver2.c_str());
+                if(value2 != 0)
+                    return -1;
+            }
+        }
+        return 0;
+    }
+};
