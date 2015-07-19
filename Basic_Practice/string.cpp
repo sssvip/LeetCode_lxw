@@ -2,6 +2,9 @@
 #include <string>
 #include <sstream>
 #include <algorithm>
+#include <vector>
+#include <cstring> //strlen
+#include <climits>
 using namespace std;
 
 string& trim(string &s){  
@@ -14,16 +17,16 @@ string& trim(string &s){
 } 
 
 //注意：当字符串为空时，也会返回一个空字符串  
-void split(std::string& s, std::string& delim,std::vector< std::string >* ret){  
+void split(string& s, string& delim, vector<string>* ret){  
     size_t last = 0;  
-    size_t index=s.find_first_of(delim,last);  
-    while (index!=std::string::npos){  
-        ret->push_back(s.substr(last,index-last));  
-        last=index+1;  
-        index=s.find_first_of(delim,last);  
+    size_t index = s.find_first_of(delim,last);  
+    while (index != string::npos){  
+        ret->push_back(s.substr(last, index-last));  
+        last = index+1;  
+        index = s.find_first_of(delim, last);  
     }  
-    if (index-last>0){  
-        ret->push_back(s.substr(last,index-last));  
+    if (index-last > 0){  
+        ret->push_back(s.substr(last, index-last));  
     }  
 }
 
@@ -59,15 +62,22 @@ void TestStringFind(){
 }
 
 int main(void){
+    cout << "string.find()" << endl;
     string str ="hello";
     if(str.find("t") != string::npos){
         cout << "found" << endl;
     }
     else{
         cout << str.find("t") << endl; 
-        cout << string::npos << endl; 
+        cout << string::npos << endl;
+        cout << string::npos + 1 << endl;   //0
+        cout << string::npos - 1 << endl; 
+        cout << INT_MAX << endl;
+        cout << LONG_MAX << endl;
     }
+    cout << "--------------------------------" << endl;
 
+    cout << "stringstream" << endl;
     int a = 10;
     char ch = 'a';
     stringstream ss;
@@ -76,27 +86,31 @@ int main(void){
     cout << ss.str() << endl;   //10a
     cout << "--------------------------------" << endl;
 
-    //Actually "string += char" if string += int. int will be casted to char;
+    //Actually it is "string += char".
+    //if string += int. int will be casted to char;
+    cout << "string += char" << endl;
     a = 9;
     str += a + '0';	//no '-='
     cout << str << endl; //hello9    
     str += ch;
     cout << str << endl;    //hello9a
+    cout << "--------------------------------" << endl;
 
 	//NOTE:
 	str = "";
     str += 'a';
-    cout << str << endl;
-    str += 'b' + 'e'; //NO: messy code.
+    cout << str << endl;    //a
+    str += 'b' + '0'; //NO: messy code.
     cout << str << endl;
     str = "a";
     str += "b" + 'c';   //NO: messy code.
     cout << str << endl;
+    cout << "--------------------------------" << endl;
 
-    //string += char is OK. but "string + char" is NOT OK.
+    cout << "string += char is OK. but \"string + char\" is NOT OK." << endl;
     str = "b";
     str += 'c';
-    cout << str << endl;
+    cout << str << endl;    //bc
     cout << "b" + 'c' << endl;	//NO: messy code.
     cout << "--------------------------------" << endl;
     
@@ -117,14 +131,33 @@ int main(void){
 }
 
 /*
+string.find()
 4294967295
 4294967295
+0
+4294967294
+2147483647
+2147483647
+--------------------------------
+stringstream
 10a
+--------------------------------
+string += char
 hello9
 hello9a
+--------------------------------
 a
 a
-a��
-�
-end
+a
+--------------------------------
+string += char is OK. but "string + char" is NOT OK.
+bc
+e
+--------------------------------
+str: hello
+str: ehllo
+str1: olhel
+str1: ehllo
+str1 == str
+--------------------------------
 */
