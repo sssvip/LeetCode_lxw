@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 void showVec(vector<int> & vec){
@@ -42,7 +43,18 @@ int main(void){
     v.insert(v.begin() + 2, 12);
     showVec(v);
 
+    v.push_back(1);
+    v.push_back(12);
+    showVec(v);
+    cout << "unique:" << endl;
+    //Usually, unique() alone is not enough: 1.sort()  2.unique()  3.resize()
+    sort(v.begin(), v.end());
+    vector<int>::iterator it = unique(v.begin(), v.end());
+    v.resize(distance(v.begin(), it));
+    showVec(v);
+
     v.clear();
     showVec(v);
+
     return 0;
 }
