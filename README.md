@@ -117,7 +117,7 @@ Submitted by lxw.
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [num122.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num122/num122.cpp) | Array | Medium |
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [num123.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num123/num123.cpp) | Array/DP | Hard |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [num125.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num125/num125.cpp) | String | Easy |
-| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [num128.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num128/num128.cpp) | Array | Medium |
+| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [num128](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num128) | Array/Set | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | [num155](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num155/) | Stack/Data Structure | Easy(**Not Easy. Important.**) |
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [num160](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num160/num160.cpp) | Linked List | Easy |
