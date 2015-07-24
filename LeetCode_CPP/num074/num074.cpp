@@ -21,6 +21,8 @@ Consider the following matrix:
 ]
 Given target = 3, return true.
 */
+//这题 左下 右上都可以(两种情况都是去一行 & 留一行)
+//不要用右下 左上(两种情况都是去所有 & 去一个 )
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
