@@ -33,20 +33,23 @@ public:
         if(rows == 0)
             return 0;
         int cols = matrix[0].size();
+        
         int top = 0;
         int bottom = rows - 1;
         int left = 0;
         int right = cols - 1;
         while(left <= right && top <= bottom){
-            if(target == matrix[top][right])
+            if(target == matrix[bottom][left])
                 return true;
-            if(target < matrix[top][right]){
-                --right;
+            if(target < matrix[bottom][left]){
+                --bottom;
             }
-            if(target > matrix[top][right]){
-                ++top;
+            else{ 	//NO: "if(target > matrix[bottom][left]){" because bottom has already been modified.
+                ++left;
             }
         }
         return false;
     }
 };
+//此题右上 左下都可以(都是去一行 & 去一列)
+//不要用左上 右下都可以(都是去一个 & 去所有)
