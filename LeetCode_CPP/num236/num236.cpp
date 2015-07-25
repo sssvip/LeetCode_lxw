@@ -20,7 +20,7 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
 */
 
-//如果是普通二叉树, 而不是BST.  则应该遍历节点, 先找到p,q. 同时记录下从root到该几点的路径.
+//如果是普通二叉树, 而不是BST.  则应该遍历节点, 先找到p,q. 同时记录下从root到该节点的路径.
 //之后比较路径,最后一个相同的节点便是LCA.
 
 /**

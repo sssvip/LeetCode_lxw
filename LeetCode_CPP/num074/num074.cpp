@@ -21,6 +21,8 @@ Consider the following matrix:
 ]
 Given target = 3, return true.
 */
+//这题 左下 右上都可以(两种情况都是去一行 & 留一行)
+//不要用右下 左上(两种情况都是去所有 & 去一个 )
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
@@ -31,32 +33,24 @@ public:
         if(n < 0)
             return false;
         
-        int i = 0;
-        int j = n - 1;
-        int rowStart = 0;
-        int rowEnd = m - 1;
-        int colStart = 0;
-        int colEnd = n - 1;
-        while(1){
-            if(target == matrix[i][j]){
+        int top = 0;
+        int bottom = m - 1;
+        int left = 0;
+        int right = n - 1;
+        while((right >= left && top  <= bottom)){
+            if(target == matrix[top][right]){
                 return true;
             }
-            else if(target < matrix[i][j]){
+            if(target < matrix[top][right]){
                 //current row
-                --j;
-                --colEnd;
-                rowStart = rowEnd = i;
-                if(colEnd < colStart)
-                    return false;
+                --right;
+                bottom = top;
             }
             else{
-                //following columns
-                ++i;
-                ++rowStart;
-                if(rowStart > rowEnd){
-                    return false;
-                }
+                //remove one row.
+                ++top;
             }
         }
+        return false;
     }
 };
