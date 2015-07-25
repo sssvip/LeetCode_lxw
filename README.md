@@ -125,14 +125,12 @@ Submitted by lxw.
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |
 | 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | [num221.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num221/num221.cpp) | DP | Hard |
+| 225 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [num225.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num225/num225.cpp) | Queue/Data Structure | Easy |
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [num226_Recursive.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num226/num226_Recursive.cpp) [num226_Iterative.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num226/num226_Iterative.cpp)  | Binary Tree | Easy |
-<<<<<<< HEAD
 | 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [num230.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num230/num230.cpp) | Tree | Medium |
 | 231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [num231.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num231/num231.cpp) | Bitmanipulation | Easy |
-=======
 | 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [num232.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num232/num232.cpp) | Stack | Easy |
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [num234.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num234/num234.cpp) | Linked List | Easy |
->>>>>>> 3d2991a5a00b512c65ddd66258c3e3b9fbe1aefd
 | 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [num235.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num235/num235.cpp) | Tree | Easy |
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [num236.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num236/num236.cpp) | Tree/DFS | Medium |
 | 237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [num237.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num237/num237.cpp) | Linked List | Easy |
