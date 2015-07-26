@@ -16,7 +16,8 @@ public:
             return false;
         multiset<int> mset;
         for (int i = 0; i < nums.size(); i ++) {
-            auto it = mset.lower_bound(nums[i] - t);
+            //auto it = mset.lower_bound(nums[i] - t);
+            multiset<int>::iterator it = mset.lower_bound(nums[i] - t);
             if (it != mset.end()) {
             	//如果nums[i] < *it, 则*it - nums[i]可能比t大的，所以在内部又增加了一个判断条件
                 int diff = abs(nums[i] - *it);
