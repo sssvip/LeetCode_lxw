@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>   //push_heap(), make_heap(), pop_heap()
-#include <algorithm>
+#include <vector>
+#include <algorithm>//make_heap(), push_heap(), pop_heap(), sort_heap()
 using namespace std;
 
 void show(vector<int>& v){
@@ -18,8 +18,8 @@ int main(void)
     int myInts[] = {10, 20, 30, 5, 15};
     vector<int> v(myInts, myInts + 5);
     show(v);
-    //build_heap
-    cout << "build heap:" << endl;
+    //make_heap
+    cout << "make heap:" << endl;
     make_heap(v.begin(), v.end());
     show(v);
     cout << endl;
@@ -46,3 +46,20 @@ int main(void)
     cout << endl;
     return 0;
 }
+
+/*
+lxw@17:46:43:Basic_Practice$ ./a.out 
+10, 20, 30, 5, 15, 
+make heap:
+30, 20, 10, 5, 15, 
+
+rebuild heap:
+30, 20, 25, 5, 15, 10, 
+
+delete max:
+25, 20, 10, 5, 15, 30, 
+25, 20, 10, 5, 15, 
+
+sort heap:
+5, 10, 15, 20, 25, 
+*/
