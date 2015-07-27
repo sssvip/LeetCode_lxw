@@ -85,10 +85,10 @@ int match(int val, TrieNode * root){
         else{
             if(p->next[0]){
                 p = p->next[0];
-                ++ans;
             }
             else{
                 p = p->next[1];
+                ++ans;
             }
         }
     }
@@ -97,19 +97,20 @@ int match(int val, TrieNode * root){
 
 int main(){
     int n;
-    cin >> n;
-    TrieNode * root = new TrieNode();
-    int * array = new int[n];
-    for(int i = 0; i < n; ++i){
-    	cin >> array[i];
-        insert(array[i], root);
-    }
-    int result = INT_MIN;
-    for(int i = 0; i < n; ++i){
-    	result = max(result, match(array[i], root));
-    }
-    delTrieNode(root);
-    delete[] array;
-    cout << result << endl;
+    while(cin >> n){
+	    TrieNode * root = new TrieNode();
+	    int * array = new int[n];
+	    for(int i = 0; i < n; ++i){
+	    	cin >> array[i];
+	        insert(array[i], root);
+	    }
+	    int result = INT_MIN;
+	    for(int i = 0; i < n; ++i){
+	    	result = max(result, array[i] ^ match(array[i], root));
+	    }
+	    delTrieNode(root);
+	    delete[] array;
+	    cout << result << endl;
+	}
     return 0;
 }
