@@ -1,14 +1,25 @@
-//File: trie_1.cpp
+//File: trie_2.cpp
 //Author: lxw
-//Time: 2015-07-26
-//Usage: Trie Tree Demo 1.
+//Time: 2015-07-27
+//Usage: Trie Tree Demo 2.
 
 /*
-题目：给定一个数组a[]，再给出m个询问，每个询问一个数x，在a[]中找出一个数y，使得x与y的异或值最大。
- 
-分析：最直观的思路就是对于每一个询问，直接暴力在数组a[]中比较，找最大的，但这样做的时间复杂度会很大。O(m*n) 
-我们有一个很好的解法，那就是字典树，假设所有的数字范围均在int内，那么就可以建立深度为32的字典树即可，所以总的时间复杂度为O(n+32*m)。 
-建好字典树后，从根节点往下遍历一遍就行了，先对x按位取反，尽量走相同的节点，如果不存在就忽略。
+Description
+给定一些数，求这些数中两个数的异或值最大的那个值
+
+Input
+第一行为数字个数n，1 <= n <= 10 ^ 5。接下来n行每行一个32位有符号非负整数。
+
+Output
+任意两数最大异或值
+
+Sample Input
+3
+3
+7
+9
+Sample Output
+14
 */
 
 #include <iostream>
@@ -19,7 +30,6 @@
 #include <climits>
 
 using namespace std;
-typedef long long ll;
 
 class TrieNode{
 public:
@@ -33,7 +43,7 @@ public:
     }
 };
 
-void insert(ll n, TrieNode * root){
+void insert(int n, TrieNode * root){
     TrieNode *p = root;
     for(int i = 31; i >= 0; i--){
         int id = (n >> i) & 1;
@@ -56,9 +66,9 @@ void delTrieNode(TrieNode * root){
     delete root;
 }
 
-ll match(ll val, TrieNode * root){
+int match(int val, TrieNode * root){
     val = ~val;
-    ll ans = 0;
+    int ans = 0;
     TrieNode * p = root;
     for(int i = 31; i >= 0; i--){
         ans <<= 1;
@@ -75,10 +85,10 @@ ll match(ll val, TrieNode * root){
         else{
             if(p->next[0]){
                 p = p->next[0];
+                ++ans;
             }
             else{
                 p = p->next[1];
-                ++ans;
             }
         }
     }
@@ -86,36 +96,20 @@ ll match(ll val, TrieNode * root){
 }
 
 int main(){
-    int n, m;
-    TrieNode * root = new TrieNode();
-    cout << "n: ";
+    int n;
     cin >> n;
-    cout << "m: ";
-    cin >> m;
-    cout << "Input " << n << " source numbers: " << endl;
+    TrieNode * root = new TrieNode();
+    int * array = new int[n];
     for(int i = 0; i < n; ++i){
-        ll val;
-        cin >> val;
-        insert(val, root);
+    	cin >> array[i];
+        insert(array[i], root);
     }
-    cout << "Input " << m << " target numbers: " << endl;
-    while(m--){
-        ll val;
-        cout << "target: ";
-        cin >> val;
-        cout << match(val, root) << endl;
+    int result = INT_MIN;
+    for(int i = 0; i < n; ++i){
+    	result = max(result, match(array[i], root));
     }
     delTrieNode(root);
+    delete[] array;
+    cout << result << endl;
     return 0;
 }
-
-/*
-lxw@08:41:22:template$ ./a.out 
-n: 3  
-m: 1
-Input 3 source numbers: 
-6 5 1
-Input 1 target numbers: 
-target: 3
-5
-*/
