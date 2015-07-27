@@ -92,6 +92,7 @@ Submitted by lxw.
 | 086 | [Partition List](https://leetcode.com/problems/partition-list/) | [num086.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num086/num086.cpp) | Linked List | Medium |
 | 088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [num088.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num088/num088.cpp) | Array | Easy |
 | 089 | [Gray Code](https://leetcode.com/problems/gray-code/) | [num089.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num089/num089.cpp) | Array(Math) | Medium |
+| 090 | [Subsets II](https://leetcode.com/problems/subsets-ii/) | [num090.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num090/num090.cpp) | Backtracking | Medium |
 | 092 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [num092.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num092/num092.cpp) | Linked List | Medium |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [num100.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num100/num100.cpp) | Tree/DFS | Easy |
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [num101](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num101) | Tree/BFS | Easy |
