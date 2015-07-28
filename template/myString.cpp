@@ -1,3 +1,7 @@
+// File: myString.cpp
+// Author: lxw
+// Date: 2015-07-29
+
 #include <iostream>
 #include <cstring>
 using namespace std;
