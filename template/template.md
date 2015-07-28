@@ -15,3 +15,4 @@ Programming Template Index by lxw.<br>
 | trie_1.cpp | 字典树trie tree demo 1 |
 | trie_2.cpp | 字典树trie tree demo 2 |
 | trie_3.cpp | 字典树trie tree demo 3 |
+| MyString.cpp | class string implementation demo|
