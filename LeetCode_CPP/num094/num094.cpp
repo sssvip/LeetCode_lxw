@@ -50,3 +50,26 @@ public:
 };
 
 //iterative
+class Solution {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        vector<int> inOrder;
+        if(root == NULL)
+            return inOrder;
+        TreeNode * node = root;
+        stack<TreeNode *> s;
+        while(1){
+            while(node){
+                s.push(node);
+                node = node->left;
+            }
+            if(s.empty())
+                break;
+            node = s.top();
+            s.pop();
+            inOrder.push_back(node->val);
+            node = node->right;
+        }
+        return inOrder;
+    }
+};
