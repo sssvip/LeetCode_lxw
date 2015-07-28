@@ -122,6 +122,7 @@ Submitted by lxw.
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [num125.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num125/num125.cpp) | String | Easy |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [num128](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num128) | Array/Set | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
+| 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [num144](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num144/num144.cpp) | Stack | Medium |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | [num155](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num155/) | Stack/Data Structure | Easy(**Not Easy. Important.**) |
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [num160](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num160/num160.cpp) | Linked List | Easy |
 | 165 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [num165.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num165/num165.cpp)/[num165.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num165/num165.py) | string | Easy |
