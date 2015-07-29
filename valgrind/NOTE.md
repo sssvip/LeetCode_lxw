@@ -5,6 +5,8 @@
 ```
 lxw@11:42:25:num095$ valgrind --tool=memcheck --leak-check=full --log-file=./demo.txt ./a.out
 ```
+其他选项:
+--trace-children=yes    多进程</br>
 
 ###内存分配</br>
 常见的内存分配方式分三种：静态存储，栈上分配，堆上分配。</br>
