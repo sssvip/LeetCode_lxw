@@ -96,6 +96,7 @@ Submitted by lxw.
 | 091 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [num091.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num091/num091.cpp) | DP | Medium |
 | 092 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [num092.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num092/num092.cpp) | Linked List | Medium |
 | 094 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [num094.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num094/num094.cpp) | Stack | Medium |
+| 095 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | [num095.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num095/num095.cpp) | Tree | Medium |
 | 096 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | [num096.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num096/num096.cpp) | Tree/DP | Easy |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [num100.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num100/num100.cpp) | Tree/DFS | Easy |
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [num101](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num101) | Tree/BFS | Easy |

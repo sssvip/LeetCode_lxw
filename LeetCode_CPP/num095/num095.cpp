@@ -59,6 +59,7 @@ private:
             int rightLen = right.size();
             for(int i = 0; i < leftLen; ++i){
                 for(int j = 0; j < rightLen; ++j){
+                    //NOTE: 多个树共用节点
                     node = new TreeNode(k); //must be here;
                     node->left = left[i];
                     node->right = right[j];
@@ -68,19 +69,21 @@ private:
         }
         return nodes;
     }
-    void freeNode(TreeNode * node){
-        if(node == NULL)
+    void freeNode(TreeNode ** node){
+        if(*node == NULL)
             return;
-        freeNode(node->left);
-        freeNode(node->right);
-        delete node;
+        freeNode(&((*node)->left));
+        freeNode(&((*node)->right));
+        delete *node;
+        *node = NULL;
     }
 public:
     ~Solution(){
         //free roots
         int length = roots.size();
-        for(int i = 0; i < length; ++i){
-            freeNode(roots[i]);
+        //freeNode(&(roots[0]));
+        for(int i = 1; i < length; ++i){
+            ;//delete roots[i];
         }
     }
     vector<TreeNode*> generateTrees(int n) {
