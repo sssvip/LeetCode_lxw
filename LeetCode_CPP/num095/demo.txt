@@ -1,0 +1,26 @@
+==7552== Memcheck, a memory error detector
+==7552== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==7552== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==7552== Command: ./a.out
+==7552== Parent PID: 5758
+==7552== 
+==7552== 
+==7552== HEAP SUMMARY:
+==7552==     in use at exit: 1,112,616 bytes in 92,718 blocks
+==7552==   total heap usage: 137,889 allocs, 45,171 frees, 2,242,820 bytes allocated
+==7552== 
+==7552== 1,112,616 (201,552 direct, 911,064 indirect) bytes in 16,796 blocks are definitely lost in loss record 1,533 of 1,533
+==7552==    at 0x402A6DC: operator new(unsigned int) (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==7552==    by 0x8048A36: Solution::generateTrees(int, int) (in /home/lxw/lxw0109/LeetCode_lxw/LeetCode_CPP/num095/a.out)
+==7552==    by 0x8048B7C: Solution::generateTrees(int) (in /home/lxw/lxw0109/LeetCode_lxw/LeetCode_CPP/num095/a.out)
+==7552==    by 0x8048853: main (in /home/lxw/lxw0109/LeetCode_lxw/LeetCode_CPP/num095/a.out)
+==7552== 
+==7552== LEAK SUMMARY:
+==7552==    definitely lost: 201,552 bytes in 16,796 blocks
+==7552==    indirectly lost: 911,064 bytes in 75,922 blocks
+==7552==      possibly lost: 0 bytes in 0 blocks
+==7552==    still reachable: 0 bytes in 0 blocks
+==7552==         suppressed: 0 bytes in 0 blocks
+==7552== 
+==7552== For counts of detected and suppressed errors, rerun with: -v
+==7552== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
