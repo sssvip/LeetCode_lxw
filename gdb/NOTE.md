@@ -18,14 +18,14 @@ n	next	#逐行(不进入函数内)</br>
 s	step	#逐行(进入函数内)</br>
 r	run</br>
 b	break 10/break funcName</br>
-q	quit
----</br>
+q	quit</br>
+===</br>
 多进程(fork):</br>
 ```
 set follow-fork-mode parent
 set follow-fork-mode child
 ```
----</br>
+===</br>
 多线程:</br>
 ```
 info threads
@@ -42,5 +42,4 @@ Jul 29 15:17:01 lxw-Aspire-4736Z CRON[6000]: (root) CMD (   cd / && run-parts --
 对于上面的error 7中的7，是二进制的111, 每一位分别代表u/s, r/w, present.</br>
 111代表: 用户u, 读写rw, 存在p.</br>
 000代表: 内核s, 只读r, 不存在.</br>
-可以通过例子crash.cpp理解, 当尝试修改"hello"常量的内容时出现`Segmentation fault (core dumped)
-`错误.</br>
+可以通过例子crash.cpp理解, 当尝试修改"hello"常量的内容时出现`Segmentation fault (core dumped)`错误. "用户 写 存在"</br>
