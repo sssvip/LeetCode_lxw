@@ -21,6 +21,17 @@ Credits:
 Special thanks to @ifanchu for adding this problem and creating all test cases.
 */
 
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <set>
+#include <climits>
+
+using namespace std;
+
+/*
+//Method 1: OK
 class Solution {
 public:
     string convertToTitle(int n) {
@@ -35,3 +46,27 @@ public:
         return title;
     }
 };
+*/
+
+//Method 2: OK
+class Solution {
+public:
+    string convertToTitle(int n) {
+        if(n <= 0)
+            return "";
+        string title = "";
+        while(n){
+            //NO: title = ((n - 1) % 26 + 'A') + title; //NO: int + string
+            title = char((n - 1) % 26 + 'A') + title;
+            n = (n - 1) / 26;
+        }
+        //reverse(title.begin(), title.end());
+        return title;
+    }
+};
+
+int main(void){
+	Solution sol;
+	cout << sol.convertToTitle(26) << endl;
+	return 0;
+}
