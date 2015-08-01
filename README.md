@@ -152,7 +152,7 @@ Submitted by lxw.
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [num238.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num238/num238.cpp) | Array | Medium |
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | [num239.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num239/num239.cpp) | Array | Medium[Heap? Hard?] |
 | 240 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [num240.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num240/num240.cpp) | Array | Medium |
-
+| 241 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [num241.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num241/num241.cpp) | String | Easy |
 
 
 ###References:
