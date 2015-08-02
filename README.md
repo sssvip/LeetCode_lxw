@@ -124,6 +124,7 @@ Submitted by lxw.
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [num123.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num123/num123.cpp) | Array/DP | Hard |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [num125.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num125/num125.cpp) | String | Easy |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [num128](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num128) | Array/Set | Medium |
+| 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [num129.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num129/num129.cpp) | DFS | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [num144](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num144/num144.cpp) | Stack | Medium |
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [num145](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num145/num145.cpp) | Stack | Hard |
