@@ -126,6 +126,7 @@ Submitted by lxw.
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [num128](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num128) | Array/Set | Medium |
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [num129.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num129/num129.cpp) | DFS | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
+| 137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [num137](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num137/) |  | Medium |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [num144](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num144/num144.cpp) | Stack | Medium |
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [num145](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num145/num145.cpp) | Stack | Hard |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | [num155](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num155/) | Stack/Data Structure | Easy(**Not Easy. Important.**) |
