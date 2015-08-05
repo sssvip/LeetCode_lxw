@@ -72,3 +72,19 @@ int main(void){
     cout << (long long)((long long)(-1500000001) - (long long)(1500000000)) << endl;
 	return 0;
 }
+
+
+//Better and Easier
+class Solution {
+public:
+    int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
+        int result = (D - B) * (C - A) + (H - F) * (G - E);
+        int left = max(A, E);
+        int bottom = max(B, F);
+        int right = min(C, G);
+        int top = min(D, H);
+        if (top <= bottom || right <= left)
+            return result;
+        return result - (top - bottom) * (right - left);
+    }
+};
