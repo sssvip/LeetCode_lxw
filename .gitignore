@@ -5,30 +5,3 @@ LeetCode_J/bin/*
 */a.out
 a.out
 *~
-#!/usr/bin/bash
-
-if [ -d ./intermedia ]
-then
-	rm -r intermedia
-fi
-
-if [ -f ./result ]
-then
-	rm ./result
-fi
-mkdir intermedia && python ./split.py && ls ./intermedia/* | xargs sort | uniq >> result
-
-
-
-#!/usr/bin/python
-
-with open("./urls") as f:
-	while 1:
-		line = f.readline().strip()
-		if not line:
-			break
-		f1 = open("./intermedia/" + str(len(line)), "a")
-		f1.write(line + "\n")
-		f1.close()
-
-# ls ./intermedia/* | xargs sort | xargs unique >> result
