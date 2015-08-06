@@ -95,7 +95,6 @@ private:
         }
         return true;
     }*/
-
     //[AC]Method 1: 每个合数都可以写成几个质数相乘的形式。
     void isPrime(int number, vector<int> & primes){
         int sqrtNum = sqrt(number);
@@ -117,11 +116,32 @@ public:
         }
         return count;*/
         
+        /*
         //Method 1
         vector<int> primes;
         for(int i = 2; i < n; ++i){
             isPrime(i, primes);
         }
         return primes.size();
+        */
+
+        //Method 2
+        if(n < 2)
+            return 0;
+        vector<int> flag(n, 1);
+        for(int i = 2; i * i < n; ++i){
+            //if(i == 2 || i & 0x01 == 1){ //Odd    //OK
+            if(flag[i] == 1){
+                for(int j = i; j * i < n; ++j){
+                    flag[j * i] = 0;
+                }
+            }
+        }
+        int count = 0;
+        for(int i = 2; i < n; ++i){
+            if(flag[i] == 1)
+                ++count;
+        }
+        return count;
     }
 };
