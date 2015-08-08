@@ -139,6 +139,7 @@ Submitted by lxw.
 | 168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | [num168.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num168/num168.cpp) | string | Easy |
 | 171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | [num171.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num171/num171.cpp) | string | Easy |
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [num191.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num191/num191.cpp) | Bit manipulation | Easy |
+| 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | [num202.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num202/num202.cpp) | Hash Table | Easy |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/) | [num204.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num204/num204.cpp) | Math | Medium |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |
