@@ -19,11 +19,16 @@ private:
     vector<string> result;
     bool isNum(string & s, int start, int end){
         int num = 0;
+        int length = end - start + 1;
         for(int i = start; i <= end; ++i){
             num = num * 10 + s[i] - '0';
         }
-        if(num >= 0 && num <= 255)
-            return true;
+        if(num >= 0 && num <= 255){
+            if((length == 1) || (length == 2 && num > 9) || (length == 3 && num > 99))
+                return true;
+            else
+                return false;
+        }
         else
             return false;
     }
