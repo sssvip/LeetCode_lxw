@@ -141,6 +141,7 @@ Submitted by lxw.
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [num191.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num191/num191.cpp) | Bit manipulation | Easy |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | [num198.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num198/num198.cpp) | DP | Easy |
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | [num202.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num202/num202.cpp) | Hash Table | Easy |
+| 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [num203.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num203/num203.cpp) | Linked List | Easy |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/) | [num204.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num204/num204.cpp) | Math | Medium |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [num205_get.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum205%2Fnum205_get.py) | Hash Table | Easy |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [num206.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num206/num206.py) [num206.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num206/num206.cpp) | Linked List | Easy |
