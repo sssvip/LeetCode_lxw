@@ -130,6 +130,7 @@ Submitted by lxw.
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [num129.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num129/num129.cpp) | DFS | Medium |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | [num130.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num130/num130.cpp) | BFS | Medium |
 | 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | [num131.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num131/num131.cpp) | Backtracking | Medium |
+| 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | [num133.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num133/num133.cpp) | BFS/Graph | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
 | 137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [num137](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num137/) |  | Medium |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [num144](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num144/num144.cpp) | Stack | Medium |
