@@ -33,7 +33,7 @@ Visually, the graph looks like the following:
  * Definition for undirected graph.
  * struct UndirectedGraphNode {
  *     int label;
- *     vector<UndirectedGraphNode *> neighbors; //何时进行初始化操作? 什么时候才可以使用这个数据成员(未在构造函数中提及的数据成员)?
+ *     vector<UndirectedGraphNode *> neighbors; //何时进行初始化操作? 在调用构造函数时对其进行初始化, 并且比构造函数的函数体执行的要早
  *     UndirectedGraphNode(int x) : label(x) {};
  * };
  */
