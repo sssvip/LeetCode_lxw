@@ -8,7 +8,7 @@ using namespace std;
 class Singleton{
 private:
 	Singleton(){}
-	static Singleton * instance;
+	static Singleton * instance = NULL;
 public:
 	static Singleton * getInstance(){
 		if(instance == NULL)
@@ -19,13 +19,15 @@ public:
 		if(instance != NULL)
 			delete instance;
 	}
+    void sayHello(){
+        cout << "hello" << endl;
+    }
 };
 
-Singleton * Singleton::instance = NULL;     //NOTE: essential.
+//Singleton * Singleton::instance = NULL;     //NOTE: essential.
 int main(void){
-	//Singleton s;	
 	Singleton * s = Singleton::getInstance();
-	//Singleton::getInstance();
+    s->sayHello();
     return 0;
 }
 
