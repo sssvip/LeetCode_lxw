@@ -11,10 +11,10 @@ private:
 	mutex m;
 public:
 	Lock(mutex mt):m(mt){
-		this->m.Lock();
+		this->m.lock();
 	}
 	~Lock(){
-		this->m.Unlock();
+		this->m.unlock();
 	}
 };
 
