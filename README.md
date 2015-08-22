@@ -172,6 +172,7 @@ Submitted by lxw.
 | 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | [num257.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num257/num257.cpp) | Tree/DFS | Easy |
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | [num258.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num258/num258.cpp) | Math | Easy |
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | [num260.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num260/num260.cpp) | Bit Manipulation | Medium |
+| 263 | [Ugly Number](https://leetcode.com/problems/ugly-number/) | [num263.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num263/num263.cpp) | Math | Medium |
 
 ###References:
 [LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>
