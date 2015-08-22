@@ -137,15 +137,27 @@ string reverse(string str){
 
 //int -> string
 //Implement casting int to string on myself.
-string int2String(int number){
-    char t[24];
-    int i = 0;	 
-    while (number) {
-        t[i++] = (number % 10) + '0';
-        number /= 10;
+string int2String(int value){
+    long long val = (long long)value;
+    char result[11];
+    int sign = 0;
+    if(value < 0){
+        sign = 1;   //negative
+        val = -val;
     }
-    t[i] = 0;	 
-    return string(reverse(t));
+    int i = 0;
+    while(val != 0){
+        result[i] = val % 10 + '0';
+        val = val / 10;
+        ++i;
+    }
+    result[i] = '\0';
+    if(sign == 0){  //positive
+        return string(reverse(result));
+    }
+    else{   //negative
+        return "-" + string(reverse(result));
+    }
 }
 
 int main(void){	
