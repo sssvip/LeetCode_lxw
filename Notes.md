@@ -29,3 +29,7 @@ TBD
 
 ###红黑树(Red-Black Tree) RBT
 TBD
+
+###Math
+(a * b) mod c == (a mod c) * (b mod c)
+(a * b) mod c == ((a mod c) * (b mod c)) mod c
