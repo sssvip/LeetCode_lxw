@@ -63,7 +63,7 @@ r 执行到函数返回
 -ff	常与-o选项一起使用，不同进程(子进程)产生的系统调用输出到filename.PID文件
 -r	打印每一个系统调用的相对时间
 -t	在输出中的每一行前加上时间信息。 -tt 时间确定到微秒级。还可以使用-ttt打印相对时间
--e	expr	输出过滤器，通过表达式，可以过滤出掉你不想要输出
+-e expr 输出过滤器，通过表达式，可以过滤出掉你不想要输出
 -e trace=file/process/network/signal/ipc/all	只跟踪有关文件操作/进程控制/与网络有关/与系统信号有关/与进程通讯有关/所有的/的系统调用. 
 '''
 strace -crt -e trace=all -o result cat /dev/null
