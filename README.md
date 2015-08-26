@@ -174,6 +174,7 @@ Submitted by lxw.
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | [num260.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num260/num260.cpp) | Bit Manipulation | Medium |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number/) | [num263.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num263/num263.cpp) | Math | Medium |
 | 264 | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) | [num264.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num264/num264.cpp) | Queue/Math | Medium |
+| 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [num268.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num268/num268.cpp) | Binary Search/ | Medium |
 
 
 ###References:
