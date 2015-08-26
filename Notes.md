@@ -33,3 +33,6 @@ TBD
 ###Math
 (a * b) mod c == (a mod c) * (b mod c)
 (a * b) mod c == ((a mod c) * (b mod c)) mod c
+
+###Bucket Sort
+桶排序使用线性时间Θ（n）.桶排序并不是比较排序，他不受到O(n log n)下限的影响。
