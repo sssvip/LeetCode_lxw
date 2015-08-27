@@ -1,6 +1,8 @@
 // File: fork1.cpp
 // Author: lxw
 // Date: 2015-08-12
+// getpid(): get the pid of the current process.
+// fork()返回值: 若成功调用一次则返回两个值，子进程返回0，父进程返回子进程ID；否则，出错返回-1
 
 #include <stdio.h>
 #include <unistd.h>
