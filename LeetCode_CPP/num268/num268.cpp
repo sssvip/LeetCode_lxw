@@ -18,6 +18,8 @@ Credits:
 Special thanks to @jianchao.li.fighter for adding this problem and creating all test cases.
 */
 
+//Method 1.
+//O(nlogn).
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
@@ -41,5 +43,20 @@ public:
             }
         }
         return missing;
+    }
+};
+
+
+//Method 2.
+//O(n).
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        int length = nums.size();
+        int sum = 0;
+        for(int i = 0; i < length; ++i){
+            sum += nums[i];
+        }
+        return (1+length)*length/2 - sum;
     }
 };
