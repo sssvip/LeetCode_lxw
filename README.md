@@ -139,6 +139,7 @@ Submitted by lxw.
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [num160](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num160/num160.cpp) | Linked List | Easy |
 | 165 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [num165.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num165/num165.cpp)/[num165.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num165/num165.py) | string | Easy |
 | 168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | [num168.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num168/num168.cpp) | string | Easy |
+| 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | [num169.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num169/num169.cpp) | Array/Map | Easy |
 | 171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | [num171.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num171/num171.cpp) | string | Easy |
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [num191.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num191/num191.cpp) | Bit manipulation | Easy |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | [num198.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num198/num198.cpp) | DP | Easy |
