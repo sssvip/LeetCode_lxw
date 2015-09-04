@@ -133,6 +133,7 @@ Submitted by lxw.
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | [num133.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num133/num133.cpp) | BFS/Graph | Medium |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [num136](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num136/) | BitManipulation | Medium |
 | 137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [num137](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num137/) |  | Medium |
+| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [num141](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num141/num141.cpp) | Linked List/Two Pointers | Medium |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [num144](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num144/num144.cpp) | Stack | Medium |
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [num145](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num145/num145.cpp) | Stack | Hard |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | [num155](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num155/) | Stack/Data Structure | Easy(**Not Easy. Important.**) |
