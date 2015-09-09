@@ -1,4 +1,7 @@
 @1:netstat
+netstat - Print network connections, routing tables, interface statistics,
+masquerade connections, and multicast memberships
+
 netstat常用选项：
 -a (all)显示所有选项，默认不显示LISTEN相关
 -t (tcp)仅显示tcp相关选项
@@ -56,6 +59,7 @@ r 执行到函数返回
 [tcpdump Demo](http://www.cnblogs.com/lxw0109/p/tcpdump.html)
 
 @4: strace
+strace - trace system calls and signals
 -c	统计每种系统调用所执行的时间，调用次数，出错次数。
 -p	跟踪指定的进程
 -o filename 默认strace将结果输出到stdout
