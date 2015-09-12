@@ -182,6 +182,9 @@ Submitted by lxw.
 | 273 | [Integer to English Words](https://leetcode.com/problems/integer-to-english-words/) | [num273.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num273/num273.cpp) | String | Easy |
 | 274 | [H-Index](https://leetcode.com/problems/h-index/) | [num274.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num274/num274.cpp) | Array | Easy |
 | 275 | [H-Index II](https://leetcode.com/problems/h-index-ii/) | [num275.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num275/num275.cpp) | Binary Search | Easy |
+| 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | [num278.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num278/num278.cpp) | Binary Search | Easy(**Traps and pitfalls**) |
+
+
 
 ###References:
 [LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>
