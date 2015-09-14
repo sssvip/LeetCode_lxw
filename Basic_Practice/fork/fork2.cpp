@@ -10,7 +10,8 @@
 int main(){
     for(int i= 0; i< 3; i++){
         int pid= fork();
-        if(pid== 0){
+        printf("%d\n", pid);
+        if(pid == 0){
             printf("son\n");
         }
         else{
