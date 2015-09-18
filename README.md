@@ -183,7 +183,7 @@ Submitted by lxw.
 | 274 | [H-Index](https://leetcode.com/problems/h-index/) | [num274.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num274/num274.cpp) | Array | Easy |
 | 275 | [H-Index II](https://leetcode.com/problems/h-index-ii/) | [num275.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num275/num275.cpp) | Binary Search | Easy |
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | [num278.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num278/num278.cpp) | Binary Search | Easy(**Traps and pitfalls**) |
-
+| 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares/) | [num279.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num279/num279.cpp) | DP | Hard(**Not easy to understand**) |
 
 
 ###References:
