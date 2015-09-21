@@ -15,7 +15,9 @@ public:
 };
 
 class Base2{
-    public:
+//No matter it is public or private, the results are identical.
+//public:
+private:
     virtual void f(){}
     virtual void g(){}
 };
