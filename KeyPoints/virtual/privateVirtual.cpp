@@ -19,9 +19,14 @@ class Derive : public Base {
 int main(void){
 	typedef void (*func)();	
 	Derive d;
-	//
-	func fu = (func)*((int *)*(int *)&d);
-	(*fu)();
+	func fu = (func)*( ((int *)( (int *)( (*(int *)&d)+0 ) )) + 0);
+	cout << fu << endl;
+	fu();		//OK
+	(*fu)();	//OK
+	fu = (func)*( ((int *)( (int *)( (*(int *)&d)+0 ) )) + 1);
+	cout << fu << endl;
+	fu();		//no
+	(*fu)(); 	//no
 	return 0;
 }
 
@@ -30,14 +35,10 @@ int main(void){
 //Output:
 
 lxw virtual$ ./a.out 
-Derive::f
-Derive::g1
-Derive::h1
-Derive::f
-Base1::g
-Base1::h
-Derive::f
-Base2::g
-Base2::h
+1
+Base::f
+Base::f
+1
+Segmentation fault (core dumped)
 lxw virtual$ 
 */
