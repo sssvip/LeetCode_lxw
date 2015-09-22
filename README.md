@@ -135,6 +135,7 @@ Submitted by lxw.
 | 137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [num137](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num137/) |  | Medium |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [num141.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num141/num141.cpp) | Linked List/Two Pointers | Medium |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [num142.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num142/num142.cpp) | Linked List/Two Pointers | Medium |
+| 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | [num143.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num143/num143.cpp) | Linked List | Medium |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [num144](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num144/num144.cpp) | Stack | Medium |
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [num145](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num145/num145.cpp) | Stack | Hard |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | [num147.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num147/num147.cpp) | Linked List | Medium |
