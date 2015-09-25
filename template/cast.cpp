@@ -214,6 +214,7 @@ int main(void){
     cout << "chStr: " << chStr << endl << endl; //123
     delete[] chStr;
 
+    //c++ 11
     //string -> int
     cout << stoi("-100") << endl;
 

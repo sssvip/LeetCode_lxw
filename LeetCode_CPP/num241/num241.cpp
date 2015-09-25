@@ -1,42 +1,33 @@
 // File: num241.cpp
 // Author: lxw
-// Date: 2015-08-01
+// Date: 2015-09-25
 
 /*
-Num num241: Valid Anagram
-Source: https://leetcode.com/problems/valid-anagram/
+Num num241: Different Ways to Add Parentheses
+Source: https://leetcode.com/problems/different-ways-to-add-parentheses/
 
-Given two strings s and t, write a function to determine if t is an anagram of s.
+Given a string of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. The valid operators are +, - and *.
 
-For example,
-s = "anagram", t = "nagaram", return true.
-s = "rat", t = "car", return false.
 
-Note:You may assume the string contains only lowercase alphabets.
+Example 1
+Input: "2-1-1".
+
+((2-1)-1) = 0
+(2-(1-1)) = 2
+Output: [0, 2]
+
+
+Example 2
+Input: "2*3-4*5"
+
+(2*(3-(4*5))) = -34
+((2*3)-(4*5)) = -14
+((2*(3-4))*5) = -10
+(2*((3-4)*5)) = -10
+(((2*3)-4)*5) = 10
+Output: [-34, -14, -10, -10, 10]
+
+Credits:
+Special thanks to @mithmatt for adding this problem and creating all test cases.
 */
 
-class Solution {
-public:
-    bool isAnagram(string s, string t) {
-        /*//OK
-        sort(s.begin(), s.end());
-        sort(t.begin(), t.end());
-        return s == t;
-        */
-        
-        vector<int> count(256, 0);
-        int length1 = s.length();
-        for(int i = 0; i < length1; ++i){
-            ++count[s[i]];
-        }
-        int length2 = t.length();
-        for(int i = 0; i < length2; ++i){
-            --count[t[i]];
-        }
-        for(int i = 0; i < 256; ++i){
-            if(count[i] != 0)
-                return false;
-        }
-        return true;
-    }
-};
