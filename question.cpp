@@ -5,14 +5,14 @@ class A{
 public:
 	A(int i){
 		cout << this << endl;
-		x = i;
+		y = i;
 	}
 	void dispa(){
 		cout << this << endl;
-		cout << this->x << endl;
+		cout << this->y << endl;
 	}
 private:
-	int x;
+	int y;
 };
 
 class B : public A{
