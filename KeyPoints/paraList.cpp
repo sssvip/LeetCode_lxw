@@ -1,6 +1,7 @@
 // File: paraList.cpp
 // Author: lxw
 // Date: 2015-09-28
+// Reference: http://www.douban.com/note/294704511/
 
 /*
    构造函数初始化时必须采用初始化列表一共有三种情况，
