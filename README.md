@@ -189,6 +189,7 @@ Submitted by lxw.
 | 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares/) | [num279.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num279/num279.cpp) | DP | Hard(**Not easy to understand**) |
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [num283.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num283/num283.cpp) | Array/Two Pointers | Easy |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | [num287.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num287/num287.cpp) | Array/Binary Search | Easy/Medium |
+| 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [num290.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num290/num290.cpp) | Hash Table | Medium |
 
 ###References:
 [LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>
