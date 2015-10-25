@@ -191,6 +191,7 @@ Submitted by lxw.
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | [num287.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num287/num287.cpp) | Array/Binary Search | Easy/Medium |
 | 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [num290.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num290/num290.cpp) | Hash Table | Medium |
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game/) | [num292.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num292/num292.cpp) | IQ | Medium |
+| 295 | [ind Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/ ) | [num295.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num295/num295.cpp) | priority_queue/Heap | Medium |
 
 ###References:
 [LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>
