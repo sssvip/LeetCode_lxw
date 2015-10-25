@@ -41,9 +41,15 @@ int main()
 {
     Fun pFun = NULL;
     Base1 b1;
+    cout << "Address of VT:" << &b1 << endl;
     cout << "Address of VT:" << (int *)(&b1) << endl;
-    cout << "Address of the first function in the VT:" << (int *)*(int *)(&b1) << endl;
-    cout << "Address of the first function in the VT:" << (Fun)*(int *)(&b1) << endl;
+    cout << "Address of VT:" << (char *)(&b1) << endl;
+    cout << "Address of the first function in the VT:" << ((int *)*(int *)(&b1)) << endl;
+    pFun = (Fun)*((int *)*(int *)(&b1));
+    cout << "Address of the first function in the VT:" << pFun << endl;
+    pFun();
+    cout << "sizeof(Fun): " << sizeof(Fun) << ", sizeof(pFun): " << sizeof(pFun) << ", pFun: " << pFun << endl;
+    
     
     /*
     Derive d;
