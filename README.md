@@ -174,7 +174,8 @@ Submitted by lxw.
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [num238.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num238/num238.cpp) | Array | Medium |
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | [num239.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num239/num239.cpp) | Array | Medium[Heap? Hard?] |
 | 240 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [num240.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num240/num240.cpp) | Array | Medium |
-| 241 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [num241.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num241/num241.cpp) | String | Easy |
+| 241 | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | [num241.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num241/num241.cpp) |  | Medium |
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [num241.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num242/num242.cpp) | String | Easy |
 | 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | [num257.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num257/num257.cpp) | Tree/DFS | Easy |
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | [num258.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num258/num258.cpp) | Math | Easy |
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | [num260.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num260/num260.cpp) | Bit Manipulation | Medium |
@@ -187,7 +188,8 @@ Submitted by lxw.
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | [num278.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num278/num278.cpp) | Binary Search | Easy(**Traps and pitfalls**) |
 | 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares/) | [num279.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num279/num279.cpp) | DP | Hard(**Not easy to understand**) |
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [num283.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num283/num283.cpp) | Array/Two Pointers | Easy |
-
+| 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | [num287.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num287/num287.cpp) | Array/Binary Search | Easy/Medium |
+| 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [num290.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num290/num290.cpp) | Hash Table | Medium |
 
 ###References:
 [LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>

@@ -213,5 +213,13 @@ int main(void){
     str.copy(chStr, length, 0);
     cout << "chStr: " << chStr << endl << endl; //123
     delete[] chStr;
+
+    //c++ 11
+    //string -> int
+    cout << stoi("-100") << endl;
+
+    //int -> string 
+    int num = -100;
+    cout << to_string(num) << endl;
     return 0;
 }
