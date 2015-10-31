@@ -148,6 +148,7 @@ Submitted by lxw.
 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | [num190.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num190/num190.cpp) | Bit manipulation | Easy |
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [num191.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num191/num191.cpp) | Bit manipulation | Easy |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | [num198.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num198/num198.cpp) | DP | Easy |
+| 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [num199.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num199/num199.cpp) | BFS | Medium |
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | [num202.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num202/num202.cpp) | Hash Table | Easy |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [num203.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num203/num203.cpp) | Linked List | Easy |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/) | [num204.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num204/num204.cpp) | Math | Medium |
