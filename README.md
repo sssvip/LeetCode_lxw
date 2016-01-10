@@ -196,6 +196,7 @@ Submitted by lxw.
 | 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | [num295.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num295/num295.cpp) | priority_queue/Heap | Medium |
 | 303 | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | [num303.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num303/num303.cpp) | DP | Medium |
 | 304 | [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) | [num304.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num304/num304.cpp) | DP | Medium |
+| 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | [num32.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num322/num322.cpp) | DP | Medium |
 
 
 ###References:
