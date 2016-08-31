@@ -24,6 +24,7 @@ Explanation:
 """
 
 class Solution(object):
+    #Method 1 88ms
     def findTheDifference(self, s, t):
         """
         :type s: str
@@ -34,13 +35,27 @@ class Solution(object):
         result = 0
         for i in xrange(length):
             result += (ord(t[i]) - ord(s[i]))
-            #result += ((int)t[i] - (int)s[i])
         result += ord(t[length])
         return chr(result)
 
+    #Method 2: better 60ms
+    def findTheDifference1(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: str
+        """
+        length = len(s)
+        result = 0
+        for i in xrange(length):
+            result ^= ord(s[i])
+            result ^= ord(t[i])
+        result ^= ord(t[length])
+        return chr(result)
 def main():
     sol = Solution()
     print "result:", sol.findTheDifference("abcd", "caedb")
+    print "result1:", sol.findTheDifference1("abcd", "caedb")
 
 if __name__ == "__main__":
     main()
