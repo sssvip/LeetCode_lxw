@@ -6,7 +6,7 @@ Submitted by lxw.
 
 
 | **Number** | **Title** | **Solution** | **Type** | **Star** |
-|---| ----- | -------- | ---------- | -------- | ----- | 
+|---| ----- | -------- | ---------- | -------- | ----- |
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/) | [num001.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num001/num001.py) | Hash Table | Easy |
 | 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [num002.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum002%2Fnum002.py) | Linked List | Easy |
 | 003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [num003.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum003%2Fnum003.py) | Hash Table | Medium |
@@ -198,6 +198,7 @@ Submitted by lxw.
 | 304 | [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) | [num304.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num304/num304.cpp) | DP | Medium |
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | [num322.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num322/num322.cpp) | DP | Medium |
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [num328.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num328/num328.cpp) | Linked List | Easy |
+| 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [num389.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num389/num389.py)/[num389.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num389/num389.java) | String | Easy |
 
 ###References:
 [LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>
