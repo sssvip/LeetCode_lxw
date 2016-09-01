@@ -198,6 +198,7 @@ Submitted by lxw.
 | 304 | [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) | [num304.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num304/num304.cpp) | DP | Medium |
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | [num322.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num322/num322.cpp) | DP | Medium |
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [num328.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num328/num328.cpp) | Linked List | Easy |
+| 388 | [Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/) | [num388.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num388/num388.py)/[num388.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num389/num389.java) | String/Array(Stack) | Medium |
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [num389.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num389/num389.py)/[num389.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num389/num389.java) | String | Easy |
 
 ###References:
