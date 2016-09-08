@@ -46,12 +46,65 @@ Notice that a/aa/aaa/file1.txt is not the longest file path, if there is another
 """
 
 class Solution(object):
+
     """
     Time: O(n)
     Space: O(height)
     48ms
+    List is Stack.
+    Better
     """
     def lengthLongestPath(self, input):
+        """
+        :type input: str
+        :rtype: int
+        """
+        maxLength = 0
+        input = "".join([input, "\n"])
+        length = len(input)
+        index = 0
+        i = 0
+        layer = 0
+        stack = []
+
+        while i < length:
+            if input[i] == '\n':
+                fileName = input[index:i]
+                if fileName == "":
+                    break;
+                if '.' in fileName: #file
+                    if layer > 0:
+                        tempMaxLength = stack[layer - 1] + 1 + len(fileName)
+                    else:
+                        tempMaxLength = len(fileName)
+                    maxLength = tempMaxLength if tempMaxLength > maxLength else maxLength
+                else:
+                    while layer < len(stack):
+                        stack.pop()
+                    if layer > 0:
+                        stack.append(stack[layer - 1] + 1 + len(fileName))
+                    else:
+                        stack.append(len(fileName))
+                layer = 0
+                i += 1  #NOTE
+                while i < length: 
+                    if input[i] != '\t':
+                        index = i
+                        break
+                    i += 1
+                    layer += 1
+            else:
+                i += 1
+
+        return maxLength
+
+    """
+    Time: O(n)
+    Space: O(height)
+    48ms
+    Use List to simulate Stack.
+    """
+    def lengthLongestPath1(self, input):
         """
         :type input: str
         :rtype: int
@@ -65,7 +118,6 @@ class Solution(object):
         while i < length:
             if input[i] == '\n':
                 fileName = input[index:i]
-                #print "fileName: ", fileName
                 if layer > 0:
                     if layer < len(array):
                         array[layer] = array[layer - 1] + len(fileName) + 1
@@ -111,10 +163,12 @@ def main():
     string = "dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"
     print "string:", string
     print sol.lengthLongestPath(string)
+    print sol.lengthLongestPath1(string)
 
     string = "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"
     print "string:", string
     print sol.lengthLongestPath(string)
+    print sol.lengthLongestPath1(string)
 
 if __name__ == "__main__":
     main()
