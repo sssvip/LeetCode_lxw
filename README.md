@@ -200,7 +200,7 @@ Submitted by lxw.
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [num328.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num328/num328.cpp) | Linked List | Easy |
 | 388 | [Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/) | [num388.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num388/num388.py) | String/Array(Stack) | Medium |
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [num389.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num389/num389.py)/[num389.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num389/num389.java) | String | Easy |
-| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [num392.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num392/num392.java) | String/ | Medium |
+| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [num392.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num392/num392.java) | String | Medium |
 
 ###References:
 [LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>
