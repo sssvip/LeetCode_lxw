@@ -1,8 +1,7 @@
 /**
- * @FileName: num1.java
  * @Author: lxw
  * @Date: 2014-12-30
- * @Usage: LeetCode num 1.
+ * @URL: https://leetcode.com/problems/find-the-difference/
  */
 class Solution {
 	//Method 1: 7ms

@@ -1,8 +1,8 @@
 /**
- *@FileName: num1_1.java
  *@Author: lxw
  *@Date: Jan 3, 2015
  *@Usage: Use the Built-in Data Structure in Java to solve the problem.
+ *@URL: https://leetcode.com/problems/two-sum/
  */
 package num1;
 
