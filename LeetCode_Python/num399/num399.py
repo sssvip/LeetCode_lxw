@@ -56,9 +56,19 @@ class Solution(object):
                         print "OK"
                         break
             elif dividend in charDictCharFloat and divisor not in charDictCharFloat: 
-                pass
+                for key in charDictCharFloat[dividend]:
+                    if divisor in charDictCharFloat[key]:
+                        result[index] = charDictCharFloat[dividend][key] * charDictCharFloat[key][divisor]
+                        flag = True
+                        print "OK"
+                        break
             elif dividend not in charDictCharFloat and divisor in charDictCharFloat: 
-                pass
+                for key in charDictCharFloat[divisor]:
+                    if dividend in charDictCharFloat[key]:
+                        result[index] = 1.0 / (charDictCharFloat[divisor][key] * charDictCharFloat[key][dividend])
+                        flag = True
+                        print "OK"
+                        break
             else:
                 for key in charDictCharFloat.iterkeys():
                     if divisor in charDictCharFloat[key] and dividend in charDictCharFloat[key]:
@@ -69,9 +79,15 @@ class Solution(object):
             if not flag:
                 result[index] = -1.0;
                 print "No"
-                
 
         return result
+        """
+        TODO:
+        a / c
+        b / d
+        a / b
+        queries: c/d     a/b & b/d => a / d   &  a / c => c/d
+        """
 
 def main():
     sol = Solution()
