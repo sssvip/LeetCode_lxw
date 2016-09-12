@@ -1,7 +1,7 @@
 /**
  * @Author: lxw
  * @Date: 2014-12-30
- * @URL: https://leetcode.com/problems/is-subsequence/
+ * @URL: https://leetcode.com/problems/rotate-function/
  */
 
 /*

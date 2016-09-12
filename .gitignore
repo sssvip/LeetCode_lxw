@@ -1,8 +1,4 @@
-#LeetCode/[.]*
-#LeetCode_J/[.]*
-LeetCode_J/bin/*
-*/*/a.out
-*/a.out
-a.out
+**/bin
+**/a.out
 *~
-*/*/*.class
+**/*.class
