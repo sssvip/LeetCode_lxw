@@ -47,38 +47,39 @@ class Solution(object):
         for index in xrange(length):
             dividend, divisor = queries[index]
             flag = False
+
+            #a:{c}, b:{c}   a/c / b/c
             if dividend in charDictCharFloat and divisor in charDictCharFloat:
-                print "Both"
                 for key in charDictCharFloat[dividend]:
                     if key in charDictCharFloat[divisor]:
                         result[index] = charDictCharFloat[dividend][key] / charDictCharFloat[divisor][key]
                         flag = True
-                        print "OK"
                         break
-            elif dividend in charDictCharFloat and divisor not in charDictCharFloat: 
+
+            #a:{c}, c:{b}   a/c * c/b   a/c * c/d * d/e * e/c
+            if not flag and dividend in charDictCharFloat and divisor not in charDictCharFloat:
                 for key in charDictCharFloat[dividend]:
                     if divisor in charDictCharFloat[key]:
                         result[index] = charDictCharFloat[dividend][key] * charDictCharFloat[key][divisor]
                         flag = True
-                        print "OK"
                         break
-            elif dividend not in charDictCharFloat and divisor in charDictCharFloat: 
+
+            #a:{c}, c:{b}   a/c * c/b
+            if not flag and dividend not in charDictCharFloat and divisor in charDictCharFloat: 
                 for key in charDictCharFloat[divisor]:
                     if dividend in charDictCharFloat[key]:
                         result[index] = 1.0 / (charDictCharFloat[divisor][key] * charDictCharFloat[key][dividend])
                         flag = True
-                        print "OK"
                         break
             else:
                 for key in charDictCharFloat.iterkeys():
                     if divisor in charDictCharFloat[key] and dividend in charDictCharFloat[key]:
                         result[index] = charDictCharFloat[key][divisor] / charDictCharFloat[key][dividend]
                         flag = True
-                        print "OK"
                         break
+
             if not flag:
                 result[index] = -1.0;
-                print "No"
 
         return result
         """
