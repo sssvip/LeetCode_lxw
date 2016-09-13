@@ -5,8 +5,8 @@ LeetCode Programming Practice in _**[C++](http://www.cplusplus.com/)**_/_**[Java
 Submitted by lxw.</br>
 
 ###Algorithm
-| **Number** | **Title** | **Solution** | **Type** | **Star** |
-|---| ----- | -------- | ---------- | -------- | ----- |
+| **Number** | **Title** | **Solution** | **Type** | **Difficulty** |
+| --- | ------ | -------- | ---------- | -------- | -------- |
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/) | [num001.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num001/num001.py) | Hash Table | Easy |
 | 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [num002.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum002%2Fnum002.py) | Linked List | Easy |
 | 003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [num003.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum003%2Fnum003.py) | Hash Table | Medium |
@@ -208,9 +208,9 @@ Submitted by lxw.</br>
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [num399.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num399/num399.py) | Dict | Medium |
 
 ###Shell
-| **Number** | **Title** | **Solution** | **Type** | **Star** |
-|---| ----- | -------- | ---------- | -------- | ----- |
-| 195 | [Tenth Line](https://leetcode.com/submissions/detail/74123215/) | [num195.sh](https://github.com/lxw0109/LeetCode_lxw/blob/master/ShellLeetCode/num195/num195.sh) | Shell | Easy |
+| **Number** | **Title** | **Solution** | **Difficulty** |
+| --- | ------ | -------- | ---------- |
+| 195 | [Tenth Line](https://leetcode.com/submissions/detail/74123215/) | [num195.sh](https://github.com/lxw0109/LeetCode_lxw/blob/master/ShellLeetCode/num195/num195.sh) | Easy |
 
 ###References:
 [LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>
