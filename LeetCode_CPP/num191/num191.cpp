@@ -23,6 +23,7 @@ public:
             if((n >> i) & 0x01)
                 ++count;
         }*/
+        //Each time of "n &= n - 1", we delete one '1' from n.
         while(n != 0){
             n = n & (n-1);
             ++count;
