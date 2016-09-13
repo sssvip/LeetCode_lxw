@@ -1,10 +1,10 @@
 LeetCode_lxw
 ============
 
-LeetCode Programming Practice in _**[C++](http://www.cplusplus.com/)**_.<br>
-Submitted by lxw.
+LeetCode Programming Practice in _**[C++](http://www.cplusplus.com/)**_/_**[Java](http://docs.oracle.com/javase/8/docs/api/)**_/_**[Python](https://docs.python.org/2.7/library/index.html)**_.<br>
+Submitted by lxw.</br>
 
-
+###Algorithm
 | **Number** | **Title** | **Solution** | **Type** | **Star** |
 |---| ----- | -------- | ---------- | -------- | ----- |
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/) | [num001.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num001/num001.py) | Hash Table | Easy |
@@ -206,6 +206,11 @@ Submitted by lxw.
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [num392.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num392/num392.java) | String | Medium |
 | 396 | [Rotate Function](https://leetcode.com/problems/rotate-function/) | [num396.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num396/num396.java) | Array | Easy |
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [num399.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num399/num399.py) | Dict | Medium |
+
+###Shell
+| **Number** | **Title** | **Solution** | **Type** | **Star** |
+|---| ----- | -------- | ---------- | -------- | ----- |
+| 195 | [Tenth Line](https://leetcode.com/submissions/detail/74123215/) | [num195.sh](https://github.com/lxw0109/LeetCode_lxw/blob/master/ShellLeetCode/num195/num195.sh) | Shell | Easy |
 
 ###References:
 [LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>
