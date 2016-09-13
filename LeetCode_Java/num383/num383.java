@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 class Solution {
 	/*
-	time: o(m+n). 50 ms.
+	time: O(m+n). 50 ms.
 	*/
 	public boolean canConstruct(String ransomNote, String magazine) {
 		Map<Character, Integer> ransomDict = new HashMap<Character, Integer>();
