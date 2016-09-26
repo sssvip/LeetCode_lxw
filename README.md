@@ -213,7 +213,8 @@ Submitted by lxw.</br>
 ###Shell
 | **Number** | **Title** | **Solution** | **Difficulty** |
 | --- | ------ | -------- | ---------- |
-| 195 | [Tenth Line](https://leetcode.com/submissions/detail/74123215/) | [num195.sh](https://github.com/lxw0109/LeetCode_lxw/blob/master/ShellLeetCode/num195/num195.sh) | Easy |
+| 193 | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/) | [num193.sh](https://github.com/lxw0109/LeetCode_lxw/blob/master/ShellLeetCode/num193/num193.sh) | Easy |
+| 195 | [Tenth Line](https://leetcode.com/problems/tenth-line/) | [num195.sh](https://github.com/lxw0109/LeetCode_lxw/blob/master/ShellLeetCode/num195/num195.sh) | Easy |
 
 ###References:
 [LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>
