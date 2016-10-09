@@ -208,6 +208,7 @@ Submitted by lxw.</br>
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [num389.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num389/num389.py)/[num389.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num389/num389.java) | String | Easy |
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [num392.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num392/num392.java) | String | Medium |
 | 396 | [Rotate Function](https://leetcode.com/problems/rotate-function/) | [num396.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num396/num396.java) | Array | Easy |
+| 397 | [Integer Replacement](https://leetcode.com/problems/integer-replacement/) | [num397.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num397/num397.py) | Greedy | Medium |
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [num399.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num399/num399.py) | Dict | Medium |
 
 ###Shell
