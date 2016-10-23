@@ -210,6 +210,7 @@ Submitted by lxw.</br>
 | 396 | [Rotate Function](https://leetcode.com/problems/rotate-function/) | [num396.java](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Java/num396/num396.java) | Array | Easy |
 | 397 | [Integer Replacement](https://leetcode.com/problems/integer-replacement/) | [num397.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num397/num397.py) | Greedy | Medium |
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [num399.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num399/num399.py) | Dict | Medium |
+| 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | [num412.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num412/num412.py) | Math | Easy |
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings/) | [num415.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num415/num415.py) | String | Easy(Patience and Carefulness) |
 
 ###Shell
