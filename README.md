@@ -1,4 +1,4 @@
-GLeetCode_lxw
+LeetCode_lxw
 ============
 
 LeetCode Programming Practice in _**[C++](http://www.cplusplus.com/)**_/_**[Java](http://docs.oracle.com/javase/8/docs/api/)**_/_**[Python](https://docs.python.org/2.7/library/index.html)**_.<br>
@@ -24,7 +24,7 @@ Submitted by lxw.</br>
 | 016 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [num016.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num016/num016.cpp) | Array | Hard |
 | 017 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [num017.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num017/num017.cpp) | DFS&String | Hard |
 | 018 | [4Sum](https://leetcode.com/problems/4sum/) | [num018.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num018/num018.cpp) | Array | Hard |
-| 019 | [Remove Nth Node From EndPow(x, n) of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [num019.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num019/num019.cpp) | Linked List(Two Pointers)| Easy |
+| 019 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [num019.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num019/num019.cpp) | Linked List(Two Pointers)| Easy |
 | 020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [num020.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num020/num020.cpp) | Stack | Easy |
 | 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [num021.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num021/num021.cpp) | Linked List | Easy |
 | 022 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [num022.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num022/num022.cpp) | DFS | Hard |
