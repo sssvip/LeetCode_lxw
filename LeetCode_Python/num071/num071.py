@@ -24,7 +24,7 @@ In this case, you should ignore redundant slashes and return "/home/foo".
 class Solution:
     # @param {string} path
     # @return {string}
-    def simplifyPath(self, path):
+    def simplifyPath1(self, path):
         pathList = path.split('/')
         length = len(pathList)
         index = 0
@@ -40,6 +40,23 @@ class Solution:
                 index += 1
         return '/' + '/'.join(pathList[:index])
 
+    def simplifyPath(self, path):
+        pathList = path.split('/')
+        length = len(pathList)
+        index = 0
+        stack = []
+        for i in xrange(length):
+            if pathList[i] == '.' or pathList[i] == '':
+                continue
+            elif pathList[i] == '..':
+                if stack != []:
+                    stack.pop(-1)   #pop the peak
+            else:
+                stack.append(pathList[i])
+        return '/' + '/'.join(stack)
+
 if __name__ == '__main__':
-	sol = Solution()
-	print(sol.simplifyPath('/'))
+    sol = Solution()
+    print(sol.simplifyPath('/'))
+    print(sol.simplifyPath('/home/./iscas/xlab/'))
+    print(sol.simplifyPath('/home/./iscas/../ict/'))
