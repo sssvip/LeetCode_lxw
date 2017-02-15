@@ -214,6 +214,7 @@ Submitted by lxw.</br>
 | 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | [num412.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num412/num412.py) | Math | Easy |
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings/) | [num415.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num415/num415.py) | String | Easy(Patience and Carefulness) |
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance/) | [num461.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num461/num461.py) | BitManipulation | Easy |
+| 500 | [Keyboard Row](https://leetcode.com/problems/keyboard-row/?tab=Description) | [num500.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num500/num500.py) | String | Easy |
 
 ###Shell
 | **Number** | **Title** | **Solution** | **Difficulty** |
