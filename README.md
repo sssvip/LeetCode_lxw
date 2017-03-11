@@ -215,6 +215,8 @@ Submitted by lxw.</br>
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings/) | [num415.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num415/num415.py) | String | Easy(Patience and Carefulness) |
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance/) | [num461.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num461/num461.py) | BitManipulation | Easy |
 | 500 | [Keyboard Row](https://leetcode.com/problems/keyboard-row/?tab=Description) | [num500.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num500/num500.py) | String | Easy |
+| 520 | [Detect Capital](https://leetcode.com/problems/detect-capital/?tab=Description) | [num520.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num520/num520.py)/[num520.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num520/num520.cpp) | String | Easy |
+
 
 ###Shell
 | **Number** | **Title** | **Solution** | **Difficulty** |
