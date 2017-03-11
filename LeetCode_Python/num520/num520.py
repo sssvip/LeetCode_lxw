@@ -29,25 +29,24 @@ class Solution(object):
         :type word: str
         :rtype: bool
         """
+        
+        """
+        #Method 1:
+        Time: O(n)  72ms
         length = len(word)
         if length < 2:
             return True
-        if word[-1] < 91: #Uppercase
+        if ord(word[-1]) < 91: #Uppercase
             for letter in word[-2::-1]:
-                if letter > 90: #Lowercase
+                if ord(letter) > 90: #Lowercase
                     return False
         else:   #Lowercase
             for letter in word[-2:0:-1]:
-                if letter < 97: #Uppercase
+                if ord(letter) < 97: #Uppercase
                     return False
         return True
-
-
-def main():
-    sol = Solution()
-    words = ["Hello", "Alaska", "Dad", "Peace"]
-    print sol.findWords(words)
-
-
-if __name__ == "__main__":
-    main()
+        """
+        
+        #Method 2:
+        #Time: O(n) 49ms
+        return re.match("^[A-Z]*$|^[a-z]*$|^[A-Z][a-z]*$", word) != None

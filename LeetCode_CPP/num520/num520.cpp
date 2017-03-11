@@ -27,6 +27,7 @@ Note: The input will be a non-empty word consisting of uppercase and lowercase l
 class Solution {
 public:
     bool detectCapitalUse(string word) {
+        //Time: O(n) 16ms
         int length = word.size();
         if(length < 2)
             return true;
