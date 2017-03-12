@@ -214,6 +214,7 @@ Submitted by lxw.</br>
 | 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | [num412.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num412/num412.py) | Math | Easy |
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings/) | [num415.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num415/num415.py) | String | Easy(Patience and Carefulness) |
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance/) | [num461.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num461/num461.py) | BitManipulation | Easy |
+| 476 | [Number Complement](https://leetcode.com/problems/number-complement/?tab=Description) | [num476.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num476/num476.py)/[num476.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num476/num476.cpp) | BitManipulation | Easy |
 | 500 | [Keyboard Row](https://leetcode.com/problems/keyboard-row/?tab=Description) | [num500.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num500/num500.py) | String | Easy |
 | 520 | [Detect Capital](https://leetcode.com/problems/detect-capital/?tab=Description) | [num520.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num520/num520.py)/[num520.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num520/num520.cpp) | String | Easy |
 
