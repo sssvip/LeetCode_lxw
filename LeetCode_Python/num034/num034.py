@@ -1,11 +1,11 @@
 #!/usr/bin/python2.7
-# FileName: num071.py
+# FileName: num034.py
 # Author: lxw
 # Date: 2015-07-03
 
 """
-Num 034: 
-Source: 
+Num 034: Search for a Range
+Source: https://leetcode.com/problems/search-for-a-range/
 
 Given a sorted array of integers, find the starting and ending position of a given target value.
 
