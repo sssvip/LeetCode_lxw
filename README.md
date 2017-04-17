@@ -2,9 +2,9 @@ LeetCode_lxw
 ============
 
 LeetCode Programming Practice in _**[C++](http://www.cplusplus.com/)**_/_**[Java](http://docs.oracle.com/javase/8/docs/api/)**_/_**[Python](https://docs.python.org/2.7/library/index.html)**_.<br>
-Submitted by lxw.</br>
+Submitted by [lxw](http://xiaoweiliu.cn).</br>
 
-###Algorithm
+### Algorithm
 | **Number** | **Title** | **Solution** | **Type** | **Difficulty** |
 | --- | ------ | -------- | ---------- | -------- | -------- |
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/) | [num001.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num001/num001.py) | Hash Table | Easy |
@@ -140,6 +140,7 @@ Submitted by lxw.</br>
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [num145](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num145/num145.cpp) | Stack | Hard |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | [num147.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num147/num147.cpp) | Linked List | Medium |
 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [num151.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num151/num151.py) | Stack/String | Medium |
+| 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/#/description) | [num153.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num153/num153.py) | Binary Search | Easy |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | [num155](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num155/) | Stack/Data Structure | Easy(**Not Easy. Important.**) |
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [num160](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num160/num160.cpp) | Linked List | Easy |
 | 165 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [num165.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num165/num165.cpp)/[num165.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num165/num165.py) | string | Easy |
@@ -186,7 +187,7 @@ Submitted by lxw.</br>
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | [num260.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num260/num260.cpp) | Bit Manipulation | Medium |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number/) | [num263.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num263/num263.cpp) | Math | Medium |
 | 264 | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) | [num264.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num264/num264.cpp) | Queue/Math | Medium |
-| 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [num268.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num268/num268.cpp) | Binary Search/ | Medium |
+| 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [num268.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num268/num268.cpp) | Binary Search | Medium |
 | 273 | [Integer to English Words](https://leetcode.com/problems/integer-to-english-words/) | [num273.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num273/num273.cpp) | String | Easy |
 | 274 | [H-Index](https://leetcode.com/problems/h-index/) | [num274.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num274/num274.cpp) | Array | Easy |
 | 275 | [H-Index II](https://leetcode.com/problems/h-index-ii/) | [num275.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num275/num275.cpp) | Binary Search | Easy |
@@ -220,13 +221,19 @@ Submitted by lxw.</br>
 | 520 | [Detect Capital](https://leetcode.com/problems/detect-capital/?tab=Description) | [num520.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num520/num520.py)/[num520.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num520/num520.cpp) | String | Easy |
 
 
-###Shell
+### Shell
 | **Number** | **Title** | **Solution** | **Difficulty** |
 | --- | ------ | -------- | ---------- |
 | 193 | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/) | [num193.sh](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Shell/num193/num193.sh) | Easy |
 | 195 | [Tenth Line](https://leetcode.com/problems/tenth-line/) | [num195.sh](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Shell/num195/num195.sh) | Easy |
 
-###References:
+
+### Database
+| **Number** | **Title** | **Solution** | **Difficulty** |
+| --- | ------ | -------- | ---------- |
+| 182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/#/description) | [num182.sql](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_DB/num182/num182.sql) | Hard |
+
+### References:
 [LeetCode Question Difficulty Distribution](http://blog.csdn.net/yutianzuijin/article/details/11477603)</br>
 [LeetCode Question Difficulty Distribution](http://wwwx.cs.unc.edu/~zhew/Leetcoder/)</br>
 [illuz-Some Good Solutions](http://blog.csdn.net/hcbbt/article/category/2904451)</br>
