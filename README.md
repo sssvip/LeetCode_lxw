@@ -5,8 +5,10 @@ LeetCode Programming Practice in _**[C++](http://www.cplusplus.com/)**_/_**[Java
 Submitted by [lxw](http://xiaoweiliu.cn).</br>
 
 ### Algorithm
+
+
 | **Number** | **Title** | **Solution** | **Type** | **Difficulty** |
-| --- | ------ | -------- | ---------- | -------- | -------- |
+| --- | ------ | -------- | ---------- | -------- |
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/) | [num001.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num001/num001.py) | Hash Table | Easy |
 | 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [num002.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum002%2Fnum002.py) | Linked List | Easy |
 | 003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [num003.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python%2Fnum003%2Fnum003.py) | Hash Table | Medium |
@@ -223,6 +225,7 @@ Submitted by [lxw](http://xiaoweiliu.cn).</br>
 
 
 ### Shell
+
 | **Number** | **Title** | **Solution** | **Difficulty** |
 | --- | ------ | -------- | ---------- |
 | 193 | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/) | [num193.sh](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Shell/num193/num193.sh) | Easy |
@@ -230,6 +233,7 @@ Submitted by [lxw](http://xiaoweiliu.cn).</br>
 
 
 ### Database
+
 | **Number** | **Title** | **Solution** | **Difficulty** |
 | --- | ------ | -------- | ---------- |
 | 182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/#/description) | [num182.sql](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_DB/num182/num182.sql) | Hard |
