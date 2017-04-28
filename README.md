@@ -219,6 +219,7 @@ Submitted by [lxw](http://xiaoweiliu.cn).</br>
 | 476 | [Number Complement](https://leetcode.com/problems/number-complement/?tab=Description) | [num476.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num476/num476.py)/[num476.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num476/num476.cpp) | BitManipulation | Easy |
 | 500 | [Keyboard Row](https://leetcode.com/problems/keyboard-row/?tab=Description) | [num500.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num500/num500.py) | String | Easy |
 | 520 | [Detect Capital](https://leetcode.com/problems/detect-capital/?tab=Description) | [num520.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num520/num520.py)/[num520.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num520/num520.cpp) | String | Easy |
+| 535 | [Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/#/description) | [num535.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num535/num535.py) | Hash Table/Math/System Design | Medium |
 
 
 ### Shell
