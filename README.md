@@ -45,7 +45,7 @@ Submitted by [lxw](http://xiaoweiliu.cn).</br>
 | 035 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [num035.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num035/num035.cpp) | Binary Search | Easy |
 | 036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [num036.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num036/) | Hash Table | Easy |
 | 037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | [num037.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num037/num037.cpp) | DFS | Hard |
-| 038 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [num038.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num038/num038.cpp) | string | Easy |
+| 038 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [num038.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num038/num038.cpp)/[num038.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num038/num038.py) | string | Easy |
 | 039 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [num039.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num039/num039.cpp) | Backtracking | Hard |
 | 040 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [num040](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num040) | Backtracking | Medium/Hard |
 | 041 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | [num041](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num041) | Array | Medium |
