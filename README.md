@@ -63,7 +63,7 @@ Submitted by [lxw](http://xiaoweiliu.cn).</br>
 | 053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [num053.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num053/num053.cpp) | Array | Easy |
 | 054 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [num054.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num054/num054.cpp) | Array | Easy |
 | 055 | [Jump Game](https://leetcode.com/problems/jump-game/) | [num055.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num055/num055.cpp) | Greedy | Medium |
-| 056 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [num056.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num056/num056.cpp) | Array | Medium(OK) |
+| 056 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [num056.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num056/num056.cpp)/[num056.py](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_Python/num056/num056.py) | Array | Medium |
 | 057 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | [num057.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num057/num057.cpp) | Array | Medium(OK) |
 | 058 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | [num058.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num058/num058.cpp) | String | Easy |
 | 059 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [num059.cpp](https://github.com/lxw0109/LeetCode_lxw/blob/master/LeetCode_CPP/num059/num059.cpp) | Array | Easy |
