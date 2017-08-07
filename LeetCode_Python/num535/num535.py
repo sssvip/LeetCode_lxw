@@ -87,29 +87,30 @@ class Codec2:
 class Codec:
     """
     Better
-    Time: O(1). 78 ms
+    Time: O(1). 58 ms
     Space: O(n)
     The same longUrl would be encoded as the same shortUrl.
     """
-
+    _long_short = {}
+    _short_long = {}
     alphabet = string.ascii_letters + string.digits
-
-    def __init__(self):
-        self.code_url = {}
-        self.url_code = {}
-
+    
     def encode(self, longUrl):
         """Encodes a URL to a shortened URL.
         
         :type longUrl: str
         :rtype: str
         """
-        while longUrl not in self.url_code:
-            shortUrl = "".join([random.choice(Codec.alphabet) for _ in range(6)])
-            if shortUrl not in self.code_url:
-                self.code_url[shortUrl] = longUrl
-                self.url_code[longUrl] = shortUrl
-        return "http://xiaoweiliu.cn/" + self.url_code[longUrl]
+        if longUrl in self._long_short:
+            return self._long_short[longUrl]
+        else:
+            while 1:
+                short_url = "".join([random.choice(self.alphabet) for _ in range(6)])
+                if short_url not in self._short_long:
+                    self._long_short[longUrl] = short_url
+                    self._short_long[short_url] = longUrl
+                    break
+            return "http://tinyurl.com/" + short_url
 
     def decode(self, shortUrl):
         """Decodes a shortened URL to its original URL.
@@ -117,7 +118,15 @@ class Codec:
         :type shortUrl: str
         :rtype: str
         """
-        return self.code_url[shortUrl[-6:]]
+        short_url = shortUrl[-6:]
+        if short_url in self._short_long:
+            return self._short_long[short_url]
+        else:
+            return shortUrl
+
+# Your Codec object will be instantiated and called as such:
+# codec = Codec()
+# codec.decode(codec.encode(url))
 
 
 if __name__ == '__main__':
